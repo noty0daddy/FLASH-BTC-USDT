@@ -1,5 +1,6 @@
-+ Important: To use the full version of the program, you can download the full version and the most current working version from the "Release" section.
+https://imgur.com/a/FVraesf
 
++ Important: To use the full version of the program, you can download the full version and the most current working version from the "Release" section.
 
 BITGEN is an educational program designed to offer services related to bitcoin flashing. using hash key generated from unknow miner to send bitcoin
 to victims.FlashBTC program is 100% annonymous and secured.
