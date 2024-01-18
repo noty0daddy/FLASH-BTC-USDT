@@ -1,4 +1,5 @@
-https://imgur.com/a/FVraesf
+Picture of the program: https://imgur.com/a/FVraesf
+
 
 + Important: To use the full version of the program, you can download the full version and the most current working version from the "Release" section.
 
