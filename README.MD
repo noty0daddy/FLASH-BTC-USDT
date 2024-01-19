@@ -30,3 +30,7 @@ You can spend bitcoins easily on any other address (Segwit address, legacy, Segw
 ✔️ Works with any wallet 🖥 (exodus wallet, the wallet that can perform the fastest and most secure transactions)
 ✔️ BTC & USDT 💸
 ✔️ very fast and works perfectly 🌐
+
+## Disclaimer⚠️
+Please ensure that you use this software responsibly and ethically. We do not endorse or support any illegal activity.
+
