@@ -1,4 +1,6 @@
 Picture of the program: https://imgur.com/a/FVraesf
+## 📢 Updated
++ **The program has been updated, you can download the latest version from the "Relase" section.**
 
 ## 🏹・Important!
 ```js
