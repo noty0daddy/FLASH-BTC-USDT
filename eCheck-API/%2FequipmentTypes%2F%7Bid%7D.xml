@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/equipmentTypes/{id}" path="/equipmentTypes/{id}" id="a48f60b4-f392-4921-bbcb-828e06941350">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/equipmentTypes/{id}" path="/equipmentTypes/{id}" id="a48f60b4-f392-4921-bbcb-828e06941350">
   <con:settings id="462a69a8-3c91-485f-a30e-426ee3ebbf3b">
     <con:setting id="a48f60b4-f392-4921-bbcb-828e06941350fileName">%2FequipmentTypes%2F%7Bid%7D</con:setting>
   </con:settings>

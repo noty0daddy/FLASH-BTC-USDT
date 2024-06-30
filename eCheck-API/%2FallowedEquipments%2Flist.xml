@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/allowedEquipments/list" path="/allowedEquipments/list" id="11739e17-30f5-4929-9988-06aa888b0f8e">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/allowedEquipments/list" path="/allowedEquipments/list" id="11739e17-30f5-4929-9988-06aa888b0f8e">
   <con:settings id="9cb6380f-0f6c-4e6d-8c38-379cd8b37c67">
     <con:setting id="11739e17-30f5-4929-9988-06aa888b0f8efileName">%2FallowedEquipments%2Flist</con:setting>
   </con:settings>
@@ -118,6 +118,10 @@ Search list of allowed equipments (only non-deleted data) by given criteria, pag
     <con:request name="Request 1" id="cab774ec-b821-4102-9bd2-1a7d25908dd9" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://localhost:8080</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

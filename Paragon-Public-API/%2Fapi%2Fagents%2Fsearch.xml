@@ -5,7 +5,7 @@
   </con:settings>
   <con:parameters/>
   <con:method name="AgentsSearch_Search" id="b6b29f78-8424-4fdd-8fa1-c095af81d014" method="GET">
-    <con:description></con:description>
+    <con:description/>
     <con:settings/>
     <con:parameters>
       <con:parameter>
@@ -136,6 +136,10 @@
     <con:request name="Request 1" id="19b2f27a-1f30-4215-9e1c-98b3ea8ef530" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://paragon-dash-api-stage.azurewebsites.net</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

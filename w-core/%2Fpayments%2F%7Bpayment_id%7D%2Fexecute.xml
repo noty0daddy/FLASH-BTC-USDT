@@ -61,6 +61,10 @@
     <con:request name="Request 1" id="d57eff6c-422e-4ca6-8191-6c6c259dbac6" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://virtserver.swaggerhub.com</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/cart/addsessiontimeslot/{sessionid}{choosentime}{timeslotid}{oldtime}" path="/cart/addsessiontimeslot/{sessionid}{choosentime}{timeslotid}{oldtime}" id="a96c419e-439e-44f4-91c7-fabdbff14ed1">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/cart/addsessiontimeslot/{sessionid}{choosentime}{timeslotid}{oldtime}" path="/cart/addsessiontimeslot/{sessionid}{choosentime}{timeslotid}{oldtime}" id="a96c419e-439e-44f4-91c7-fabdbff14ed1">
   <con:settings id="6894a238-4b16-4c73-8cc8-701b80e0e7f4">
     <con:setting id="a96c419e-439e-44f4-91c7-fabdbff14ed1fileName">%2Fcart%2Faddsessiontimeslot%2F%7Bsessionid%7D%7Bchoosentime%7D%7Btimeslotid%7D%7Boldtime%7D</con:setting>
   </con:settings>
@@ -164,6 +164,10 @@
     <con:request name="Request 1" id="9c6567dd-a974-462f-9a3c-bf46784be5a6" mediaType="application/json">
       <con:settings/>
       <con:endpoint>http://dev.shoprocket.co</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">

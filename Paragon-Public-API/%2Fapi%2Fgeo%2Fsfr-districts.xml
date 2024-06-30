@@ -5,7 +5,7 @@
   </con:settings>
   <con:parameters/>
   <con:method name="GeoSfrDistricts_Get" id="e8384338-7862-4a56-8564-41e9a837e124" method="GET">
-    <con:description></con:description>
+    <con:description/>
     <con:settings/>
     <con:parameters/>
     <con:representation type="RESPONSE">
@@ -46,6 +46,10 @@
     <con:request name="Request 1" id="6aeae045-3495-4f06-b3ec-19d1d1865fb9" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://paragon-dash-api-stage.azurewebsites.net</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

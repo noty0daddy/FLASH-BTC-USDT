@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/user" path="/user" id="1f6bc4eb-9b62-415e-b45c-b203c27f84b0">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/user" path="/user" id="1f6bc4eb-9b62-415e-b45c-b203c27f84b0">
   <con:settings id="a1e3599d-123b-400e-b361-9b1eb563e910">
     <con:setting id="1f6bc4eb-9b62-415e-b45c-b203c27f84b0fileName">%2Fuser</con:setting>
   </con:settings>
@@ -22,6 +22,10 @@ Create user</con:description>
     <con:request name="Request 1" id="f7c7c0f4-ea7b-4b56-9260-a48f55349265" mediaType="application/json">
       <con:settings/>
       <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">

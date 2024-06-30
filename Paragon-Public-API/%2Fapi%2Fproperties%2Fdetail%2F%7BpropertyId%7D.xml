@@ -11,7 +11,7 @@
     </con:parameter>
   </con:parameters>
   <con:method name="PropertiesDetail_GetPublicProperty" id="695a2bea-0b7a-4ead-a768-f952c408c6c8" method="GET">
-    <con:description></con:description>
+    <con:description/>
     <con:settings/>
     <con:parameters/>
     <con:representation type="RESPONSE">
@@ -249,6 +249,10 @@
     <con:request name="Request 1" id="6ffa6754-855d-4291-96d1-8c7a2209485a" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://paragon-dash-api-stage.azurewebsites.net</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

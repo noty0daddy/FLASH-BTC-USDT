@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/api/mail/email-signup" path="/api/mail/email-signup" id="94ab2095-7fbf-4e81-8efa-7dc7ec2b4240">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/api/mail/email-signup" path="/api/mail/email-signup" id="94ab2095-7fbf-4e81-8efa-7dc7ec2b4240">
   <con:settings id="53835aa1-c19a-4775-947e-ef2534aa76a3">
     <con:setting id="94ab2095-7fbf-4e81-8efa-7dc7ec2b4240fileName">%2Fapi%2Fmail%2Femail-signup</con:setting>
   </con:settings>
   <con:parameters/>
   <con:method name="Mail_Send_Email_Signup" id="f75fb5c0-ec06-4e24-90e1-f8137a703029" method="POST">
-    <con:description></con:description>
+    <con:description/>
     <con:settings/>
     <con:parameters/>
     <con:representation type="REQUEST">

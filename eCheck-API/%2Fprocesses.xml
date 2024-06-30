@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/processes" path="/processes" id="ffe81ab2-2b9d-4219-96cf-9cd7f7c37c10">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/processes" path="/processes" id="ffe81ab2-2b9d-4219-96cf-9cd7f7c37c10">
   <con:settings id="0ec87106-f782-41e9-b9e2-41f62f50d6f7">
     <con:setting id="ffe81ab2-2b9d-4219-96cf-9cd7f7c37c10fileName">%2Fprocesses</con:setting>
   </con:settings>

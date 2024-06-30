@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/api/v1/jobs/retrieve" path="/api/v1/jobs/retrieve" id="fa2f2f0e-107e-4276-aba9-14a2eb6a1aa8">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/api/v1/jobs/retrieve" path="/api/v1/jobs/retrieve" id="fa2f2f0e-107e-4276-aba9-14a2eb6a1aa8">
   <con:settings id="ab836e64-28d6-498a-bcd2-6a1178db61fb">
     <con:setting id="fa2f2f0e-107e-4276-aba9-14a2eb6a1aa8fileName">%2Fapi%2Fv1%2Fjobs%2Fretrieve</con:setting>
   </con:settings>

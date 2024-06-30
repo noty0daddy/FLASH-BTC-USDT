@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/account/livestate/{companyid}{authkey}{partnerkey}" path="/account/livestate/{companyid}{authkey}{partnerkey}" id="2e0220ce-80c9-4e69-99d0-605d4832fefb">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/account/livestate/{companyid}{authkey}{partnerkey}" path="/account/livestate/{companyid}{authkey}{partnerkey}" id="2e0220ce-80c9-4e69-99d0-605d4832fefb">
   <con:settings id="e284b972-ed94-4b7b-ae72-86253c954e16">
     <con:setting id="2e0220ce-80c9-4e69-99d0-605d4832fefbfileName">%2Faccount%2Flivestate%2F%7Bcompanyid%7D%7Bauthkey%7D%7Bpartnerkey%7D</con:setting>
   </con:settings>
@@ -44,6 +44,10 @@
     <con:request name="Request 1" id="711b6cf8-7cce-4e32-bdab-5e948d53beef" mediaType="application/json">
       <con:settings/>
       <con:endpoint>http://dev.shoprocket.co</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">

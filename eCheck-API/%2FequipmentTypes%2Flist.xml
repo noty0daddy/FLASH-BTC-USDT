@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/equipmentTypes/list" path="/equipmentTypes/list" id="9a2aba21-8f95-4d1f-98b5-86cb9bfae0da">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/equipmentTypes/list" path="/equipmentTypes/list" id="9a2aba21-8f95-4d1f-98b5-86cb9bfae0da">
   <con:settings id="6db8af7f-0ca8-455a-affa-a54ecdd28ba7">
     <con:setting id="9a2aba21-8f95-4d1f-98b5-86cb9bfae0dafileName">%2FequipmentTypes%2Flist</con:setting>
   </con:settings>
@@ -92,6 +92,10 @@ Search list of equipment types by given criteria, page number, page size, sort c
     <con:request name="Request 1" id="bf64297f-7759-42ed-83c7-bd12d00d1811" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://localhost:8080</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

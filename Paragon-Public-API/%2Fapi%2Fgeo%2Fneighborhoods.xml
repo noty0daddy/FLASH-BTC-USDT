@@ -5,7 +5,7 @@
   </con:settings>
   <con:parameters/>
   <con:method name="GeoNeighborhoods_Get" id="183c8249-dcc9-49e4-8c1b-7a59e4d8ae8b" method="GET">
-    <con:description></con:description>
+    <con:description/>
     <con:settings/>
     <con:parameters/>
     <con:representation type="RESPONSE">
@@ -46,6 +46,10 @@
     <con:request name="Request 1" id="089dbcb0-1001-4c8e-947b-d822a3752711" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://paragon-dash-api-stage.azurewebsites.net</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

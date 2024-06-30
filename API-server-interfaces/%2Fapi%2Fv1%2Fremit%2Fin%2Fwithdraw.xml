@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/api/v1/remit/in/withdraw" path="/api/v1/remit/in/withdraw" id="d964c296-36ef-4c9a-abf3-65772a989696">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/api/v1/remit/in/withdraw" path="/api/v1/remit/in/withdraw" id="d964c296-36ef-4c9a-abf3-65772a989696">
   <con:settings id="5b0f36cd-0c76-4e7e-ac8f-7c1ed16e1de5">
     <con:setting id="d964c296-36ef-4c9a-abf3-65772a989696fileName">%2Fapi%2Fv1%2Fremit%2Fin%2Fwithdraw</con:setting>
   </con:settings>

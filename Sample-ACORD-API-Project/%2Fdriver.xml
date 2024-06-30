@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/driver" path="/driver" id="0f01fdb8-e458-4194-aae4-1c0698260799">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/driver" path="/driver" id="0f01fdb8-e458-4194-aae4-1c0698260799">
   <con:settings id="cda5d41e-7813-492b-9924-f16e6c1f2fa4">
     <con:setting id="0f01fdb8-e458-4194-aae4-1c0698260799fileName">%2Fdriver</con:setting>
   </con:settings>
@@ -17,6 +17,10 @@ Gets the requested driver on the policy</con:description>
     <con:request name="Request 1" id="443aaeb4-43da-4655-8b77-a09b77728a98" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://acord.org</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

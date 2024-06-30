@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/app/checkcache/" path="/app/checkcache/" id="f0dad4c3-9f98-49e5-852d-e5157adcf3c4">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/app/checkcache/" path="/app/checkcache/" id="f0dad4c3-9f98-49e5-852d-e5157adcf3c4">
   <con:settings id="ae0ce716-a62f-4709-acd9-b6598247e97a">
     <con:setting id="f0dad4c3-9f98-49e5-852d-e5157adcf3c4fileName">%2Fapp%2Fcheckcache%2F</con:setting>
   </con:settings>
@@ -25,6 +25,10 @@
     <con:request name="Request 1" id="262112f0-624a-4ab3-a951-d42e4691ad37" mediaType="application/json">
       <con:settings/>
       <con:endpoint>http://dev.shoprocket.co</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">

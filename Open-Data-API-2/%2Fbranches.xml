@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/branches" path="/branches" id="397d1303-a360-489c-9b9e-7bd254974be6">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/branches" path="/branches" id="397d1303-a360-489c-9b9e-7bd254974be6">
   <con:settings id="d74ce7dc-0f4b-4a34-974c-f048a91517a8">
     <con:setting id="397d1303-a360-489c-9b9e-7bd254974be6fileName">%2Fbranches</con:setting>
   </con:settings>
@@ -57,6 +57,10 @@
     <con:request name="Request 1" id="ea6ce03a-bba1-4389-803b-67fe5e5b4e4f" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://host.abc.xyz</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

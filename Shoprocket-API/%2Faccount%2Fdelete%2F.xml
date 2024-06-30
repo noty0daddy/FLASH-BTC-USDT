@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/account/delete/" path="/account/delete/" id="0bbc0371-de74-433d-8496-c11ef28325bc">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/account/delete/" path="/account/delete/" id="0bbc0371-de74-433d-8496-c11ef28325bc">
   <con:settings id="e1d52107-69aa-454d-820f-888a41b711c5">
     <con:setting id="0bbc0371-de74-433d-8496-c11ef28325bcfileName">%2Faccount%2Fdelete%2F</con:setting>
   </con:settings>

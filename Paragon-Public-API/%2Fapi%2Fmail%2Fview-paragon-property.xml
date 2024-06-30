@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/api/mail/view-paragon-property" path="/api/mail/view-paragon-property" id="5425542a-1576-4378-9960-f4b10a90d03c">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/api/mail/view-paragon-property" path="/api/mail/view-paragon-property" id="5425542a-1576-4378-9960-f4b10a90d03c">
   <con:settings id="68ebf8fe-05fb-4c9c-a20d-935ff7df7ba0">
     <con:setting id="5425542a-1576-4378-9960-f4b10a90d03cfileName">%2Fapi%2Fmail%2Fview-paragon-property</con:setting>
   </con:settings>
   <con:parameters/>
   <con:method name="Mail_Send_Paragon_Property" id="fe7f6d0e-71f6-442b-81c0-e4fd998637b2" method="POST">
-    <con:description></con:description>
+    <con:description/>
     <con:settings/>
     <con:parameters/>
     <con:representation type="REQUEST">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/skus/list" path="/skus/list" id="2d97c1d2-d640-4474-9b5c-f4b05ff37f52">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/skus/list" path="/skus/list" id="2d97c1d2-d640-4474-9b5c-f4b05ff37f52">
   <con:settings id="f55ac83e-c713-4e19-8f6e-307929cc03db">
     <con:setting id="2d97c1d2-d640-4474-9b5c-f4b05ff37f52fileName">%2Fskus%2Flist</con:setting>
   </con:settings>
@@ -101,6 +101,10 @@ Search list of SKUs by given criteria, page number, page size, sort column and s
     <con:request name="Request 1" id="23ba6fe1-c4d8-4ec0-a009-b52f6ac7e9cc" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://localhost:8080</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

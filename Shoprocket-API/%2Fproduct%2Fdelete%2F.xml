@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/product/delete/" path="/product/delete/" id="b9f8e881-3046-4039-96cd-3f95a87d97ab">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/product/delete/" path="/product/delete/" id="b9f8e881-3046-4039-96cd-3f95a87d97ab">
   <con:settings id="d12d46ef-878f-471a-bf7d-026e05ed46b0">
     <con:setting id="b9f8e881-3046-4039-96cd-3f95a87d97abfileName">%2Fproduct%2Fdelete%2F</con:setting>
   </con:settings>

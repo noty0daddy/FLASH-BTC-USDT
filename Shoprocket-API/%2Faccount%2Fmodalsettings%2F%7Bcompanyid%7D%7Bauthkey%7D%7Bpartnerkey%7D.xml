@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/account/modalsettings/{companyid}{authkey}{partnerkey}" path="/account/modalsettings/{companyid}{authkey}{partnerkey}" id="bde830a8-07b3-407d-8cef-c85dac323523">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/account/modalsettings/{companyid}{authkey}{partnerkey}" path="/account/modalsettings/{companyid}{authkey}{partnerkey}" id="bde830a8-07b3-407d-8cef-c85dac323523">
   <con:settings id="c0ee9583-8040-454d-b5f0-9fa499785155">
     <con:setting id="bde830a8-07b3-407d-8cef-c85dac323523fileName">%2Faccount%2Fmodalsettings%2F%7Bcompanyid%7D%7Bauthkey%7D%7Bpartnerkey%7D</con:setting>
   </con:settings>
@@ -55,6 +55,10 @@
     <con:request name="Request 1" id="f00b6e9d-5c25-4529-b62d-92549bffd446" mediaType="application/json">
       <con:settings/>
       <con:endpoint>http://dev.shoprocket.co</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">

@@ -10,11 +10,6 @@
     <con:setting id="d6f11db4-2659-41ec-9822-5f1483b16fccfileName">Swagger-Petstore-Test-Suite-2</con:setting>
   </con:settings>
   <con:runType>PARALLELL</con:runType>
-  <con:properties>
-    <con:property>
-      <con:name/>
-      <con:value/>
-    </con:property>
-  </con:properties>
+  <con:properties></con:properties>
   <con:reportParameters/>
 </con:testSuite>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:loadUiTest xmlns:con="http://eviware.com/soapui/config" xmlns:con1="http://eviware.com/loadui/config" name="Load Test 8" id="289ccd99-8a3b-462e-8b37-67fd979fadc5">
+<con:loadUiTest xmlns:con1="http://eviware.com/loadui/config" xmlns:con="http://eviware.com/soapui/config" name="Load Test 8" id="289ccd99-8a3b-462e-8b37-67fd979fadc5">
   <con:settings id="663319a4-7563-4911-b3b3-71ce1d0e98fc">
     <con:setting id="soapUIObjectSourceId">7e492b52-0059-4f09-9023-172aaa708340</con:setting>
     <con:setting id="soapUIObjectSourceType">soapUIObjectSourceType_RestRequest</con:setting>

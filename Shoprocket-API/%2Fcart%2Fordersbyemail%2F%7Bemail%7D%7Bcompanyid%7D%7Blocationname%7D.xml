@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/cart/ordersbyemail/{email}{companyid}{locationname}" path="/cart/ordersbyemail/{email}{companyid}{locationname}" id="3040fe17-c071-4eff-8efd-9def56bc91e3">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/cart/ordersbyemail/{email}{companyid}{locationname}" path="/cart/ordersbyemail/{email}{companyid}{locationname}" id="3040fe17-c071-4eff-8efd-9def56bc91e3">
   <con:settings id="6a4a27c6-09c7-4032-a7df-468ebefd08b1">
     <con:setting id="3040fe17-c071-4eff-8efd-9def56bc91e3fileName">%2Fcart%2Fordersbyemail%2F%7Bemail%7D%7Bcompanyid%7D%7Blocationname%7D</con:setting>
   </con:settings>
@@ -22,7 +22,7 @@
     </con:parameter>
   </con:parameters>
   <con:method name="cart_ordersbyemail_with_paramaters" id="e7cf4ff8-7e65-42e8-8475-ae1324052046" method="GET">
-    <con:description></con:description>
+    <con:description/>
     <con:settings/>
     <con:parameters>
       <con:parameter required="true">
@@ -57,6 +57,10 @@
     <con:request name="Request 1" id="396df49c-d623-457f-b96f-093a10963af3" mediaType="application/json">
       <con:settings/>
       <con:endpoint>http://dev.shoprocket.co</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">

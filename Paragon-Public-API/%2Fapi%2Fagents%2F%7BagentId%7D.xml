@@ -12,7 +12,7 @@
     </con:parameter>
   </con:parameters>
   <con:method name="AgentsDetails_GetOne" id="e173ba2b-dcee-40ef-a77a-46b25d82008d" method="GET">
-    <con:description></con:description>
+    <con:description/>
     <con:settings/>
     <con:parameters/>
     <con:representation type="RESPONSE">
@@ -161,6 +161,10 @@
     <con:request name="Request 1" id="cd29fa9f-7068-47ac-af7b-f48980961cb8" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://paragon-dash-api-stage.azurewebsites.net</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

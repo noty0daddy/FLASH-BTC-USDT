@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/allowedEquipments/{id}" path="/allowedEquipments/{id}" id="a499489e-4363-45f1-ab2e-3ec57342a194">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/allowedEquipments/{id}" path="/allowedEquipments/{id}" id="a499489e-4363-45f1-ab2e-3ec57342a194">
   <con:settings id="73fee3b2-34b1-4ac5-ace2-cbfd48de6713">
     <con:setting id="a499489e-4363-45f1-ab2e-3ec57342a194fileName">%2FallowedEquipments%2F%7Bid%7D</con:setting>
   </con:settings>
@@ -234,6 +234,10 @@ Delete allowed equipment. The allowed equipment is soft deleted, which is marked
     <con:request name="Request 1" id="86e89398-223f-4259-907d-96cada1a7b12" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://localhost:8080</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

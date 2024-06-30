@@ -12,7 +12,7 @@
     </con:parameter>
   </con:parameters>
   <con:method name="TrendsAnalysisBlogPosts_GetById" id="347d1d22-1a11-4ecd-82f7-cf35bb746cf1" method="GET">
-    <con:description></con:description>
+    <con:description/>
     <con:settings/>
     <con:parameters/>
     <con:representation type="RESPONSE">
@@ -93,6 +93,10 @@
     <con:request name="Request 1" id="fd75111f-c8b8-422d-9dbc-ed3dbe5a611f" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://paragon-dash-api-stage.azurewebsites.net</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

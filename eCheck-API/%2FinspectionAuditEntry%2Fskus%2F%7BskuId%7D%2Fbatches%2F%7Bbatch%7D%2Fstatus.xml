@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/inspectionAuditEntry/skus/{skuId}/batches/{batch}/status" path="/inspectionAuditEntry/skus/{skuId}/batches/{batch}/status" id="3340ffb1-f688-4886-93b9-d29f70535390">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/inspectionAuditEntry/skus/{skuId}/batches/{batch}/status" path="/inspectionAuditEntry/skus/{skuId}/batches/{batch}/status" id="3340ffb1-f688-4886-93b9-d29f70535390">
   <con:settings id="b8862da0-cb99-497d-b3f7-77afe44de11b">
     <con:setting id="3340ffb1-f688-4886-93b9-d29f70535390fileName">%2FinspectionAuditEntry%2Fskus%2F%7BskuId%7D%2Fbatches%2F%7Bbatch%7D%2Fstatus</con:setting>
   </con:settings>
@@ -70,6 +70,10 @@ Get inspection audit entry status for given sku and batch</con:description>
     <con:request name="Request 1" id="b75a57fd-76d3-492b-a8cf-d9fb76ed4753" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://localhost:8080</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

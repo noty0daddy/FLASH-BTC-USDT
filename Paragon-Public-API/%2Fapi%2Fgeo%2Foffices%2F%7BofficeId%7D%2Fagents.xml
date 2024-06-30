@@ -12,7 +12,7 @@
     </con:parameter>
   </con:parameters>
   <con:method name="GeoOffices_GetAgentsByOfficeId" id="4d8704ce-30ec-4830-9cf4-15c9f879aefe" method="GET">
-    <con:description></con:description>
+    <con:description/>
     <con:settings/>
     <con:parameters/>
     <con:representation type="RESPONSE">
@@ -68,6 +68,10 @@
     <con:request name="Request 1" id="cd715b45-8e42-4784-9431-0ee95585c115" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://paragon-dash-api-stage.azurewebsites.net</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

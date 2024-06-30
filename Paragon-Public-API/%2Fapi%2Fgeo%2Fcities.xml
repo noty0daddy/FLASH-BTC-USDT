@@ -5,7 +5,7 @@
   </con:settings>
   <con:parameters/>
   <con:method name="GeoCities_Get" id="7891ffdc-e96d-44bb-bac9-a1c6fda96c5b" method="GET">
-    <con:description></con:description>
+    <con:description/>
     <con:settings/>
     <con:parameters/>
     <con:representation type="RESPONSE">
@@ -46,6 +46,10 @@
     <con:request name="Request 1" id="f749f092-fbc2-49ea-a42f-babbacd66533" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://paragon-dash-api-stage.azurewebsites.net</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

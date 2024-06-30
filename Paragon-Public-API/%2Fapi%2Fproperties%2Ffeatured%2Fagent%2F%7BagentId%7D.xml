@@ -12,7 +12,7 @@
     </con:parameter>
   </con:parameters>
   <con:method name="FeaturedProperties_FeaturedPropertiesByAgentId" id="6fb5fde8-8a82-4c27-b407-bf246a7804a4" method="GET">
-    <con:description></con:description>
+    <con:description/>
     <con:settings/>
     <con:parameters/>
     <con:representation type="RESPONSE">
@@ -252,6 +252,10 @@
     <con:request name="Request 1" id="9fc6ed21-825c-42c2-9616-bf2ba7e632c4" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://paragon-dash-api-stage.azurewebsites.net</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

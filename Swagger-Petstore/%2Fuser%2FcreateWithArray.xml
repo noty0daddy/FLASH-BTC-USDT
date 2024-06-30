@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/user/createWithArray" path="/user/createWithArray" id="7e494172-7ebb-43ce-be13-1ff5628014b3">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/user/createWithArray" path="/user/createWithArray" id="7e494172-7ebb-43ce-be13-1ff5628014b3">
   <con:settings id="edd902d3-ac0d-41bd-a6bb-1249c27d19bc">
     <con:setting id="7e494172-7ebb-43ce-be13-1ff5628014b3fileName">%2Fuser%2FcreateWithArray</con:setting>
   </con:settings>
@@ -21,6 +21,10 @@
     <con:request name="Request 1" id="2154b4f8-0339-470e-b06a-50ea6b8f0ffe" mediaType="application/json">
       <con:settings/>
       <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">

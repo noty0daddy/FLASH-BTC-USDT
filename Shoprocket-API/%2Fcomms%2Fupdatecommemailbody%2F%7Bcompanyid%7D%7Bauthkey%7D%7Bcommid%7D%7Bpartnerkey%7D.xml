@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/comms/updatecommemailbody/{companyid}{authkey}{commid}{partnerkey}" path="/comms/updatecommemailbody/{companyid}{authkey}{commid}{partnerkey}" id="60cc41b2-5a69-4483-8ed6-708051a55c04">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/comms/updatecommemailbody/{companyid}{authkey}{commid}{partnerkey}" path="/comms/updatecommemailbody/{companyid}{authkey}{commid}{partnerkey}" id="60cc41b2-5a69-4483-8ed6-708051a55c04">
   <con:settings id="8fe541f2-6bca-4241-89ac-37ab2a27de5a">
     <con:setting id="60cc41b2-5a69-4483-8ed6-708051a55c04fileName">%2Fcomms%2Fupdatecommemailbody%2F%7Bcompanyid%7D%7Bauthkey%7D%7Bcommid%7D%7Bpartnerkey%7D</con:setting>
   </con:settings>
@@ -55,6 +55,10 @@
     <con:request name="Request 1" id="3ffecfa3-adee-463c-90a6-27f5ae48ac78" mediaType="application/json">
       <con:settings/>
       <con:endpoint>http://dev.shoprocket.co</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/cart/getproduct/{id}{companyid}{translationcode}" path="/cart/getproduct/{id}{companyid}{translationcode}" id="dce0782e-bb28-450e-a625-df4a8cef7e88">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/cart/getproduct/{id}{companyid}{translationcode}" path="/cart/getproduct/{id}{companyid}{translationcode}" id="dce0782e-bb28-450e-a625-df4a8cef7e88">
   <con:settings id="e7428ab0-8d90-430b-b146-67eb92b5f618">
     <con:setting id="dce0782e-bb28-450e-a625-df4a8cef7e88fileName">%2Fcart%2Fgetproduct%2F%7Bid%7D%7Bcompanyid%7D%7Btranslationcode%7D</con:setting>
   </con:settings>
@@ -43,6 +43,10 @@
     <con:request name="Request 1" id="52857047-c675-41c5-90a8-a8862251c769" mediaType="application/json">
       <con:settings/>
       <con:endpoint>http://dev.shoprocket.co</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/account/delete/{companyid}{authkey}{partnerkey}" path="/account/delete/{companyid}{authkey}{partnerkey}" id="2faa2e10-19ad-429f-bdcc-443d05cbd3d6">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/account/delete/{companyid}{authkey}{partnerkey}" path="/account/delete/{companyid}{authkey}{partnerkey}" id="2faa2e10-19ad-429f-bdcc-443d05cbd3d6">
   <con:settings id="71ad941e-2c59-458a-ab46-46500777ae84">
     <con:setting id="2faa2e10-19ad-429f-bdcc-443d05cbd3d6fileName">%2Faccount%2Fdelete%2F%7Bcompanyid%7D%7Bauthkey%7D%7Bpartnerkey%7D</con:setting>
   </con:settings>
@@ -44,6 +44,10 @@
     <con:request name="Request 1" id="94b3e357-6aba-4fdc-b060-901ca0463651" mediaType="application/json">
       <con:settings/>
       <con:endpoint>http://dev.shoprocket.co</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">

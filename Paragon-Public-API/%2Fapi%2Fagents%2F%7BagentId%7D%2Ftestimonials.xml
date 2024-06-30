@@ -12,7 +12,7 @@
     </con:parameter>
   </con:parameters>
   <con:method name="Testimonials_Get" id="8a677250-eb59-4aee-8d78-3b554ca1f0a7" method="GET">
-    <con:description></con:description>
+    <con:description/>
     <con:settings/>
     <con:parameters/>
     <con:representation type="RESPONSE">
@@ -42,6 +42,10 @@
     <con:request name="Request 1" id="5528e0da-40d5-4e9d-bd20-9c1b01da4158" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://paragon-dash-api-stage.azurewebsites.net</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

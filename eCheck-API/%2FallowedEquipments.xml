@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/allowedEquipments" path="/allowedEquipments" id="a59d1a93-3305-426c-8ab3-07725534d1f8">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/allowedEquipments" path="/allowedEquipments" id="a59d1a93-3305-426c-8ab3-07725534d1f8">
   <con:settings id="fedd4daa-4f27-4361-92af-ad002f0f5802">
     <con:setting id="a59d1a93-3305-426c-8ab3-07725534d1f8fileName">%2FallowedEquipments</con:setting>
   </con:settings>

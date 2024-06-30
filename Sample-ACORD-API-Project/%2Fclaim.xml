@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/claim" path="/claim" id="ecc7ab2d-8776-4eb6-a258-d71e390cc0e9">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/claim" path="/claim" id="ecc7ab2d-8776-4eb6-a258-d71e390cc0e9">
   <con:settings id="7b78ad2f-a8b6-4c8f-b3f3-cb542505d520">
     <con:setting id="ecc7ab2d-8776-4eb6-a258-d71e390cc0e9fileName">%2Fclaim</con:setting>
   </con:settings>
@@ -28,6 +28,10 @@ Gets the claim summary information for the claim number provided</con:descriptio
     <con:request name="Request 1" id="c889ebf1-a804-4f47-944f-c4ebb6555241" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://acord.org</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>
@@ -55,6 +59,10 @@ Adds a new Claim on the policy</con:description>
     <con:request name="Request 1" id="0b41af50-9cf4-48f2-ae13-d648fb9fc261" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://acord.org</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

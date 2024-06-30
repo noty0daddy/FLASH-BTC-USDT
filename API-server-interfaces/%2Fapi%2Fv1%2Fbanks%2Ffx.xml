@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/api/v1/banks/fx" path="/api/v1/banks/fx" id="ff9aa44c-3358-45b8-8322-561a656c1d2e">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/api/v1/banks/fx" path="/api/v1/banks/fx" id="ff9aa44c-3358-45b8-8322-561a656c1d2e">
   <con:settings id="8c9e7543-e8e6-460f-968f-4f07013a7c6c">
     <con:setting id="ff9aa44c-3358-45b8-8322-561a656c1d2efileName">%2Fapi%2Fv1%2Fbanks%2Ffx</con:setting>
   </con:settings>

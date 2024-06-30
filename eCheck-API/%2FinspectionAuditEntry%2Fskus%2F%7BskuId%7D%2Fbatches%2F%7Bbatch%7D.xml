@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/inspectionAuditEntry/skus/{skuId}/batches/{batch}" path="/inspectionAuditEntry/skus/{skuId}/batches/{batch}" id="4879f337-52ef-40cd-a083-a76c005277ba">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/inspectionAuditEntry/skus/{skuId}/batches/{batch}" path="/inspectionAuditEntry/skus/{skuId}/batches/{batch}" id="4879f337-52ef-40cd-a083-a76c005277ba">
   <con:settings id="0025e78f-3baa-47ce-80e0-e0e6f7931f65">
     <con:setting id="4879f337-52ef-40cd-a083-a76c005277bafileName">%2FinspectionAuditEntry%2Fskus%2F%7BskuId%7D%2Fbatches%2F%7Bbatch%7D</con:setting>
   </con:settings>
@@ -137,6 +137,10 @@ Get inspection audit entry for given sku and batch</con:description>
     <con:request name="Request 1" id="ab7dd0be-354e-4587-955e-50e70aee0eca" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://localhost:8080</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/pet/findByStatus" path="/pet/findByStatus" id="45a49919-2ad7-40d3-80d8-7349f918bd77">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/pet/findByStatus" path="/pet/findByStatus" id="45a49919-2ad7-40d3-80d8-7349f918bd77">
   <con:settings id="639ddd91-046f-4227-a528-ca98cf507117">
     <con:setting id="45a49919-2ad7-40d3-80d8-7349f918bd77fileName">%2Fpet%2FfindByStatus</con:setting>
   </con:settings>
@@ -73,6 +73,10 @@ Finds Pets by status</con:description>
     <con:request name="Request 1" id="086a78de-ba0a-465d-b2a0-dbf517bf34d0" mediaType="application/json">
       <con:settings/>
       <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">

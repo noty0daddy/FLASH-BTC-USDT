@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/app/productlist/{companyid}" path="/app/productlist/{companyid}" id="194a00ae-c2cf-4284-a868-f2f55a9b39d9">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/app/productlist/{companyid}" path="/app/productlist/{companyid}" id="194a00ae-c2cf-4284-a868-f2f55a9b39d9">
   <con:settings id="7857585e-0d7d-4131-a53d-252778d5b632">
     <con:setting id="194a00ae-c2cf-4284-a868-f2f55a9b39d9fileName">%2Fapp%2Fproductlist%2F%7Bcompanyid%7D</con:setting>
   </con:settings>
@@ -77,6 +77,10 @@
     <con:request name="Request 1" id="482b7ab4-7295-4a3d-99be-41224b7c68b6" mediaType="application/json">
       <con:settings/>
       <con:endpoint>http://dev.shoprocket.co</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">

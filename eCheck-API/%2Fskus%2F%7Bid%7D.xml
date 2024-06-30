@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/skus/{id}" path="/skus/{id}" id="84d68a7c-b437-4e8f-9ad2-9f9366d46cf8">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/skus/{id}" path="/skus/{id}" id="84d68a7c-b437-4e8f-9ad2-9f9366d46cf8">
   <con:settings id="431ac195-9410-4875-a7ee-61836c31c7a9">
     <con:setting id="84d68a7c-b437-4e8f-9ad2-9f9366d46cf8fileName">%2Fskus%2F%7Bid%7D</con:setting>
   </con:settings>

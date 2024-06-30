@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/api/mail/contact-us" path="/api/mail/contact-us" id="0da6b9a6-26ab-41a0-b276-57d46609de2f">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/api/mail/contact-us" path="/api/mail/contact-us" id="0da6b9a6-26ab-41a0-b276-57d46609de2f">
   <con:settings id="c4b5cab2-b296-4edc-8e09-0c8de8d77e18">
     <con:setting id="0da6b9a6-26ab-41a0-b276-57d46609de2ffileName">%2Fapi%2Fmail%2Fcontact-us</con:setting>
   </con:settings>
   <con:parameters/>
   <con:method name="Mail_Send" id="dd7ac3ed-0184-432f-b056-44b808aa14b0" method="POST">
-    <con:description></con:description>
+    <con:description/>
     <con:settings/>
     <con:parameters/>
     <con:representation type="REQUEST">

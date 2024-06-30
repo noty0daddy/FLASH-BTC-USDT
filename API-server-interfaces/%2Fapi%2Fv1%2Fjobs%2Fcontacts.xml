@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/api/v1/jobs/contacts" path="/api/v1/jobs/contacts" id="7dfcc877-bd54-44dd-98b4-6e4aed0550d6">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/api/v1/jobs/contacts" path="/api/v1/jobs/contacts" id="7dfcc877-bd54-44dd-98b4-6e4aed0550d6">
   <con:settings id="17b0a7eb-cdee-4230-85b0-849d85abb6e3">
     <con:setting id="7dfcc877-bd54-44dd-98b4-6e4aed0550d6fileName">%2Fapi%2Fv1%2Fjobs%2Fcontacts</con:setting>
   </con:settings>

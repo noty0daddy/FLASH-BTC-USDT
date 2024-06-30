@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/configurations/list" path="/configurations/list" id="ffa262b3-3219-4335-afab-3ac7ec595325">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/configurations/list" path="/configurations/list" id="ffa262b3-3219-4335-afab-3ac7ec595325">
   <con:settings id="ecddc88a-5813-4a34-a98d-17d029bb3365">
     <con:setting id="ffa262b3-3219-4335-afab-3ac7ec595325fileName">%2Fconfigurations%2Flist</con:setting>
   </con:settings>
@@ -93,6 +93,10 @@ Search list of eCheck configurations (only non-deleted data) by given criteria, 
     <con:request name="Request 1" id="f406c62d-a917-463d-abe9-9c7ee1093fd2" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://localhost:8080</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

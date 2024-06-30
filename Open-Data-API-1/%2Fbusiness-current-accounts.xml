@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/business-current-accounts" path="/business-current-accounts" id="8fef088b-1730-45d6-a278-eaccf6576875">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/business-current-accounts" path="/business-current-accounts" id="8fef088b-1730-45d6-a278-eaccf6576875">
   <con:settings id="151863f8-d981-406b-8e15-dfcd249539ab">
     <con:setting id="8fef088b-1730-45d6-a278-eaccf6576875fileName">%2Fbusiness-current-accounts</con:setting>
   </con:settings>
@@ -57,6 +57,10 @@
     <con:request name="Request 1" id="d8600b70-8c33-437f-91dc-3902f74861cc" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://api.openbanking.xyz</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

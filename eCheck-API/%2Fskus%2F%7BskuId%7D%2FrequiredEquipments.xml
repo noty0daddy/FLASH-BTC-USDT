@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/skus/{skuId}/requiredEquipments" path="/skus/{skuId}/requiredEquipments" id="414a1c05-a329-499b-b3cf-4f5ff1c6b265">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/skus/{skuId}/requiredEquipments" path="/skus/{skuId}/requiredEquipments" id="414a1c05-a329-499b-b3cf-4f5ff1c6b265">
   <con:settings id="b699b0c8-96c9-4b1b-bda2-490a20798102">
     <con:setting id="414a1c05-a329-499b-b3cf-4f5ff1c6b265fileName">%2Fskus%2F%7BskuId%7D%2FrequiredEquipments</con:setting>
   </con:settings>
@@ -92,6 +92,10 @@ Get required equipments of SKU</con:description>
     <con:request name="Request 1" id="052f578f-cbe5-49a6-a243-b8cd1bc4a4e3" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://localhost:8080</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

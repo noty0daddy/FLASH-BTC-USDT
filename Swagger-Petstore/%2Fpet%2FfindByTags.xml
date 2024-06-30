@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/pet/findByTags" path="/pet/findByTags" id="c29e27af-39a0-4f1a-ad9d-2d8dff72ddcf">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/pet/findByTags" path="/pet/findByTags" id="c29e27af-39a0-4f1a-ad9d-2d8dff72ddcf">
   <con:settings id="af933568-a152-4eba-98f8-69d0d056238a">
     <con:setting id="c29e27af-39a0-4f1a-ad9d-2d8dff72ddcffileName">%2Fpet%2FfindByTags</con:setting>
   </con:settings>
@@ -73,6 +73,10 @@ Finds Pets by tags</con:description>
     <con:request name="Request 1" id="d4026bad-e29b-4907-8d9c-5acec8dde2a9" mediaType="application/json">
       <con:settings/>
       <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/audits/list" path="/audits/list" id="d35a86bb-6836-4d44-8784-879f08944fb9">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/audits/list" path="/audits/list" id="d35a86bb-6836-4d44-8784-879f08944fb9">
   <con:settings id="25610ce4-a2bd-4d57-9dce-0f6ddffa4b26">
     <con:setting id="d35a86bb-6836-4d44-8784-879f08944fb9fileName">%2Faudits%2Flist</con:setting>
   </con:settings>
@@ -182,6 +182,10 @@ Search list of inspection audits (without entry details) by given criteria, page
     <con:request name="Request 1" id="ac762154-6a91-45f6-be1e-d40a91e3c0d8" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://localhost:8080</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

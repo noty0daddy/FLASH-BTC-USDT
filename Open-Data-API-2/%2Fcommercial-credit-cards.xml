@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/commercial-credit-cards" path="/commercial-credit-cards" id="e227ae9e-0947-4fe0-a1dd-01c5db82193f">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/commercial-credit-cards" path="/commercial-credit-cards" id="e227ae9e-0947-4fe0-a1dd-01c5db82193f">
   <con:settings id="3cdecb3a-fdae-4ba7-90e2-4747dac6496a">
     <con:setting id="e227ae9e-0947-4fe0-a1dd-01c5db82193ffileName">%2Fcommercial-credit-cards</con:setting>
   </con:settings>
@@ -57,6 +57,10 @@
     <con:request name="Request 1" id="5ab66b92-6889-4a20-b7eb-24027b692109" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://host.abc.xyz</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

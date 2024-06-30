@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/masterdata/delta" path="/masterdata/delta" id="7dce37f1-c3b0-4c62-958b-4060d4d2e87a">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/masterdata/delta" path="/masterdata/delta" id="7dce37f1-c3b0-4c62-958b-4060d4d2e87a">
   <con:settings id="8ec8dead-3312-4ecc-a0eb-6437c1330ece">
     <con:setting id="7dce37f1-c3b0-4c62-958b-4060d4d2e87afileName">%2Fmasterdata%2Fdelta</con:setting>
   </con:settings>
@@ -105,6 +105,10 @@ Get master data delta (include deleted data)</con:description>
     <con:request name="Request 1" id="1d33c36f-4414-499e-8820-cab9116dc996" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://localhost:8080</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

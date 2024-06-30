@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/auth/register" path="/auth/register" id="a236dfdd-7cef-40ef-bb65-c29328c97437">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/auth/register" path="/auth/register" id="a236dfdd-7cef-40ef-bb65-c29328c97437">
   <con:settings id="682aef52-ff31-40f4-98d0-4a09efb314a9">
     <con:setting id="a236dfdd-7cef-40ef-bb65-c29328c97437fileName">%2Fauth%2Fregister</con:setting>
   </con:settings>

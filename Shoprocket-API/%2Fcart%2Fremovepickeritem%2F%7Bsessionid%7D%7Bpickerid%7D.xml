@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/cart/removepickeritem/{sessionid}{pickerid}" path="/cart/removepickeritem/{sessionid}{pickerid}" id="9748eddc-cc27-47be-ae20-f592f812a332">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/cart/removepickeritem/{sessionid}{pickerid}" path="/cart/removepickeritem/{sessionid}{pickerid}" id="9748eddc-cc27-47be-ae20-f592f812a332">
   <con:settings id="e4c438cb-3707-4ce5-9e0d-489b74f4fb26">
     <con:setting id="9748eddc-cc27-47be-ae20-f592f812a332fileName">%2Fcart%2Fremovepickeritem%2F%7Bsessionid%7D%7Bpickerid%7D</con:setting>
   </con:settings>
@@ -154,6 +154,10 @@
     <con:request name="Request 1" id="3c814e68-76e0-4e41-8731-d272ea76d961" mediaType="application/json">
       <con:settings/>
       <con:endpoint>http://dev.shoprocket.co</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">

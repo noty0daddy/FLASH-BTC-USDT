@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/bill/enquiry/consumernumber" path="/bill/enquiry/consumernumber" id="eabcf254-07fb-4871-be95-34b1b9ed1425">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/bill/enquiry/consumernumber" path="/bill/enquiry/consumernumber" id="eabcf254-07fb-4871-be95-34b1b9ed1425">
   <con:settings id="4b3606d6-be44-44f7-bb76-bc412c476f42">
     <con:setting id="eabcf254-07fb-4871-be95-34b1b9ed1425fileName">%2Fbill%2Fenquiry%2Fconsumernumber</con:setting>
   </con:settings>
@@ -78,6 +78,10 @@ Consumer Number Bill Enquiry</con:description>
     <con:request name="Request 1" id="679712aa-3832-4ccc-bd41-1ee80c3d54d3" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://virtserver.swaggerhub.com</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">

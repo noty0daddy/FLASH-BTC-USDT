@@ -12,7 +12,7 @@
     </con:parameter>
   </con:parameters>
   <con:method name="GeoRegions_GetById" id="3e4ec620-d194-4951-9906-f16c5246e04d" method="GET">
-    <con:description></con:description>
+    <con:description/>
     <con:settings/>
     <con:parameters/>
     <con:representation type="RESPONSE">
@@ -135,6 +135,10 @@
     <con:request name="Request 1" id="7c50046b-f320-4083-a614-c2495d990b5d" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://paragon-dash-api-stage.azurewebsites.net</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

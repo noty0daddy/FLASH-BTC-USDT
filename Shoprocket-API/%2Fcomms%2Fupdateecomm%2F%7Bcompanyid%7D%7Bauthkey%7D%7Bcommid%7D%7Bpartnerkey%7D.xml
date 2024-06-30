@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/comms/updateecomm/{companyid}{authkey}{commid}{partnerkey}" path="/comms/updateecomm/{companyid}{authkey}{commid}{partnerkey}" id="7803e4f5-dfa6-448b-822b-f3a7ec3e21b5">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/comms/updateecomm/{companyid}{authkey}{commid}{partnerkey}" path="/comms/updateecomm/{companyid}{authkey}{commid}{partnerkey}" id="7803e4f5-dfa6-448b-822b-f3a7ec3e21b5">
   <con:settings id="0625c37a-1196-4cb3-abc3-5e9901f9b901">
     <con:setting id="7803e4f5-dfa6-448b-822b-f3a7ec3e21b5fileName">%2Fcomms%2Fupdateecomm%2F%7Bcompanyid%7D%7Bauthkey%7D%7Bcommid%7D%7Bpartnerkey%7D</con:setting>
   </con:settings>
@@ -75,6 +75,10 @@
     <con:request name="Request 1" id="44f7a992-24e9-449a-9afe-2f1d3ae2c0ea" mediaType="application/json">
       <con:settings/>
       <con:endpoint>http://dev.shoprocket.co</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">

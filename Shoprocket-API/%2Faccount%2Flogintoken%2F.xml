@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/account/logintoken/" path="/account/logintoken/" id="c78c0613-2958-4305-a1a8-632bbd035b43">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/account/logintoken/" path="/account/logintoken/" id="c78c0613-2958-4305-a1a8-632bbd035b43">
   <con:settings id="2ff37b83-2e64-4e85-9efd-8d9b685d6eb5">
     <con:setting id="c78c0613-2958-4305-a1a8-632bbd035b43fileName">%2Faccount%2Flogintoken%2F</con:setting>
   </con:settings>

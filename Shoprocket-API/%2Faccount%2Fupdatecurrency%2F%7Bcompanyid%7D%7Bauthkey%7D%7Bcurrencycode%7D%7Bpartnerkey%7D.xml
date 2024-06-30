@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/account/updatecurrency/{companyid}{authkey}{currencycode}{partnerkey}" path="/account/updatecurrency/{companyid}{authkey}{currencycode}{partnerkey}" id="25c9561f-278b-43b6-acad-80290e861891">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/account/updatecurrency/{companyid}{authkey}{currencycode}{partnerkey}" path="/account/updatecurrency/{companyid}{authkey}{currencycode}{partnerkey}" id="25c9561f-278b-43b6-acad-80290e861891">
   <con:settings id="d420ca2b-ed2d-43bc-9533-cbdac8a124d9">
     <con:setting id="25c9561f-278b-43b6-acad-80290e861891fileName">%2Faccount%2Fupdatecurrency%2F%7Bcompanyid%7D%7Bauthkey%7D%7Bcurrencycode%7D%7Bpartnerkey%7D</con:setting>
   </con:settings>
@@ -49,6 +49,10 @@
     <con:request name="Request 1" id="1a91987d-5d1f-4583-b61e-67cd50b9e647" mediaType="application/json">
       <con:settings/>
       <con:endpoint>http://dev.shoprocket.co</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/rest/pickers/{name}{companyid}" path="/rest/pickers/{name}{companyid}" id="33a5ce9e-cdd9-4fc8-bd0c-ed8e8a22deff">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/rest/pickers/{name}{companyid}" path="/rest/pickers/{name}{companyid}" id="33a5ce9e-cdd9-4fc8-bd0c-ed8e8a22deff">
   <con:settings id="f48687f1-d780-4e6a-867d-adae3b5b892c">
     <con:setting id="33a5ce9e-cdd9-4fc8-bd0c-ed8e8a22defffileName">%2Frest%2Fpickers%2F%7Bname%7D%7Bcompanyid%7D</con:setting>
   </con:settings>
@@ -47,6 +47,10 @@
     <con:request name="Request 1" id="bb544f54-c5a9-4cfc-bcc2-c6bae3e2fc1a" mediaType="application/json">
       <con:settings/>
       <con:endpoint>http://dev.shoprocket.co</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">

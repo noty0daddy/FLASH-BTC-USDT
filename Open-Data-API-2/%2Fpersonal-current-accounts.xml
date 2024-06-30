@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/personal-current-accounts" path="/personal-current-accounts" id="1bec14ee-8879-4f31-b571-a4d469784d99">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/personal-current-accounts" path="/personal-current-accounts" id="1bec14ee-8879-4f31-b571-a4d469784d99">
   <con:settings id="92b408a5-cdf7-410e-8acf-4e929d91000d">
     <con:setting id="1bec14ee-8879-4f31-b571-a4d469784d99fileName">%2Fpersonal-current-accounts</con:setting>
   </con:settings>
@@ -57,6 +57,10 @@
     <con:request name="Request 1" id="9e7795f7-4dca-4520-85ba-1fb49fd9ebe3" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://host.abc.xyz</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

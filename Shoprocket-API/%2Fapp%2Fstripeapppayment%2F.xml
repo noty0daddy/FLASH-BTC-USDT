@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/app/stripeapppayment/" path="/app/stripeapppayment/" id="41d17936-21a1-4754-a7f8-1119b821eb5b">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/app/stripeapppayment/" path="/app/stripeapppayment/" id="41d17936-21a1-4754-a7f8-1119b821eb5b">
   <con:settings id="a445723c-1531-4540-9ff2-e9111b33fc16">
     <con:setting id="41d17936-21a1-4754-a7f8-1119b821eb5bfileName">%2Fapp%2Fstripeapppayment%2F</con:setting>
   </con:settings>

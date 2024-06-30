@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/inspectionAuditEntry/complete" path="/inspectionAuditEntry/complete" id="476e38a7-7656-4328-aa1f-621b309969c5">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/inspectionAuditEntry/complete" path="/inspectionAuditEntry/complete" id="476e38a7-7656-4328-aa1f-621b309969c5">
   <con:settings id="71f8e6e9-62e7-40b2-be0d-484c71ab4b08">
     <con:setting id="476e38a7-7656-4328-aa1f-621b309969c5fileName">%2FinspectionAuditEntry%2Fcomplete</con:setting>
   </con:settings>

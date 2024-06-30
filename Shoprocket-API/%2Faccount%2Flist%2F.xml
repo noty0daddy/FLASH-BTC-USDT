@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/account/list/" path="/account/list/" id="3aa30ac3-cb8a-4f14-b059-65e2068e5136">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/account/list/" path="/account/list/" id="3aa30ac3-cb8a-4f14-b059-65e2068e5136">
   <con:settings id="af123ba7-3ec1-46ca-9658-7b5a1331b97c">
     <con:setting id="3aa30ac3-cb8a-4f14-b059-65e2068e5136fileName">%2Faccount%2Flist%2F</con:setting>
   </con:settings>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/cart/removevoucher/{id}{sessionid}" path="/cart/removevoucher/{id}{sessionid}" id="b4319745-fec1-4ff0-8584-8d639dd72e9f">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/cart/removevoucher/{id}{sessionid}" path="/cart/removevoucher/{id}{sessionid}" id="b4319745-fec1-4ff0-8584-8d639dd72e9f">
   <con:settings id="c8274094-8531-4db3-ad44-ae6fcbffbb58">
     <con:setting id="b4319745-fec1-4ff0-8584-8d639dd72e9ffileName">%2Fcart%2Fremovevoucher%2F%7Bid%7D%7Bsessionid%7D</con:setting>
   </con:settings>
@@ -154,6 +154,10 @@
     <con:request name="Request 1" id="00b51bb7-f155-4be1-9838-62c5e62ab830" mediaType="application/json">
       <con:settings/>
       <con:endpoint>http://dev.shoprocket.co</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">

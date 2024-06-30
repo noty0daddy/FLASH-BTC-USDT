@@ -76,6 +76,10 @@ Finds Pets by tags</con:description>
       <con:request name="Request 1" id="d4026bad-e29b-4907-8d9c-5acec8dde2a9" mediaType="application/json">
         <con:settings/>
         <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
@@ -175,6 +179,10 @@ Find pet by ID</con:description>
       <con:request name="Request 1" id="e3478074-b61b-4162-ad32-97560236149c" mediaType="application/json">
         <con:settings/>
         <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
@@ -220,6 +228,10 @@ Find pet by ID</con:description>
       <con:request name="Request 1" id="78848da8-d12b-4741-b77d-eb3cf0975231" mediaType="application/json">
         <con:settings/>
         <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
@@ -266,6 +278,10 @@ Find pet by ID</con:description>
       <con:request name="Request 1" id="03c5cb5c-b773-4901-a64a-f0cf5fd0d50b" mediaType="application/json">
         <con:settings/>
         <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
@@ -327,6 +343,10 @@ Find pet by ID</con:description>
       <con:request name="Request 1" id="af163b76-255c-444d-bf81-187b3e398e61" mediaType="application/json">
         <con:settings/>
         <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
@@ -367,6 +387,10 @@ Returns pet inventories by status</con:description>
       <con:request name="Request 1" id="bd4a4d37-10c0-4050-b61b-74709fee4b79" mediaType="application/json">
         <con:settings/>
         <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
@@ -432,6 +456,10 @@ Returns pet inventories by status</con:description>
       <con:request name="Request 1" id="49da53cc-9960-417e-8a8c-a06e344521d2" mediaType="application/json">
         <con:settings/>
         <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
@@ -515,6 +543,10 @@ Find purchase order by ID</con:description>
       <con:request name="Request 1" id="a65f0729-3318-422c-baee-97f390813f69" mediaType="application/json">
         <con:settings/>
         <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
@@ -556,6 +588,10 @@ Delete purchase order by ID</con:description>
       <con:request name="Request 1" id="c13c3954-b553-4812-9106-15e663284a46" mediaType="application/json">
         <con:settings/>
         <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
@@ -596,6 +632,10 @@ Create user</con:description>
       <con:request name="Request 1" id="f7c7c0f4-ea7b-4b56-9260-a48f55349265" mediaType="application/json">
         <con:settings/>
         <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
@@ -635,6 +675,10 @@ Create user</con:description>
       <con:request name="Request 1" id="2154b4f8-0339-470e-b06a-50ea6b8f0ffe" mediaType="application/json">
         <con:settings/>
         <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
@@ -674,6 +718,10 @@ Create user</con:description>
       <con:request name="Request 1" id="a2f0b33e-2bc6-4831-9e4c-42bc8b8bfd54" mediaType="application/json">
         <con:settings/>
         <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
@@ -736,6 +784,10 @@ Create user</con:description>
       <con:request name="Request 1" id="79b18080-1217-442d-8105-90abc82b9183" mediaType="application/json">
         <con:settings/>
         <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
@@ -775,6 +827,10 @@ Create user</con:description>
       <con:request name="Request 1" id="ebce0d71-cbee-4f86-b194-20296fccdb1e" mediaType="application/json">
         <con:settings/>
         <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
@@ -860,6 +916,10 @@ Create user</con:description>
       <con:request name="Request 1" id="7a53c4ad-71fe-4198-8e52-e57de590885c" mediaType="application/json">
         <con:settings/>
         <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
@@ -901,6 +961,10 @@ Updated user</con:description>
       <con:request name="Request 1" id="4da27c56-0944-45c6-8de6-6525b7c3d26e" mediaType="application/json">
         <con:settings/>
         <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
@@ -942,6 +1006,10 @@ Delete user</con:description>
       <con:request name="Request 1" id="3789d0a4-0018-49c4-9418-4c78524b31c8" mediaType="application/json">
         <con:settings/>
         <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
         <con:parameters/>
         <con:environmentSpec>
           <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">

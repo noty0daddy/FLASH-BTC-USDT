@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/atms" path="/atms" id="55234126-fafe-44fd-9e1e-26cac85ff01f">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/atms" path="/atms" id="55234126-fafe-44fd-9e1e-26cac85ff01f">
   <con:settings id="8f967347-eeb9-40bb-ba5f-9641e7de82f3">
     <con:setting id="55234126-fafe-44fd-9e1e-26cac85ff01ffileName">%2Fatms</con:setting>
   </con:settings>
@@ -57,6 +57,10 @@
     <con:request name="Request 1" id="8b146017-a405-41cd-8c9d-4f9790ca376c" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://host.abc.xyz</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

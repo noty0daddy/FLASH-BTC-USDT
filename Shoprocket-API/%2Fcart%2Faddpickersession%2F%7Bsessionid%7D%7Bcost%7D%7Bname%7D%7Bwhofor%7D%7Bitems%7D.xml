@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/cart/addpickersession/{sessionid}{cost}{name}{whofor}{items}" path="/cart/addpickersession/{sessionid}{cost}{name}{whofor}{items}" id="714aaf14-1c38-4f46-aff5-0c312eacab77">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/cart/addpickersession/{sessionid}{cost}{name}{whofor}{items}" path="/cart/addpickersession/{sessionid}{cost}{name}{whofor}{items}" id="714aaf14-1c38-4f46-aff5-0c312eacab77">
   <con:settings id="41fd5fa4-5966-46c6-b291-025d18e99717">
     <con:setting id="714aaf14-1c38-4f46-aff5-0c312eacab77fileName">%2Fcart%2Faddpickersession%2F%7Bsessionid%7D%7Bcost%7D%7Bname%7D%7Bwhofor%7D%7Bitems%7D</con:setting>
   </con:settings>
@@ -31,7 +31,7 @@
     </con:parameter>
   </con:parameters>
   <con:method name="cart_addpickersession_with_paramaters" id="28f7f3b3-d284-460b-86d8-7c8dc82cfde3" method="GET">
-    <con:description></con:description>
+    <con:description/>
     <con:settings/>
     <con:parameters/>
     <con:representation type="RESPONSE">
@@ -169,6 +169,10 @@
     <con:request name="Request 1" id="8b41cef9-1c8d-4330-a032-8acda22cfe20" mediaType="application/json">
       <con:settings/>
       <con:endpoint>http://dev.shoprocket.co</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">

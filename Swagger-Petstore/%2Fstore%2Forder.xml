@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/store/order" path="/store/order" id="d06651e5-19a8-4d81-897d-462f951bc705">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/store/order" path="/store/order" id="d06651e5-19a8-4d81-897d-462f951bc705">
   <con:settings id="250680ca-90d9-4223-b0c0-df50240f26fd">
     <con:setting id="d06651e5-19a8-4d81-897d-462f951bc705fileName">%2Fstore%2Forder</con:setting>
   </con:settings>
@@ -47,6 +47,10 @@
     <con:request name="Request 1" id="49da53cc-9960-417e-8a8c-a06e344521d2" mediaType="application/json">
       <con:settings/>
       <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">

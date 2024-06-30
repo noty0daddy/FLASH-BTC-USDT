@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/store/inventory" path="/store/inventory" id="879592e3-db3c-4bc9-8f76-f52f41039366">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/store/inventory" path="/store/inventory" id="879592e3-db3c-4bc9-8f76-f52f41039366">
   <con:settings id="d7ffbeda-c23e-4448-9ddc-d30ebf3ebd92">
     <con:setting id="879592e3-db3c-4bc9-8f76-f52f41039366fileName">%2Fstore%2Finventory</con:setting>
   </con:settings>
@@ -22,6 +22,10 @@ Returns pet inventories by status</con:description>
     <con:request name="Request 1" id="bd4a4d37-10c0-4050-b61b-74709fee4b79" mediaType="application/json">
       <con:settings/>
       <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/api/v1/remit/in/invite" path="/api/v1/remit/in/invite" id="00aa2d4c-2d01-4dff-81ec-91bf71590cf7">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/api/v1/remit/in/invite" path="/api/v1/remit/in/invite" id="00aa2d4c-2d01-4dff-81ec-91bf71590cf7">
   <con:settings id="64688a7e-4ef5-4428-a216-fb10961ca9cf">
     <con:setting id="00aa2d4c-2d01-4dff-81ec-91bf71590cf7fileName">%2Fapi%2Fv1%2Fremit%2Fin%2Finvite</con:setting>
   </con:settings>

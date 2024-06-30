@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/unsecured-sme-loans" path="/unsecured-sme-loans" id="d6583ff8-7bef-42e0-86f1-53f41b66c614">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/unsecured-sme-loans" path="/unsecured-sme-loans" id="d6583ff8-7bef-42e0-86f1-53f41b66c614">
   <con:settings id="a7821937-0f56-424c-9517-a19e518b5276">
     <con:setting id="d6583ff8-7bef-42e0-86f1-53f41b66c614fileName">%2Funsecured-sme-loans</con:setting>
   </con:settings>
@@ -57,6 +57,10 @@
     <con:request name="Request 1" id="9e81f4ac-1624-4d69-ba10-f9a66c4f0307" mediaType="application/json">
       <con:settings/>
       <con:endpoint>https://host.abc.xyz</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
     </con:request>
   </con:method>

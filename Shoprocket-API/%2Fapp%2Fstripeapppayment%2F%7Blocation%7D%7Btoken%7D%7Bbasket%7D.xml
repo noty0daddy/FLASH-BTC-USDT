@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource xmlns:con="http://eviware.com/soapui/config" name="/app/stripeapppayment/{location}{token}{basket}" path="/app/stripeapppayment/{location}{token}{basket}" id="ff50887a-49c7-478a-8d3f-f8b77f18e843">
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="/app/stripeapppayment/{location}{token}{basket}" path="/app/stripeapppayment/{location}{token}{basket}" id="ff50887a-49c7-478a-8d3f-f8b77f18e843">
   <con:settings id="215dc494-e591-4c3e-88f3-6ee7f1ceb74b">
     <con:setting id="ff50887a-49c7-478a-8d3f-f8b77f18e843fileName">%2Fapp%2Fstripeapppayment%2F%7Blocation%7D%7Btoken%7D%7Bbasket%7D</con:setting>
   </con:settings>
@@ -36,6 +36,10 @@
     <con:request name="Request 1" id="24246b57-5929-4b25-969b-142c3503c401" mediaType="application/json">
       <con:settings/>
       <con:endpoint>http://dev.shoprocket.co</con:endpoint>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
       <con:parameters/>
       <con:environmentSpec>
         <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
