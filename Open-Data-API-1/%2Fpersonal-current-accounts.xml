@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/personal-current-accounts" path="/personal-current-accounts" id="0baa81f0-7198-4827-a4d3-34fe0d04cfff">
+  <con:settings id="e7da37d3-fbfa-489e-9d2d-4ebaf3ba3637">
+    <con:setting id="0baa81f0-7198-4827-a4d3-34fe0d04cffffileName">%2Fpersonal-current-accounts</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GET" id="458887c1-7c67-46e6-bed8-4c0c9e13d6a2" method="GET">
+    <con:description>Gets a list of all `Personal Current Account` objects.</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>If-Modified-Since</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Used for conditional request, to retrieve data only if modified since a given date</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>If-None-Match</con:name>
+        <con:style>HEADER</con:style>
+        <con:description>Used for conditional request, to retrieve data only if the given Etag value does not match</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/prs.openbanking.opendata.v1.2+json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/prs.openbanking.opendata.v1.2+json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/prs.openbanking.opendata.v1.2+json</con:mediaType>
+      <con:status>408</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/prs.openbanking.opendata.v1.2+json</con:mediaType>
+      <con:status>429</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/prs.openbanking.opendata.v1.2+json</con:mediaType>
+      <con:status>500</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/prs.openbanking.opendata.v1.2+json</con:mediaType>
+      <con:status>503</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/prs.openbanking.opendata.v1.2+json</con:mediaType>
+      <con:status/>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="977e606d-23ce-4551-9a74-3636804e402f" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://api.openbanking.xyz</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

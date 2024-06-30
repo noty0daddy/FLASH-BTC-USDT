@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/cart/additemsession/{sessionid}{companyid}{productid}" path="/cart/additemsession/{sessionid}{companyid}{productid}" id="52241e52-14d7-45e8-a442-fa3eb14cd70d">
+  <con:settings id="a31ba7bd-c3ba-40c2-9bb9-dcced2c130fe">
+    <con:setting id="52241e52-14d7-45e8-a442-fa3eb14cd70dfileName">%2Fcart%2Fadditemsession%2F%7Bsessionid%7D%7Bcompanyid%7D%7Bproductid%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>sessionid</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>The ID of the session you want to use</con:description>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>companyid</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>The ID of the account you wish to set the defaults for</con:description>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>productid</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>The ID item you want to add</con:description>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="cart_additemsession_with_paramaters" id="886998fa-c02e-457a-a2bb-9ce87929eed6" method="GET">
+    <con:description>This function adds an item to the session.</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>productname</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>The name of the item you want to add</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>productprice</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>The price of the item you want to add</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>whoitsfor</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Who the item is for</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>productoptions</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Holds the product options for the item | seperated</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>globaloption</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Holds the global options for the item | seperated</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>option</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Holds the option for the item | seperated</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>productdeal</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Holds the deal for the item | seperated</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>productquantity</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Holds the 1uantity for the item</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "cartitems" : {
+    "specialreqs" : "string",
+    "location" : {
+      "locationid" : "string",
+      "message" : "string",
+      "name" : "string",
+      "state" : true
+    },
+    "sessionshipping" : {
+      "digital" : true,
+      "free" : "string",
+      "weight" : "string",
+      "weightovercharge" : "string",
+      "pricetofree" : "string",
+      "cost" : "string",
+      "name" : "string",
+      "id" : 0,
+      "givefreeshipping" : true
+    },
+    "sessionlocation" : {
+      "locationid" : "string",
+      "message" : "string",
+      "name" : "string",
+      "state" : true
+    },
+    "sessionaddress" : {
+      "shippingname" : "string",
+      "shippingaddress1" : "string",
+      "shippingaddress2" : "string",
+      "shippingaddress3" : "string",
+      "shippingcountry" : "string",
+      "billingname" : "string",
+      "billingaddress1" : "string",
+      "billingaddress2" : "string",
+      "billingaddress3" : "string",
+      "billingcountry" : "string",
+      "telephone" : "string"
+    },
+    "voucher" : {
+      "percentoff" : "string",
+      "amountoff" : "string",
+      "name" : "string",
+      "vouchertype" : 0
+    },
+    "sessiontimeslot" : "string",
+    "items" : {
+      "quantity" : 0,
+      "id" : 0,
+      "whositfor" : "string",
+      "productid" : 0,
+      "name" : "string",
+      "price" : "string",
+      "taxrate" : "string",
+      "weight" : "string",
+      "quantitywarning" : "string",
+      "digital" : "string",
+      "taxamount" : "string",
+      "optionstotal" : "string",
+      "goptions" : {
+        "option" : {
+          "name" : "string",
+          "price" : "string"
+        },
+        "modifiers" : {
+          "name" : "string",
+          "modifier" : "string"
+        }
+      },
+      "options" : {
+        "optionname" : "string",
+        "optionsprice" : "string"
+      },
+      "deal" : {
+        "dealname" : "string",
+        "dealprice" : "string"
+      },
+      "itemtotal" : "string"
+    },
+    "pickers" : {
+      "id" : "string",
+      "name" : "string",
+      "whofor" : "string",
+      "cost" : "string",
+      "items" : {
+        "pickerid" : "string"
+      },
+      "quantity" : "string"
+    },
+    "totals" : {
+      "subtotal" : "string",
+      "itemcount" : "string",
+      "digitalcount" : "string",
+      "total" : "string",
+      "itemtotal" : "string",
+      "pickertotal" : "string",
+      "totalwithdiscount" : "string",
+      "discount" : "string",
+      "shippingtotal" : "string",
+      "taxtotal" : "string",
+      "gprice" : "string",
+      "stripe_min_payment" : "string",
+      "paypal_min_payment" : "string",
+      "min_paypal_flag" : "string",
+      "min_stripe_flag" : "string"
+    },
+    "stockfail" : 0,
+    "closingtimes" : {
+      "Sunday" : 0,
+      "Monday" : 0,
+      "Tuesday" : 0,
+      "Wednesday" : 0,
+      "Thursday" : 0,
+      "Friday" : 0,
+      "Saturday" : 0
+    }
+  },
+  "closingtimes" : {
+    "Sunday" : 0,
+    "Monday" : 0,
+    "Tuesday" : 0,
+    "Wednesday" : 0,
+    "Thursday" : 0,
+    "Friday" : 0,
+    "Saturday" : 0
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="162a4487-2f8d-43f2-a019-250280265141" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://dev.shoprocket.co</con:endpoint>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

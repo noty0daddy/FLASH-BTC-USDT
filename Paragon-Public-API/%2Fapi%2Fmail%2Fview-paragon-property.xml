@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/api/mail/view-paragon-property" path="/api/mail/view-paragon-property" id="5425542a-1576-4378-9960-f4b10a90d03c">
+  <con:settings id="68ebf8fe-05fb-4c9c-a20d-935ff7df7ba0">
+    <con:setting id="5425542a-1576-4378-9960-f4b10a90d03cfileName">%2Fapi%2Fmail%2Fview-paragon-property</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Mail_Send_Paragon_Property" id="fe7f6d0e-71f6-442b-81c0-e4fd998637b2" method="POST">
+    <con:description></con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "name" : "string",
+  "email" : "string",
+  "message" : "string",
+  "phone" : "string",
+  "ipAddress" : "string",
+  "propertyAddress" : "string",
+  "propertyCity" : "string",
+  "agentId" : 0,
+  "agentId2" : 0,
+  "url" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>text/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "name" : "string",
+  "email" : "string",
+  "message" : "string",
+  "phone" : "string",
+  "ipAddress" : "string",
+  "propertyAddress" : "string",
+  "propertyCity" : "string",
+  "agentId" : 0,
+  "agentId2" : 0,
+  "url" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>text/html</con:mediaType>
+      <con:params/>
+      <con:sampleContent/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>text/xml</con:mediaType>
+      <con:params/>
+      <con:sampleContent><![CDATA[<MailViewParagonProperty>
+   <name>string</name>
+   <email>string</email>
+   <message>string</message>
+   <phone>string</phone>
+   <ipAddress>string</ipAddress>
+   <propertyAddress>string</propertyAddress>
+   <propertyCity>string</propertyCity>
+   <agentId>0</agentId>
+   <agentId2>0</agentId2>
+   <url>string</url>
+</MailViewParagonProperty>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/x-www-form-urlencoded</con:mediaType>
+      <con:params/>
+      <con:sampleContent/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>202</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>202</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/html</con:mediaType>
+      <con:status>202</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/xml</con:mediaType>
+      <con:status>202</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>text/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>text/html</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>text/xml</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/x-www-form-urlencoded</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="3a62bddb-734a-4e8a-bda8-872cc0483a3f" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://paragon-dash-api-stage.azurewebsites.net</con:endpoint>
+      <con:request>{
+  "name" : "string",
+  "email" : "string",
+  "message" : "string",
+  "phone" : "string",
+  "ipAddress" : "string",
+  "propertyAddress" : "string",
+  "propertyCity" : "string",
+  "agentId" : 0,
+  "agentId2" : 0,
+  "url" : "string"
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+    <con:request name="Request 2" id="ace033fb-4d85-40b3-a430-8af9ff02d482" mediaType="text/json">
+      <con:settings/>
+      <con:endpoint>https://paragon-dash-api-stage.azurewebsites.net</con:endpoint>
+      <con:request>{
+  "name" : "string",
+  "email" : "string",
+  "message" : "string",
+  "phone" : "string",
+  "ipAddress" : "string",
+  "propertyAddress" : "string",
+  "propertyCity" : "string",
+  "agentId" : 0,
+  "agentId2" : 0,
+  "url" : "string"
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+    <con:request name="Request 3" id="5bcda077-9458-47cd-802c-753540e474a8" mediaType="text/html">
+      <con:settings/>
+      <con:endpoint>https://paragon-dash-api-stage.azurewebsites.net</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+    <con:request name="Request 4" id="986a128f-cbe3-43ad-96aa-bd2a224d94fd" mediaType="text/xml">
+      <con:settings/>
+      <con:endpoint>https://paragon-dash-api-stage.azurewebsites.net</con:endpoint>
+      <con:request><![CDATA[<MailViewParagonProperty>
+   <name>string</name>
+   <email>string</email>
+   <message>string</message>
+   <phone>string</phone>
+   <ipAddress>string</ipAddress>
+   <propertyAddress>string</propertyAddress>
+   <propertyCity>string</propertyCity>
+   <agentId>0</agentId>
+   <agentId2>0</agentId2>
+   <url>string</url>
+</MailViewParagonProperty>]]></con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+    <con:request name="Request 5" id="63392a2b-4721-481c-8d13-03606b48a58b" mediaType="application/x-www-form-urlencoded">
+      <con:settings/>
+      <con:endpoint>https://paragon-dash-api-stage.azurewebsites.net</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

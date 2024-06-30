@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/api/geo/regions/{regionId}/cities" path="/api/geo/regions/{regionId}/cities" id="c2956dc8-6852-4c01-b404-d0bf7593919c">
+  <con:settings id="1447d16d-0e45-4be9-b230-5390a8462511">
+    <con:setting id="c2956dc8-6852-4c01-b404-d0bf7593919cfileName">%2Fapi%2Fgeo%2Fregions%2F%7BregionId%7D%2Fcities</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>regionId</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="GeoCities_GetByRegion" id="a6abcfd8-f081-428e-804d-ff6fda4b3085" method="GET">
+    <con:description></con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>[ {
+  "id" : 0,
+  "name" : "string"
+} ]</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>[ {
+  "id" : 0,
+  "name" : "string"
+} ]</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/html</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent><![CDATA[<object>
+   <AnonymousModel>
+      <id>0</id>
+      <name>string</name>
+   </AnonymousModel>
+</object>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="082651fc-0da0-44b4-84e6-19aa6ea72564" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://paragon-dash-api-stage.azurewebsites.net</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

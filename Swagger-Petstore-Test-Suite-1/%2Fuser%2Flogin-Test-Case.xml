@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="b2d02ace-2b1b-465f-983d-628dc241676a" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="/user/login Test Case" searchProperties="true" timeout="0">
+  <con:description id="08cc0b4c-b2e9-4a2d-88b4-58dfdbddcc8f">The test case generated for the REST resource [/user/login] located at [/user/login]</con:description>
+  <con:settings>
+    <con:setting id="b2d02ace-2b1b-465f-983d-628dc241676afileName">%2Fuser%2Flogin-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="8bae3c99-2e98-4394-9530-8abe4d19f5d8">
+    <con:settings/>
+    <con:config service="Swagger Petstore" resourcePath="/tree/bitcoinWallet/1.0.0/user/login" methodName="loginUser" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="79b18080-1217-442d-8105-90abc82b9183" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://virtserver.swaggerhub.com/tree/bitcoinWallet/1.0.0/user/login</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

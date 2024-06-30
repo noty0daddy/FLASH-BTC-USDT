@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/comms/listdefaults/{companyid}{authkey}{partnerkey}" path="/comms/listdefaults/{companyid}{authkey}{partnerkey}" id="d97e0fd8-7f8e-41f2-a02d-34eaffc01145">
+  <con:settings id="3ac1e89f-2acc-4af9-a8e1-0564c93e33a3">
+    <con:setting id="d97e0fd8-7f8e-41f2-a02d-34eaffc01145fileName">%2Fcomms%2Flistdefaults%2F%7Bcompanyid%7D%7Bauthkey%7D%7Bpartnerkey%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>companyid</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>The ID of the account you wish to set the defaults for</con:description>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>authkey</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>The authorisation key issued when the account was created</con:description>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>partnerkey</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>Your partner key which was issued</con:description>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="comms_list_with_paramaters" id="bf095b5d-1276-465e-9040-bcc3c2467be7" method="GET">
+    <con:description>Allows You to See the Default Communication settings</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "result" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+      <con:sampleContent>{
+  "status" : 0,
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="82667214-8443-4176-b00a-d6753ff5ad85" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://dev.shoprocket.co</con:endpoint>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

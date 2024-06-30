@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/masterdata" path="/masterdata" id="591d1838-1c14-46ff-86c0-c9fa621d8702">
+  <con:settings id="463e31fa-a670-4d07-8b9d-2d2bc3f92026">
+    <con:setting id="591d1838-1c14-46ff-86c0-c9fa621d8702fileName">%2Fmasterdata</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="loadMasterData" id="67555848-57b0-439a-8ffc-9e4e4199dc2d" method="GET">
+    <con:description>Query all ProcessDTO/SkuDTO/EquipmentTypeDTO/RequiredEquipmentDTO/AllowedEquipmentDTO (include deleted data) from database and return
+Get master data (include deleted data)</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>[ {
+  "processes" : [ {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "description" : "string"
+  } ],
+  "skus" : [ {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "processId" : 1.5,
+    "skuNum" : "string",
+    "description" : "string"
+  } ],
+  "equipmentTypes" : [ {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "description" : "string"
+  } ],
+  "requiredEquipments" : [ {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "echeckSkuId" : 1.5,
+    "equipmentTypeId" : 1.5
+  } ],
+  "alowedEquipments" : [ {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "echeckSkuId" : 1.5,
+    "equipmentTypeId" : 1.5,
+    "barCode" : "string",
+    "deleted" : true
+  } ]
+} ]</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>403</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="18755d39-5f60-4de7-9083-151d89ca32b8" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://localhost:8080</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

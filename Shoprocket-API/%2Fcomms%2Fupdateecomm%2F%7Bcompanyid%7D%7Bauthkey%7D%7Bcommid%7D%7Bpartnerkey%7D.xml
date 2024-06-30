@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/comms/updateecomm/{companyid}{authkey}{commid}{partnerkey}" path="/comms/updateecomm/{companyid}{authkey}{commid}{partnerkey}" id="7803e4f5-dfa6-448b-822b-f3a7ec3e21b5">
+  <con:settings id="0625c37a-1196-4cb3-abc3-5e9901f9b901">
+    <con:setting id="7803e4f5-dfa6-448b-822b-f3a7ec3e21b5fileName">%2Fcomms%2Fupdateecomm%2F%7Bcompanyid%7D%7Bauthkey%7D%7Bcommid%7D%7Bpartnerkey%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>companyid</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>The ID of the account you wish to set the defaults for</con:description>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>authkey</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>The authorisation key issued when the account was created</con:description>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>commid</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>The ID of the communication you want to copy from</con:description>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>partnerkey</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>Your partner key which was issued</con:description>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="comms_update_with_paramaters" id="77f69fcc-e8b1-4a58-a231-61a8104b959f" method="GET">
+    <con:description>Allows You to update one of the Default Communications</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>subject</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>The subject of the email you want to send</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>sendsms</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Sets if you want to send this communication by SMS</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>sendemail</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Sets if you want to send this communication by Email</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>sendyouremail</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Sets if you want to send a copy of this communication to your email</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>sendaccountsemail</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Sets if you want to send a copy of this communication to your accounts email</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "result" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+      <con:sampleContent>{
+  "status" : 0,
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="44f7a992-24e9-449a-9afe-2f1d3ae2c0ea" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://dev.shoprocket.co</con:endpoint>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

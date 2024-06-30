@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" id="1651566e-a3c9-4216-837a-157cd1efec12" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Flavors" searchProperties="true">
+  <con:settings id="2a1b4a27-0c0a-42db-a01d-c66298d295dd">
+    <con:setting id="1651566e-a3c9-4216-837a-157cd1efec12fileName">Flavors</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="VirtRunnerTestStep" name="Start Virtual Service" id="0858e711-41bf-48da-8837-f23cb23f9af5">
+    <con:settings/>
+    <con:config>
+      <url>localhost</url>
+      <server>REST Virtual Service - Flavors</server>
+      <action>run</action>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="getFlavor" id="31d351d8-c607-450c-ae47-cb46becd73f2">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="http://localhost:8095" resourcePath="/getFlavor" methodName="Data" xsi:type="con:RestRequestStep">
+      <con:restRequest name="getFlavor" id="a2ccad7d-22a7-4c61-82a9-76b783323032" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://localhost:8095</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://localhost/</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="VirtRunnerTestStep" name="Stop Virtual Service" id="c780ca71-d0ee-4694-99cb-3b20b79867ef">
+    <con:settings/>
+    <con:config>
+      <url>localhost</url>
+      <server>REST Virtual Service - Flavors</server>
+      <action>stop</action>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:breakPoints>
+    <con:testStepId>0858e711-41bf-48da-8837-f23cb23f9af5</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:environmentSpec>
+    <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testCase>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/configurations/list" path="/configurations/list" id="ffa262b3-3219-4335-afab-3ac7ec595325">
+  <con:settings id="ecddc88a-5813-4a34-a98d-17d029bb3365">
+    <con:setting id="ffa262b3-3219-4335-afab-3ac7ec595325fileName">%2Fconfigurations%2Flist</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="searchConfigurations" id="8a3461b6-3f59-4fa2-bebc-1e00a4ea965b" method="GET">
+    <con:description>1. The implementations must support criteria search by eCheck_SKU.sku_num column, pagination and sort by Process.description, eCheck_SKU.sku_num, eCheck_SKU.description
+2. Iterate the result list of Configuration records, if a Configuration record has same processDescription, skuNum and skuDescription as its previous record, then set its processDescription, skuNum and skuDescription to null
+
+Search list of eCheck configurations (only non-deleted data) by given criteria, page number, page size, sort column and sort order</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>criteria</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>the criteria to search (wildcard match). If null then no criteria filter applied</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>pageNumber</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description>the page 0 based indexing. Must be >=0 if present. Assume 0 by default if null</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>pageSize</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description>the maximum number of results to return. Must be >0 if present. Assume Integer.MAX by default if null</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>sortColumn</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>the sort by column, if implementations doesn't support sorting by the provided column, implementations must return 400 with proper error message and error code</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>sortOrder</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>the sort order. Must be ASC or DESC if present. Assume ASC by default if null</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "criteria" : "string",
+  "pageNumber" : 0,
+  "pageSize" : 0,
+  "sortColumn" : "string",
+  "sortOrder" : "ASC",
+  "totalCount" : 1.5,
+  "records" : [ {
+    "processDescription" : "string",
+    "skuNum" : "string",
+    "skuDescription" : "string",
+    "equipmentDescription" : "string",
+    "barCodes" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>403</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="f406c62d-a917-463d-abe9-9c7ee1093fd2" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://localhost:8080</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

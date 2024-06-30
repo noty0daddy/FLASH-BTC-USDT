@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/api/geo/offices" path="/api/geo/offices" id="54cfd9c9-2957-40d1-8671-4b11aa1cc6bc">
+  <con:settings id="a77013d5-02a1-4896-b4ce-7dbab02c91d1">
+    <con:setting id="54cfd9c9-2957-40d1-8671-4b11aa1cc6bcfileName">%2Fapi%2Fgeo%2Foffices</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GeoOffices_Get" id="214469db-309b-43b8-b729-a49e0f81ac00" method="GET">
+    <con:description></con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>[ {
+  "id" : 0,
+  "name" : "string",
+  "address1" : "string",
+  "address2" : "string",
+  "city" : "string",
+  "state" : "string",
+  "zip" : "string",
+  "email" : "string",
+  "phone1" : "string",
+  "phone2" : "string",
+  "cell" : "string",
+  "fax" : "string",
+  "mlsId" : "string",
+  "closed" : true,
+  "marketingTitle" : "string",
+  "marketingBody" : "string",
+  "marketingRegions" : [ {
+    "id" : 0,
+    "name" : "string"
+  } ]
+} ]</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>[ {
+  "id" : 0,
+  "name" : "string",
+  "address1" : "string",
+  "address2" : "string",
+  "city" : "string",
+  "state" : "string",
+  "zip" : "string",
+  "email" : "string",
+  "phone1" : "string",
+  "phone2" : "string",
+  "cell" : "string",
+  "fax" : "string",
+  "mlsId" : "string",
+  "closed" : true,
+  "marketingTitle" : "string",
+  "marketingBody" : "string",
+  "marketingRegions" : [ {
+    "id" : 0,
+    "name" : "string"
+  } ]
+} ]</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/html</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent><![CDATA[<object>
+   <AnonymousModel>
+      <id>0</id>
+      <name>string</name>
+      <address1>string</address1>
+      <address2>string</address2>
+      <city>string</city>
+      <state>string</state>
+      <zip>string</zip>
+      <email>string</email>
+      <phone1>string</phone1>
+      <phone2>string</phone2>
+      <cell>string</cell>
+      <fax>string</fax>
+      <mlsId>string</mlsId>
+      <closed>true</closed>
+      <marketingTitle>string</marketingTitle>
+      <marketingBody>string</marketingBody>
+      <marketingRegions>
+         <AnonymousModel>
+            <id>0</id>
+            <name>string</name>
+         </AnonymousModel>
+      </marketingRegions>
+   </AnonymousModel>
+</object>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="729b423f-6d85-4084-8011-fb548d165c4d" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://paragon-dash-api-stage.azurewebsites.net</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

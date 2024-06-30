@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction xmlns:con="http://eviware.com/soapui/config" name="/getFlavor" method="GET" resourcePath="/getFlavor" id="5cc31861-c6d5-4c54-900e-f2cdc78c910a">
+  <con:settings id="6e9b0404-b8e5-4ef2-9d4f-d0e43747d0ff">
+    <con:setting id="5cc31861-c6d5-4c54-900e-f2cdc78c910afileName">%2FgetFlavor</con:setting>
+  </con:settings>
+  <con:defaultResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchPath xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:nil="true"/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Flavor" id="af0e6fcf-af95-4eef-b9b6-a4d0c9c83221" httpResponseStatus="200" mediaType="application/xml" dataSource="Flavors">
+    <con:settings/>
+    <con:responseContent>&lt;xml>
+                    &lt;flavor>${#MockResponse#flavor}&lt;/flavor>
+                    &lt;/xml></con:responseContent>
+  </con:response>
+</con:restMockAction>

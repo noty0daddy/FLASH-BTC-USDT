@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/comms/deletecomm/{companyid}{authkey}{commid}{partnerkey}" path="/comms/deletecomm/{companyid}{authkey}{commid}{partnerkey}" id="0b4395a2-f98f-49a5-a592-dfa7503fe1c9">
+  <con:settings id="72be6655-55b0-4579-ad5f-b96e3281d0ad">
+    <con:setting id="0b4395a2-f98f-49a5-a592-dfa7503fe1c9fileName">%2Fcomms%2Fdeletecomm%2F%7Bcompanyid%7D%7Bauthkey%7D%7Bcommid%7D%7Bpartnerkey%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>companyid</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>The ID of the account you wish to set the defaults for</con:description>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>authkey</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>The authorisation key issued when the account was created</con:description>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>commid</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>The ID of the communication you want to copy from</con:description>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>partnerkey</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>Your partner key which was issued</con:description>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="comms_delete_with_paramaters" id="1f1be770-5674-49e2-8f62-e87e9a35084c" method="GET">
+    <con:description>Allows You to delete one of the Default Communications</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "result" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+      <con:sampleContent>{
+  "status" : 0,
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="57eda700-e004-4d18-851b-776f1ae17b6f" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://dev.shoprocket.co</con:endpoint>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

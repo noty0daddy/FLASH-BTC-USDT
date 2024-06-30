@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/allowedEquipments/{id}" path="/allowedEquipments/{id}" id="a499489e-4363-45f1-ab2e-3ec57342a194">
+  <con:settings id="73fee3b2-34b1-4ac5-ace2-cbfd48de6713">
+    <con:setting id="a499489e-4363-45f1-ab2e-3ec57342a194fileName">%2FallowedEquipments%2F%7Bid%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>id</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>number</con:dataType>
+      <con:description>the allowed equipment id</con:description>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="updateAllowedEquipment" id="cd0ddc63-29b8-47a8-a756-12956f21e8f8" method="PUT">
+    <con:description>1. Check allowedEquipment.sku.id exists in eCheck_SKU, return 404 error if check failed
+2. Check allowedEquipment.equipmentType.id exists in Equipment_Type, return 404 error if check failed
+3. Check allowedEquipment.id exists in Allowed_Equipment and is not marked as deleted, return 404 error if check failed
+4. Get duplicating row (select * from Allowed_Equipment where id!={allowedEquipment.id} and echeck_sku_id={allowedEquipment.sku.id} and equipment_type_id={allowedEquipment.equipmentType.id} and bar_code={allowedEquipment.barCode})
+5. If there is a duplicating row and it is not marked as deleted, return 409 error
+6. update Allowed_Equipment set... where id={allowedEquipment.id}, return 200 success response
+
+Update allowed equipment</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "createdBy" : "string",
+  "createdAt" : "2015-07-20T15:49:04-07:00",
+  "updatedBy" : "string",
+  "updatedAt" : "2015-07-20T15:49:04-07:00",
+  "id" : 1.5,
+  "sku" : {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "process" : {
+      "createdBy" : "string",
+      "createdAt" : "2015-07-20T15:49:04-07:00",
+      "updatedBy" : "string",
+      "updatedAt" : "2015-07-20T15:49:04-07:00",
+      "id" : 1.5,
+      "description" : "string"
+    },
+    "skuNum" : "string",
+    "description" : "string"
+  },
+  "equipmentType" : {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "description" : "string"
+  },
+  "barCode" : "string",
+  "deleted" : true
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "createdBy" : "string",
+  "createdAt" : "2015-07-20T15:49:04-07:00",
+  "updatedBy" : "string",
+  "updatedAt" : "2015-07-20T15:49:04-07:00",
+  "id" : 1.5,
+  "sku" : {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "process" : {
+      "createdBy" : "string",
+      "createdAt" : "2015-07-20T15:49:04-07:00",
+      "updatedBy" : "string",
+      "updatedAt" : "2015-07-20T15:49:04-07:00",
+      "id" : 1.5,
+      "description" : "string"
+    },
+    "skuNum" : "string",
+    "description" : "string"
+  },
+  "equipmentType" : {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "description" : "string"
+  },
+  "barCode" : "string",
+  "deleted" : true
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>403</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>409</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="e2dedd1c-f845-45b0-9531-8899df8fd730" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://localhost:8080</con:endpoint>
+      <con:request>{
+  "createdBy" : "string",
+  "createdAt" : "2015-07-20T15:49:04-07:00",
+  "updatedBy" : "string",
+  "updatedAt" : "2015-07-20T15:49:04-07:00",
+  "id" : 1.5,
+  "sku" : {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "process" : {
+      "createdBy" : "string",
+      "createdAt" : "2015-07-20T15:49:04-07:00",
+      "updatedBy" : "string",
+      "updatedAt" : "2015-07-20T15:49:04-07:00",
+      "id" : 1.5,
+      "description" : "string"
+    },
+    "skuNum" : "string",
+    "description" : "string"
+  },
+  "equipmentType" : {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "description" : "string"
+  },
+  "barCode" : "string",
+  "deleted" : true
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="deleteAllowedEquipment" id="05abf80a-fdce-4834-b654-135f1d1f2d2e" method="DELETE">
+    <con:description>1. Check id exists in Allowed_Equipment and is not marked as deleted, return 404 error if check failed
+2. update Allowed_Equipment set deleted=1 where id={id}
+
+Delete allowed equipment. The allowed equipment is soft deleted, which is marked as deleted but not actually removed from database</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>403</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="86e89398-223f-4259-907d-96cada1a7b12" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://localhost:8080</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/cart/addsessionaddress/{sessionid}{companyid}" path="/cart/addsessionaddress/{sessionid}{companyid}" id="e4399d9e-6f16-4654-b709-b0ff5b53a102">
+  <con:settings id="df5bde83-05e6-48eb-907c-74d80394c79f">
+    <con:setting id="e4399d9e-6f16-4654-b709-b0ff5b53a102fileName">%2Fcart%2Faddsessionaddress%2F%7Bsessionid%7D%7Bcompanyid%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>sessionid</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>The ID of the session you want to use</con:description>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>companyid</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>The ID of the account you wish to set the defaults for</con:description>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="cart_addsessionaddress_with_paramaters" id="e7aad6c0-ffc4-40ea-ac74-5f8af81eea1d" method="GET">
+    <con:description>This function add a billing and shipping address to the a session</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>bname</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Hold the billing name</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>bstreet</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Hold the billing street</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>bcity</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Hold the billing city</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>bpost</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Hold the billing name postcode</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>bcountry</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Hold the billing country</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>bphone</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Hold the billing phone</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>sname</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Hold the shipping name</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>sstreet</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Hold the shipping street</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>scity</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>The ID of the transaltion you want to return for the product</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>spost</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Hold the shipping postcode</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "cartitems" : {
+    "specialreqs" : "string",
+    "location" : {
+      "locationid" : "string",
+      "message" : "string",
+      "name" : "string",
+      "state" : true
+    },
+    "sessionshipping" : {
+      "digital" : true,
+      "free" : "string",
+      "weight" : "string",
+      "weightovercharge" : "string",
+      "pricetofree" : "string",
+      "cost" : "string",
+      "name" : "string",
+      "id" : 0,
+      "givefreeshipping" : true
+    },
+    "sessionlocation" : {
+      "locationid" : "string",
+      "message" : "string",
+      "name" : "string",
+      "state" : true
+    },
+    "sessionaddress" : {
+      "shippingname" : "string",
+      "shippingaddress1" : "string",
+      "shippingaddress2" : "string",
+      "shippingaddress3" : "string",
+      "shippingcountry" : "string",
+      "billingname" : "string",
+      "billingaddress1" : "string",
+      "billingaddress2" : "string",
+      "billingaddress3" : "string",
+      "billingcountry" : "string",
+      "telephone" : "string"
+    },
+    "voucher" : {
+      "percentoff" : "string",
+      "amountoff" : "string",
+      "name" : "string",
+      "vouchertype" : 0
+    },
+    "sessiontimeslot" : "string",
+    "items" : {
+      "quantity" : 0,
+      "id" : 0,
+      "whositfor" : "string",
+      "productid" : 0,
+      "name" : "string",
+      "price" : "string",
+      "taxrate" : "string",
+      "weight" : "string",
+      "quantitywarning" : "string",
+      "digital" : "string",
+      "taxamount" : "string",
+      "optionstotal" : "string",
+      "goptions" : {
+        "option" : {
+          "name" : "string",
+          "price" : "string"
+        },
+        "modifiers" : {
+          "name" : "string",
+          "modifier" : "string"
+        }
+      },
+      "options" : {
+        "optionname" : "string",
+        "optionsprice" : "string"
+      },
+      "deal" : {
+        "dealname" : "string",
+        "dealprice" : "string"
+      },
+      "itemtotal" : "string"
+    },
+    "pickers" : {
+      "id" : "string",
+      "name" : "string",
+      "whofor" : "string",
+      "cost" : "string",
+      "items" : {
+        "pickerid" : "string"
+      },
+      "quantity" : "string"
+    },
+    "totals" : {
+      "subtotal" : "string",
+      "itemcount" : "string",
+      "digitalcount" : "string",
+      "total" : "string",
+      "itemtotal" : "string",
+      "pickertotal" : "string",
+      "totalwithdiscount" : "string",
+      "discount" : "string",
+      "shippingtotal" : "string",
+      "taxtotal" : "string",
+      "gprice" : "string",
+      "stripe_min_payment" : "string",
+      "paypal_min_payment" : "string",
+      "min_paypal_flag" : "string",
+      "min_stripe_flag" : "string"
+    },
+    "stockfail" : 0,
+    "closingtimes" : {
+      "Sunday" : 0,
+      "Monday" : 0,
+      "Tuesday" : 0,
+      "Wednesday" : 0,
+      "Thursday" : 0,
+      "Friday" : 0,
+      "Saturday" : 0
+    }
+  },
+  "closingtimes" : {
+    "Sunday" : 0,
+    "Monday" : 0,
+    "Tuesday" : 0,
+    "Wednesday" : 0,
+    "Thursday" : 0,
+    "Friday" : 0,
+    "Saturday" : 0
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="cfaff8d1-3520-4a67-bccd-ce31971b2941" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://dev.shoprocket.co</con:endpoint>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

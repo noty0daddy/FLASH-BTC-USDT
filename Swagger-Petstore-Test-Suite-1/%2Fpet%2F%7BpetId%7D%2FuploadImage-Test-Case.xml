@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="b1a7c28e-320c-4291-8f58-6774a7ec5449" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="/pet/{petId}/uploadImage Test Case" searchProperties="true" timeout="0">
+  <con:description id="433f21ce-3d7d-4345-a967-9f62c142d670">The test case generated for the REST resource [/pet/{petId}/uploadImage] located at [/pet/{petId}/uploadImage]</con:description>
+  <con:settings>
+    <con:setting id="b1a7c28e-320c-4291-8f58-6774a7ec5449fileName">%2Fpet%2F%7BpetId%7D%2FuploadImage-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="bec4d3eb-153f-48f3-b403-b5dc82f6226c">
+    <con:settings/>
+    <con:config service="Swagger Petstore" resourcePath="/tree/bitcoinWallet/1.0.0/pet/{petId}/uploadImage" methodName="uploadFile" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="af163b76-255c-444d-bf81-187b3e398e61" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://virtserver.swaggerhub.com/tree/bitcoinWallet/1.0.0/pet/uploadImage</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

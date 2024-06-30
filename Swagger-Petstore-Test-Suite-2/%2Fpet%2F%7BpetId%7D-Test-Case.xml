@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="be3facbd-79aa-4759-9b9c-34c757bd49ae" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="/pet/{petId} Test Case" searchProperties="true" timeout="0">
+  <con:description id="0098507b-28cb-415f-bb04-267f00515fe1">The test case generated for the REST resource [/pet/{petId}] located at [/pet/{petId}]</con:description>
+  <con:settings>
+    <con:setting id="be3facbd-79aa-4759-9b9c-34c757bd49aefileName">%2Fpet%2F%7BpetId%7D-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="9d8197a5-815b-4254-baed-a75d6c49d56b">
+    <con:settings/>
+    <con:config service="Swagger Petstore" resourcePath="/tree/bitcoinWallet/1.0.0/pet/{petId}" methodName="getPetById" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="e3478074-b61b-4162-ad32-97560236149c" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://virtserver.swaggerhub.com/tree/bitcoinWallet/1.0.0/pet/</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Request 1 2" id="138fa50e-267d-49ab-93e1-a40dd032eb05">
+    <con:settings/>
+    <con:config service="Swagger Petstore" resourcePath="/tree/bitcoinWallet/1.0.0/pet/{petId}" methodName="updatePetWithForm" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1 2" id="78848da8-d12b-4741-b77d-eb3cf0975231" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://virtserver.swaggerhub.com/tree/bitcoinWallet/1.0.0/pet/</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Request 1 3" id="51b93705-caad-4932-ac63-645ad23de1c7">
+    <con:settings/>
+    <con:config service="Swagger Petstore" resourcePath="/tree/bitcoinWallet/1.0.0/pet/{petId}" methodName="deletePet" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1 3" id="03c5cb5c-b773-4901-a64a-f0cf5fd0d50b" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://virtserver.swaggerhub.com/tree/bitcoinWallet/1.0.0/pet/</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

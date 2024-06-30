@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/api/agents/{agentId}" path="/api/agents/{agentId}" id="5901972f-144e-49dd-83f8-783617c5a08a">
+  <con:settings id="9c313a63-6f84-4143-a464-d23560fa7cb2">
+    <con:setting id="5901972f-144e-49dd-83f8-783617c5a08afileName">%2Fapi%2Fagents%2F%7BagentId%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>agentId</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="AgentsDetails_GetOne" id="e173ba2b-dcee-40ef-a77a-46b25d82008d" method="GET">
+    <con:description></con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "id" : 0,
+  "fullName" : "string",
+  "firstName" : "string",
+  "middleNames" : "string",
+  "lastName" : "string",
+  "displayName" : "string",
+  "email" : "string",
+  "office" : "string",
+  "officeId" : 0,
+  "address" : {
+    "id" : 0,
+    "address1" : "string",
+    "address2" : "string",
+    "city" : "string",
+    "state" : "string",
+    "zip" : "string"
+  },
+  "workNumber" : "string",
+  "cellNumber" : "string",
+  "faxNumber" : "string",
+  "mlsId" : "string",
+  "website" : "string",
+  "bio" : "string",
+  "imageUrl" : "string",
+  "dreLicense" : "string",
+  "agentPreference" : {
+    "id" : 0,
+    "agentId" : 0,
+    "altAgentHeaderUrl" : "string",
+    "twitterUsername" : "string",
+    "instagramUsername" : "string",
+    "facebookUsername" : "string"
+  },
+  "socialMediaPosts" : [ {
+    "source" : "string",
+    "text" : "string",
+    "imageUrl" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "id" : 0,
+  "fullName" : "string",
+  "firstName" : "string",
+  "middleNames" : "string",
+  "lastName" : "string",
+  "displayName" : "string",
+  "email" : "string",
+  "office" : "string",
+  "officeId" : 0,
+  "address" : {
+    "id" : 0,
+    "address1" : "string",
+    "address2" : "string",
+    "city" : "string",
+    "state" : "string",
+    "zip" : "string"
+  },
+  "workNumber" : "string",
+  "cellNumber" : "string",
+  "faxNumber" : "string",
+  "mlsId" : "string",
+  "website" : "string",
+  "bio" : "string",
+  "imageUrl" : "string",
+  "dreLicense" : "string",
+  "agentPreference" : {
+    "id" : 0,
+    "agentId" : 0,
+    "altAgentHeaderUrl" : "string",
+    "twitterUsername" : "string",
+    "instagramUsername" : "string",
+    "facebookUsername" : "string"
+  },
+  "socialMediaPosts" : [ {
+    "source" : "string",
+    "text" : "string",
+    "imageUrl" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/html</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent><![CDATA[<AgentDto>
+   <id>0</id>
+   <fullName>string</fullName>
+   <firstName>string</firstName>
+   <middleNames>string</middleNames>
+   <lastName>string</lastName>
+   <displayName>string</displayName>
+   <email>string</email>
+   <office>string</office>
+   <officeId>0</officeId>
+   <AddressDto>
+      <id>0</id>
+      <address1>string</address1>
+      <address2>string</address2>
+      <city>string</city>
+      <state>string</state>
+      <zip>string</zip>
+   </AddressDto>
+   <workNumber>string</workNumber>
+   <cellNumber>string</cellNumber>
+   <faxNumber>string</faxNumber>
+   <mlsId>string</mlsId>
+   <website>string</website>
+   <bio>string</bio>
+   <imageUrl>string</imageUrl>
+   <dreLicense>string</dreLicense>
+   <AgentPreferenceDto>
+      <id>0</id>
+      <agentId>0</agentId>
+      <altAgentHeaderUrl>string</altAgentHeaderUrl>
+      <twitterUsername>string</twitterUsername>
+      <instagramUsername>string</instagramUsername>
+      <facebookUsername>string</facebookUsername>
+   </AgentPreferenceDto>
+   <socialMediaPosts>
+      <AnonymousModel>
+         <source>string</source>
+         <text>string</text>
+         <imageUrl>string</imageUrl>
+      </AnonymousModel>
+   </socialMediaPosts>
+</AgentDto>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="cd29fa9f-7068-47ac-af7b-f48980961cb8" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://paragon-dash-api-stage.azurewebsites.net</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

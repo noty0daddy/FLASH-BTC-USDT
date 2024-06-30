@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/equipmentTypes/{id}" path="/equipmentTypes/{id}" id="a48f60b4-f392-4921-bbcb-828e06941350">
+  <con:settings id="462a69a8-3c91-485f-a30e-426ee3ebbf3b">
+    <con:setting id="a48f60b4-f392-4921-bbcb-828e06941350fileName">%2FequipmentTypes%2F%7Bid%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>id</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>number</con:dataType>
+      <con:description>the equipment type id</con:description>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="updateEquipmentType" id="1b35bd2d-6339-4cb9-acda-3a4b261480a1" method="PUT">
+    <con:description>1. Check equipmentType.id exists in Equipment_Type, return 404 error if check failed
+2. Get duplicating row (select * from Equipment_Type where id!={equipmentType.id} and description={equipmentType.description})
+3. If there is a duplicating row, return 409 error
+4. update Equipment_Type set... where id={equipmentType.id}, return 200 success response
+
+Update equipment type</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "createdBy" : "string",
+  "createdAt" : "2015-07-20T15:49:04-07:00",
+  "updatedBy" : "string",
+  "updatedAt" : "2015-07-20T15:49:04-07:00",
+  "id" : 1.5,
+  "description" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "createdBy" : "string",
+  "createdAt" : "2015-07-20T15:49:04-07:00",
+  "updatedBy" : "string",
+  "updatedAt" : "2015-07-20T15:49:04-07:00",
+  "id" : 1.5,
+  "description" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>403</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>409</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="b62124b7-af80-487e-b0d4-eca41cb73c85" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://localhost:8080</con:endpoint>
+      <con:request>{
+  "createdBy" : "string",
+  "createdAt" : "2015-07-20T15:49:04-07:00",
+  "updatedBy" : "string",
+  "updatedAt" : "2015-07-20T15:49:04-07:00",
+  "id" : 1.5,
+  "description" : "string"
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

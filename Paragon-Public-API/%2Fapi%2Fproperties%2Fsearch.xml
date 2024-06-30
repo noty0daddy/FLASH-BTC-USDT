@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/api/properties/search" path="/api/properties/search" id="c6e7009f-acfc-4e76-9565-59994df73766">
+  <con:settings id="64f1f49b-408a-47a8-9664-d961f105ed9d">
+    <con:setting id="c6e7009f-acfc-4e76-9565-59994df73766fileName">%2Fapi%2Fproperties%2Fsearch</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="PropertiesSearch_SearchEx" id="b4f9375a-2431-4d15-87a1-f2dd5e5b4513" method="GET">
+    <con:description></con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>searchRequest.psc</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>array</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>searchRequest.priceMin</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>searchRequest.priceMax</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>searchRequest.totalBathsMin</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>number</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>searchRequest.bedsMin</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>searchRequest.neighborhoods</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>array</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>searchRequest.cities</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>array</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>searchRequest.counties</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>array</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>searchRequest.zips</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>array</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>searchRequest.uri</con:name>
+        <con:style>QUERY</con:style>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>searchRequest.search</con:name>
+        <con:style>QUERY</con:style>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>searchRequest.page</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>searchRequest.size</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>searchRequest.sortBy</con:name>
+        <con:style>QUERY</con:style>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>searchRequest.sortDesc</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>boolean</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "items" : [ {
+    "id" : "string",
+    "dashListingId" : 0,
+    "homeJunctionSystemId" : "string",
+    "addressWithheld" : true,
+    "streetAddress" : "string",
+    "city" : "string",
+    "state" : "string",
+    "zip" : "string",
+    "county" : "string",
+    "mlsArea" : "string",
+    "neighborhood" : "string",
+    "mlsId" : "string",
+    "aggregatePropertySearchCategory" : 100,
+    "aggregateListingStatus" : "string",
+    "paragonLegacyPropertyTypeId" : 0,
+    "paragonListingStatusId" : 0,
+    "hjListingType" : "string",
+    "hjPropertyType" : "string",
+    "hjListingStatus" : "string",
+    "listingDate" : "2015-07-20T15:49:04-07:00",
+    "source" : "string",
+    "description" : "string",
+    "bedrooms" : 0,
+    "totalBaths" : 1.100000023841858,
+    "fullBaths" : 0,
+    "halfBaths" : 0,
+    "squareFootage" : 1.100000023841858,
+    "lotSizeAcres" : 1.100000023841858,
+    "lotSizeSqft" : 0,
+    "yearBuilt" : 0,
+    "parkingSpaces" : "string",
+    "price" : 0,
+    "officeName" : "string",
+    "agents" : [ {
+      "dashAgentId" : 0,
+      "fullName" : "string",
+      "imageUrl" : "string",
+      "mlsId" : "string",
+      "phone" : "string",
+      "email" : "string",
+      "cellNumber" : "string",
+      "dreLicense" : "string",
+      "address" : {
+        "id" : 0,
+        "address1" : "string",
+        "address2" : "string",
+        "city" : "string",
+        "state" : "string",
+        "zip" : "string"
+      }
+    } ],
+    "leadImageUrl" : "string",
+    "imageUrls" : [ "string" ],
+    "paragonFeatures" : [ "string" ],
+    "openHouses" : [ {
+      "startDateTime" : "2015-07-20T15:49:04-07:00",
+      "endDateTime" : "2015-07-20T15:49:04-07:00"
+    } ],
+    "viewStrings" : [ "string" ],
+    "garageStrings" : [ "string" ],
+    "parkingStrings" : [ "string" ],
+    "fireplaceStrings" : [ "string" ],
+    "expenseStrings" : [ "string" ],
+    "incomeStrings" : [ "string" ],
+    "zoningStrings" : [ "string" ],
+    "hoa" : true,
+    "hoaDues" : "string"
+  } ],
+  "request" : {
+    "psc" : [ 0 ],
+    "priceMin" : 0,
+    "priceMax" : 0,
+    "totalBathsMin" : 1.100000023841858,
+    "bedsMin" : 0,
+    "neighborhoods" : [ "string" ],
+    "cities" : [ "string" ],
+    "counties" : [ "string" ],
+    "zips" : [ "string" ],
+    "uri" : "string",
+    "search" : "string",
+    "page" : 0,
+    "size" : 0,
+    "sortBy" : "string",
+    "sortDesc" : true
+  },
+  "results" : {
+    "itemCount" : 0,
+    "itemOffset" : 0,
+    "totalItemsCount" : 0,
+    "hasMore" : true,
+    "nextPageQueryString" : "string"
+  },
+  "errors" : [ "string" ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "items" : [ {
+    "id" : "string",
+    "dashListingId" : 0,
+    "homeJunctionSystemId" : "string",
+    "addressWithheld" : true,
+    "streetAddress" : "string",
+    "city" : "string",
+    "state" : "string",
+    "zip" : "string",
+    "county" : "string",
+    "mlsArea" : "string",
+    "neighborhood" : "string",
+    "mlsId" : "string",
+    "aggregatePropertySearchCategory" : 100,
+    "aggregateListingStatus" : "string",
+    "paragonLegacyPropertyTypeId" : 0,
+    "paragonListingStatusId" : 0,
+    "hjListingType" : "string",
+    "hjPropertyType" : "string",
+    "hjListingStatus" : "string",
+    "listingDate" : "2015-07-20T15:49:04-07:00",
+    "source" : "string",
+    "description" : "string",
+    "bedrooms" : 0,
+    "totalBaths" : 1.100000023841858,
+    "fullBaths" : 0,
+    "halfBaths" : 0,
+    "squareFootage" : 1.100000023841858,
+    "lotSizeAcres" : 1.100000023841858,
+    "lotSizeSqft" : 0,
+    "yearBuilt" : 0,
+    "parkingSpaces" : "string",
+    "price" : 0,
+    "officeName" : "string",
+    "agents" : [ {
+      "dashAgentId" : 0,
+      "fullName" : "string",
+      "imageUrl" : "string",
+      "mlsId" : "string",
+      "phone" : "string",
+      "email" : "string",
+      "cellNumber" : "string",
+      "dreLicense" : "string",
+      "address" : {
+        "id" : 0,
+        "address1" : "string",
+        "address2" : "string",
+        "city" : "string",
+        "state" : "string",
+        "zip" : "string"
+      }
+    } ],
+    "leadImageUrl" : "string",
+    "imageUrls" : [ "string" ],
+    "paragonFeatures" : [ "string" ],
+    "openHouses" : [ {
+      "startDateTime" : "2015-07-20T15:49:04-07:00",
+      "endDateTime" : "2015-07-20T15:49:04-07:00"
+    } ],
+    "viewStrings" : [ "string" ],
+    "garageStrings" : [ "string" ],
+    "parkingStrings" : [ "string" ],
+    "fireplaceStrings" : [ "string" ],
+    "expenseStrings" : [ "string" ],
+    "incomeStrings" : [ "string" ],
+    "zoningStrings" : [ "string" ],
+    "hoa" : true,
+    "hoaDues" : "string"
+  } ],
+  "request" : {
+    "psc" : [ 0 ],
+    "priceMin" : 0,
+    "priceMax" : 0,
+    "totalBathsMin" : 1.100000023841858,
+    "bedsMin" : 0,
+    "neighborhoods" : [ "string" ],
+    "cities" : [ "string" ],
+    "counties" : [ "string" ],
+    "zips" : [ "string" ],
+    "uri" : "string",
+    "search" : "string",
+    "page" : 0,
+    "size" : 0,
+    "sortBy" : "string",
+    "sortDesc" : true
+  },
+  "results" : {
+    "itemCount" : 0,
+    "itemOffset" : 0,
+    "totalItemsCount" : 0,
+    "hasMore" : true,
+    "nextPageQueryString" : "string"
+  },
+  "errors" : [ "string" ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/html</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent/>
+    </con:representation>
+    <con:request name="Request 1" id="89bffedb-a5fe-420f-8e80-c72e67421fe8" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://paragon-dash-api-stage.azurewebsites.net</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

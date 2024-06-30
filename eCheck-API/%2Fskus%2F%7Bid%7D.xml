@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/skus/{id}" path="/skus/{id}" id="84d68a7c-b437-4e8f-9ad2-9f9366d46cf8">
+  <con:settings id="431ac195-9410-4875-a7ee-61836c31c7a9">
+    <con:setting id="84d68a7c-b437-4e8f-9ad2-9f9366d46cf8fileName">%2Fskus%2F%7Bid%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>id</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>number</con:dataType>
+      <con:description>the SKU id</con:description>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="updateSKU" id="92f66ca6-9af9-4400-a747-9469ab34807d" method="PUT">
+    <con:description>1. Check sku.process.id exists in Process, return 404 error if check failed
+2. Check sku.id exists in eCheck_SKU, return 404 error if check failed
+3. Get duplicating row (select * from eCheck_SKU where id!={sku.id} and skuNum={sku.skuNum} and process_id={sku.process.id})
+4. If there is a duplicating row, return 409 error
+5. update eCheck_SKU set... where id={sku.id}, return 200 success response
+
+Update SKU</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "createdBy" : "string",
+  "createdAt" : "2015-07-20T15:49:04-07:00",
+  "updatedBy" : "string",
+  "updatedAt" : "2015-07-20T15:49:04-07:00",
+  "id" : 1.5,
+  "process" : {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "description" : "string"
+  },
+  "skuNum" : "string",
+  "description" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "createdBy" : "string",
+  "createdAt" : "2015-07-20T15:49:04-07:00",
+  "updatedBy" : "string",
+  "updatedAt" : "2015-07-20T15:49:04-07:00",
+  "id" : 1.5,
+  "process" : {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "description" : "string"
+  },
+  "skuNum" : "string",
+  "description" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>403</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>409</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="2dacbcaf-aeea-4c89-889f-0e04e7cb6768" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://localhost:8080</con:endpoint>
+      <con:request>{
+  "createdBy" : "string",
+  "createdAt" : "2015-07-20T15:49:04-07:00",
+  "updatedBy" : "string",
+  "updatedAt" : "2015-07-20T15:49:04-07:00",
+  "id" : 1.5,
+  "process" : {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "description" : "string"
+  },
+  "skuNum" : "string",
+  "description" : "string"
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

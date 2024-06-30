@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/claim" path="/claim" id="ecc7ab2d-8776-4eb6-a258-d71e390cc0e9">
+  <con:settings id="7b78ad2f-a8b6-4c8f-b3f3-cb542505d520">
+    <con:setting id="ecc7ab2d-8776-4eb6-a258-d71e390cc0e9fileName">%2Fclaim</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GET" id="a89d1f0c-5ddf-4db7-9c4a-251a2a7df956" method="GET">
+    <con:description>Gets the claim summary information for the claim number provided
+Gets the claim summary information for the claim number provided</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>policyId</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>the policy number of the policy to which the claim which is being requested is associated</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>claimId</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>the uniue id of the claim which is being requested</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="c889ebf1-a804-4f47-944f-c4ebb6555241" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://acord.org</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+  <con:method name="PUT" id="1999c5b1-b548-40cd-a40d-4d57f5c8e07a" method="PUT">
+    <con:description>Adds a new Claim on the policy
+Adds a new Claim on the policy</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>policyId</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>the policy number of the policy to which the claim which is being requested is associated</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>claimId</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>the policy number of the policy to which the claim which is being requested is associated</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="0b41af50-9cf4-48f2-ae13-d648fb9fc261" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://acord.org</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

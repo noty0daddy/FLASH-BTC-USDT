@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/auth/refreshToken" path="/auth/refreshToken" id="022362bc-fd4e-4811-bc90-289290589587">
+  <con:settings id="fdb14754-372d-4dd7-8114-3d789ef99f09">
+    <con:setting id="022362bc-fd4e-4811-bc90-289290589587fileName">%2Fauth%2FrefreshToken</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="refreshToken" id="f5fa1b37-ceaa-4698-8c8d-15ff407c01da" method="POST">
+    <con:description>Extract refresh token from X-REFRESH-TOKEN header, validate it and issue a new access token
+Issue a new access token</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "user" : {
+    "id" : 1.5,
+    "username" : "string",
+    "password" : "string",
+    "role" : "ROLE_ADMIN"
+  },
+  "accessToken" : "string",
+  "refreshToken" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="c05c3380-ad8b-4d04-b2c1-9681a38c8939" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://localhost:8080</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

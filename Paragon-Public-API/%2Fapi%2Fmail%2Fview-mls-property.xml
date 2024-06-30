@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/api/mail/view-mls-property" path="/api/mail/view-mls-property" id="302c589c-a75d-4dad-a4ca-5b73fb27dd71">
+  <con:settings id="d214bd9a-4a11-45ad-8612-6d3c5bef0b10">
+    <con:setting id="302c589c-a75d-4dad-a4ca-5b73fb27dd71fileName">%2Fapi%2Fmail%2Fview-mls-property</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Mail_Send_Mls_Property" id="a26bdf04-90f7-43a6-85e9-687d81a4a113" method="POST">
+    <con:description></con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "name" : "string",
+  "email" : "string",
+  "phone" : "string",
+  "message" : "string",
+  "ipAddress" : "string",
+  "propertyAddress" : "string",
+  "propertyCity" : "string",
+  "url" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>text/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "name" : "string",
+  "email" : "string",
+  "phone" : "string",
+  "message" : "string",
+  "ipAddress" : "string",
+  "propertyAddress" : "string",
+  "propertyCity" : "string",
+  "url" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>text/html</con:mediaType>
+      <con:params/>
+      <con:sampleContent/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>text/xml</con:mediaType>
+      <con:params/>
+      <con:sampleContent><![CDATA[<MailViewMlsProperty>
+   <name>string</name>
+   <email>string</email>
+   <phone>string</phone>
+   <message>string</message>
+   <ipAddress>string</ipAddress>
+   <propertyAddress>string</propertyAddress>
+   <propertyCity>string</propertyCity>
+   <url>string</url>
+</MailViewMlsProperty>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/x-www-form-urlencoded</con:mediaType>
+      <con:params/>
+      <con:sampleContent/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>202</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>202</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/html</con:mediaType>
+      <con:status>202</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/xml</con:mediaType>
+      <con:status>202</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>text/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>text/html</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>text/xml</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/x-www-form-urlencoded</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="6733ece1-7b74-4d52-8caa-e40f142476cb" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://paragon-dash-api-stage.azurewebsites.net</con:endpoint>
+      <con:request>{
+  "name" : "string",
+  "email" : "string",
+  "phone" : "string",
+  "message" : "string",
+  "ipAddress" : "string",
+  "propertyAddress" : "string",
+  "propertyCity" : "string",
+  "url" : "string"
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+    <con:request name="Request 2" id="0fcdd355-8368-4e29-80b7-5de27798bc48" mediaType="text/json">
+      <con:settings/>
+      <con:endpoint>https://paragon-dash-api-stage.azurewebsites.net</con:endpoint>
+      <con:request>{
+  "name" : "string",
+  "email" : "string",
+  "phone" : "string",
+  "message" : "string",
+  "ipAddress" : "string",
+  "propertyAddress" : "string",
+  "propertyCity" : "string",
+  "url" : "string"
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+    <con:request name="Request 3" id="71553bd1-b45d-420d-ac6d-af08f2060675" mediaType="text/html">
+      <con:settings/>
+      <con:endpoint>https://paragon-dash-api-stage.azurewebsites.net</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+    <con:request name="Request 4" id="b7b7149f-537b-4ca4-b557-ac5229681882" mediaType="text/xml">
+      <con:settings/>
+      <con:endpoint>https://paragon-dash-api-stage.azurewebsites.net</con:endpoint>
+      <con:request><![CDATA[<MailViewMlsProperty>
+   <name>string</name>
+   <email>string</email>
+   <phone>string</phone>
+   <message>string</message>
+   <ipAddress>string</ipAddress>
+   <propertyAddress>string</propertyAddress>
+   <propertyCity>string</propertyCity>
+   <url>string</url>
+</MailViewMlsProperty>]]></con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+    <con:request name="Request 5" id="5d73b1f3-a0e2-4c92-acab-596ee50aabd3" mediaType="application/x-www-form-urlencoded">
+      <con:settings/>
+      <con:endpoint>https://paragon-dash-api-stage.azurewebsites.net</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

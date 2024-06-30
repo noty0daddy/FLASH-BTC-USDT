@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/account/logintoken/" path="/account/logintoken/" id="c78c0613-2958-4305-a1a8-632bbd035b43">
+  <con:settings id="2ff37b83-2e64-4e85-9efd-8d9b685d6eb5">
+    <con:setting id="c78c0613-2958-4305-a1a8-632bbd035b43fileName">%2Faccount%2Flogintoken%2F</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="create_logintoken_with_paramaters" id="f55427d3-781c-4172-9d66-b09db0fb72ff" method="POST">
+    <con:description>Generate a one time token to allow your user to go from your application to the Shoprocket dashboard with them having to login.</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>companyid</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Your company id</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>authkey</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Your Oauth key</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>userid</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Your Oauth key</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>partnerkey</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Your partner key which was issued</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "result" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "result" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+      <con:sampleContent>{
+  "result" : 0,
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="e213e800-a09d-4a8e-9457-4616a3b0a067" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://dev.shoprocket.co</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

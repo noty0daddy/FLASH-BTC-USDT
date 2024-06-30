@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/comms/addcomm/{companyid}{authkey}{commid}{partnerkey}" path="/comms/addcomm/{companyid}{authkey}{commid}{partnerkey}" id="5c1a2add-b0e5-478e-95f8-239e0c45d127">
+  <con:settings id="06f9ad81-bad0-4f29-aae2-31dc12a8103a">
+    <con:setting id="5c1a2add-b0e5-478e-95f8-239e0c45d127fileName">%2Fcomms%2Faddcomm%2F%7Bcompanyid%7D%7Bauthkey%7D%7Bcommid%7D%7Bpartnerkey%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>companyid</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>The ID of the account you wish to set the defaults for</con:description>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>authkey</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>The authorisation key issued when the account was created</con:description>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>commid</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>The ID of the communication you want to copy from</con:description>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>partnerkey</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>Your partner key which was issued</con:description>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="comms_add_with_paramaters" id="61234d63-0396-4e36-87af-3743f4532d4b" method="GET">
+    <con:description>Allows You to Copy Across Just One of the Default Communications</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "result" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+      <con:sampleContent>{
+  "status" : 0,
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="9352e791-096d-4a7c-946e-707346f8cac5" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://dev.shoprocket.co</con:endpoint>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

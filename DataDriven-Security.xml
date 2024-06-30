@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:securityTest xmlns:con="http://eviware.com/soapui/config" id="966de759-d023-40a6-9e52-2571a627638a" testCaseId="1651566e-a3c9-4216-837a-157cd1efec12" name="DataDriven Security" failSecurityTestOnScanErrors="true">
+  <con:settings id="8b5e1c6b-7a39-437f-b549-34f803f7e142">
+    <con:setting id="966de759-d023-40a6-9e52-2571a627638afileName">DataDriven-Security</con:setting>
+  </con:settings>
+  <con:properties/>
+  <con:reportParameters/>
+</con:securityTest>

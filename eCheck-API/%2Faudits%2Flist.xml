@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/audits/list" path="/audits/list" id="d35a86bb-6836-4d44-8784-879f08944fb9">
+  <con:settings id="25610ce4-a2bd-4d57-9dce-0f6ddffa4b26">
+    <con:setting id="d35a86bb-6836-4d44-8784-879f08944fb9fileName">%2Faudits%2Flist</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="searchInspectionAudits" id="099707ac-4938-4293-aa88-e19c551189b5" method="GET">
+    <con:description>The implementations must support criteria search by eCheck_SKU.sku_num or eCheck_Audit.batch column, pagination and sort by eCheck_SKU.sku_num, eCheck_Audit.batch, eCheck_Audit.entry_datetime and eCheck_Audit.updated_by.
+Search list of inspection audits (without entry details) by given criteria, page number, page size, sort column and sort order</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>criteria</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>the criteria to search (wildcard match). If null then no criteria filter applied</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>pageNumber</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description>the page 0 based indexing. Must be >=0 if present. Assume 0 by default if null</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>pageSize</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description>the maximum number of results to return. Must be >0 if present. Assume Integer.MAX by default if null</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>sortColumn</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>the sort by column, if implementations doesn't support sorting by the provided column, implementations must return 400 with proper error message and error code</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>sortOrder</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>the sort order. Must be ASC or DESC if present. Assume ASC by default if null</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "criteria" : "string",
+  "pageNumber" : 0,
+  "pageSize" : 0,
+  "sortColumn" : "string",
+  "sortOrder" : "ASC",
+  "totalCount" : 1.5,
+  "records" : [ {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "sku" : {
+      "createdBy" : "string",
+      "createdAt" : "2015-07-20T15:49:04-07:00",
+      "updatedBy" : "string",
+      "updatedAt" : "2015-07-20T15:49:04-07:00",
+      "id" : 1.5,
+      "process" : {
+        "createdBy" : "string",
+        "createdAt" : "2015-07-20T15:49:04-07:00",
+        "updatedBy" : "string",
+        "updatedAt" : "2015-07-20T15:49:04-07:00",
+        "id" : 1.5,
+        "description" : "string"
+      },
+      "skuNum" : "string",
+      "description" : "string"
+    },
+    "batch" : 1.5,
+    "entryDatetime" : "2015-07-20T15:49:04-07:00",
+    "insStatus" : "string",
+    "auditEntry" : {
+      "id" : 1.5,
+      "sku" : {
+        "createdBy" : "string",
+        "createdAt" : "2015-07-20T15:49:04-07:00",
+        "updatedBy" : "string",
+        "updatedAt" : "2015-07-20T15:49:04-07:00",
+        "id" : 1.5,
+        "process" : {
+          "createdBy" : "string",
+          "createdAt" : "2015-07-20T15:49:04-07:00",
+          "updatedBy" : "string",
+          "updatedAt" : "2015-07-20T15:49:04-07:00",
+          "id" : 1.5,
+          "description" : "string"
+        },
+        "skuNum" : "string",
+        "description" : "string"
+      },
+      "entryDatetime" : "2015-07-20T15:49:04-07:00",
+      "inspection" : {
+        "id" : 1.5,
+        "echeckSkuId" : 1.5,
+        "batch" : 1.5,
+        "inspectionStatus" : {
+          "id" : 1.5,
+          "description" : "string"
+        },
+        "comment" : "string",
+        "completionDate" : "2015-07-20T15:49:04-07:00"
+      },
+      "verifications" : [ {
+        "id" : 1.5,
+        "inspectionId" : 1.5,
+        "requiredEquipmentId" : 1.5,
+        "allowedEquipmentId" : 1.5,
+        "equipmentStatus" : {
+          "id" : 1.5,
+          "description" : "string"
+        },
+        "scannedTime" : "2015-07-20T15:49:04-07:00"
+      } ],
+      "requiredEquipments" : [ {
+        "createdBy" : "string",
+        "createdAt" : "2015-07-20T15:49:04-07:00",
+        "updatedBy" : "string",
+        "updatedAt" : "2015-07-20T15:49:04-07:00",
+        "id" : 1.5,
+        "echeckSkuId" : 1.5,
+        "equipmentTypeId" : 1.5
+      } ],
+      "alowedEquipments" : [ {
+        "createdBy" : "string",
+        "createdAt" : "2015-07-20T15:49:04-07:00",
+        "updatedBy" : "string",
+        "updatedAt" : "2015-07-20T15:49:04-07:00",
+        "id" : 1.5,
+        "echeckSkuId" : 1.5,
+        "equipmentTypeId" : 1.5,
+        "barCode" : "string",
+        "deleted" : true
+      } ],
+      "equipmentTypes" : [ {
+        "createdBy" : "string",
+        "createdAt" : "2015-07-20T15:49:04-07:00",
+        "updatedBy" : "string",
+        "updatedAt" : "2015-07-20T15:49:04-07:00",
+        "id" : 1.5,
+        "description" : "string"
+      } ]
+    }
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>403</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="ac762154-6a91-45f6-be1e-d40a91e3c0d8" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://localhost:8080</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

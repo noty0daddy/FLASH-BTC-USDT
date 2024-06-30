@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="1908cc4b-a237-44b2-bb67-5368ebe50c9b" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="/pet/findByTags Test Case" searchProperties="true" timeout="0">
+  <con:description id="f5b30d91-68e8-47bd-bfab-684f9d903e81">The test case generated for the REST resource [/pet/findByTags] located at [/pet/findByTags]</con:description>
+  <con:settings>
+    <con:setting id="1908cc4b-a237-44b2-bb67-5368ebe50c9bfileName">%2Fpet%2FfindByTags-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="b2584088-2aee-46e3-8c3e-33ff6dfc5a1c">
+    <con:settings/>
+    <con:config service="Swagger Petstore" resourcePath="/tree/bitcoinWallet/1.0.0/pet/findByTags" methodName="findPetsByTags" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="d4026bad-e29b-4907-8d9c-5acec8dde2a9" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://virtserver.swaggerhub.com/tree/bitcoinWallet/1.0.0/pet/findByTags</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/account/list/{companyid}{authkey}{partnerkey}" path="/account/list/{companyid}{authkey}{partnerkey}" id="28ae5515-6749-4242-b747-34ce4473ac0b">
+  <con:settings id="7146f875-929e-4215-859f-33ccf34136e6">
+    <con:setting id="28ae5515-6749-4242-b747-34ce4473ac0bfileName">%2Faccount%2Flist%2F%7Bcompanyid%7D%7Bauthkey%7D%7Bpartnerkey%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>companyid</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>Your company id</con:description>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>authkey</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>Your Oauth key</con:description>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>partnerkey</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>Your partner key which was issued</con:description>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="create_list_with_paramaters" id="808227e9-9d3e-46ff-845d-f0f8369034d8" method="GET">
+    <con:description>List the account details for a company along with summary information</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "status" : 0,
+  "name" : "string",
+  "email" : "string",
+  "productcount" : 0,
+  "totalsales" : 0,
+  "totalrevenues" : 0
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "status" : 0,
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+      <con:sampleContent>{
+  "status" : 0,
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="c7afb67a-f049-47c9-addb-ba69afc42214" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://dev.shoprocket.co</con:endpoint>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

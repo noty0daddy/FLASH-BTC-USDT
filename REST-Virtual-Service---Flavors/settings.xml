@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockService xmlns:con="http://eviware.com/soapui/config" id="e79b97b6-e3ce-410f-bc85-2a29602fa889" port="8095" path="/" host="localhost" name="REST Virtual Service - Flavors">
+  <con:settings id="111f0ba4-65d4-4d12-9d39-043a6e8cb240">
+    <con:setting id="e79b97b6-e3ce-410f-bc85-2a29602fa889fileName">REST-Virtual-Service---Flavors</con:setting>
+  </con:settings>
+  <con:properties/>
+  <con:constraints>
+    <con:congestion>0</con:congestion>
+    <con:inputBandwidth>125</con:inputBandwidth>
+    <con:outputBandwidth>125</con:outputBandwidth>
+    <con:maxThreadPoolCapacity>20</con:maxThreadPoolCapacity>
+    <con:coreThreadPoolCapacity>5</con:coreThreadPoolCapacity>
+    <con:virtError>
+      <con:start>-1</con:start>
+    </con:virtError>
+  </con:constraints>
+  <con:dataSources>
+    <con:dataSource>
+      <con:dataSource type="Grid">
+        <con:configuration>
+          <check><![CDATA[<xml-fragment><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry><con:entry xmlns:con="http://eviware.com/soapui/config">true</con:entry></xml-fragment>]]></check>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Vanilla&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Chocolate&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Mint Chocolate Chip&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Cookies and Cream&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Cookie Dough&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Guatemalan Ripple&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Butter Pecan&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Peanut Butter Swirl&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Strawberry&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Raspberry Truffle&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Gadzooks!&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Coffee&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Moose Tracks&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">English Toffee Crunch&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Dark Chocolate Chip&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Double Chocolate&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Pistachio&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Banana&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">WHYY Experience&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Cherry Vanilla&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Butterscotch Vanilla&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Chocolate Chip&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">French Vanilla&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Rum Raisin&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Peach&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Egg Nog&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Gadzooks Blanc&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Pralines and Cream&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Matcha&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Mocha Chip&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Cinnamon&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Vanilla Fudge&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Mango&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Butter Almond&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Irish Coffee&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Macadamia Nut&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Pumpkin&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Raspberry Sorbet&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Mango-Apricot Sorbet&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Lemon Sorbet&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Orange Sorbet&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Vanilla No Sugar Added&lt;/con:entry></row>
+          <row>&lt;con:entry xmlns:con="http://eviware.com/soapui/config">Pomegranate Blueberry Chunk&lt;/con:entry></row>
+          <recognizeAsPlainText>true</recognizeAsPlainText>
+        </con:configuration>
+      </con:dataSource>
+      <con:name>Flavors</con:name>
+      <con:property>flavor</con:property>
+    </con:dataSource>
+  </con:dataSources>
+  <con:headerValidator type="NONE"/>
+</con:restMockService>

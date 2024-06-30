@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/api/geo/neighborhoods" path="/api/geo/neighborhoods" id="ed223bf8-d8c4-476e-a2e8-7c7338bee4f1">
+  <con:settings id="976e5cb7-6a7d-43c8-87e9-74c09be9cf9e">
+    <con:setting id="ed223bf8-d8c4-476e-a2e8-7c7338bee4f1fileName">%2Fapi%2Fgeo%2Fneighborhoods</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GeoNeighborhoods_Get" id="183c8249-dcc9-49e4-8c1b-7a59e4d8ae8b" method="GET">
+    <con:description></con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>[ {
+  "id" : 0,
+  "name" : "string"
+} ]</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>[ {
+  "id" : 0,
+  "name" : "string"
+} ]</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/html</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent><![CDATA[<object>
+   <AnonymousModel>
+      <id>0</id>
+      <name>string</name>
+   </AnonymousModel>
+</object>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="089dbcb0-1001-4c8e-947b-d822a3752711" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://paragon-dash-api-stage.azurewebsites.net</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

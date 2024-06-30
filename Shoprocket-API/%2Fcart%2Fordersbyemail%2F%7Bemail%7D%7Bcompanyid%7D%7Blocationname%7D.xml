@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/cart/ordersbyemail/{email}{companyid}{locationname}" path="/cart/ordersbyemail/{email}{companyid}{locationname}" id="3040fe17-c071-4eff-8efd-9def56bc91e3">
+  <con:settings id="6a4a27c6-09c7-4032-a7df-468ebefd08b1">
+    <con:setting id="3040fe17-c071-4eff-8efd-9def56bc91e3fileName">%2Fcart%2Fordersbyemail%2F%7Bemail%7D%7Bcompanyid%7D%7Blocationname%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>email</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>The email of the person you want to reorder for</con:description>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>companyid</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:description>The ID of the account you wish to set the defaults for</con:description>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>locationname</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>The is the location you want to reorder for (can be blank)</con:description>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="cart_ordersbyemail_with_paramaters" id="e7cf4ff8-7e65-42e8-8475-ae1324052046" method="GET">
+    <con:description></con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>for_reordering</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>A boolean to return only reordeable orders or all (default is false)</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "id" : "string",
+  "ordertotal" : "string",
+  "email" : "string",
+  "location" : "string",
+  "dateadded" : "string",
+  "currencysymbol" : "string",
+  "items" : {
+    "id" : 0,
+    "orderid" : 0,
+    "name" : "string",
+    "quantity" : 0,
+    "itemid" : 0,
+    "taxamount" : "string",
+    "taxrate" : 0,
+    "whofor" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="396df49c-d623-457f-b96f-093a10963af3" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://dev.shoprocket.co</con:endpoint>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

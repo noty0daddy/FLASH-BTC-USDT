@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/app/getmenumeta/{companyid}" path="/app/getmenumeta/{companyid}" id="e2705055-542e-497b-a679-e72bc515bfd6">
+  <con:settings id="46010dd6-919f-4b34-ae59-d4f7755c62e9">
+    <con:setting id="e2705055-542e-497b-a679-e72bc515bfd6fileName">%2Fapp%2Fgetmenumeta%2F%7Bcompanyid%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>companyid</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>The ID of the account you wish to set the defaults for</con:description>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="app_getmenumeta_with_paramaters" id="a998f4af-0283-4073-b263-0debf2cc7b34" method="GET">
+    <con:description>The is function returns all of the menu in the system for your products allowing you to build a a menu locally</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "keyword" : "string",
+  "label" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="3131922c-9454-4b95-90e1-b85de4f6daae" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://dev.shoprocket.co</con:endpoint>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

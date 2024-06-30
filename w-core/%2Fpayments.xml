@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/payments" path="/payments" id="629fd9e6-7008-4d2b-b304-0863b0007962">
+  <con:settings id="761ab141-6449-4d3b-a128-e6209bc7d126">
+    <con:setting id="629fd9e6-7008-4d2b-b304-0863b0007962fileName">%2Fpayments</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GET" id="5f392fad-e0a4-4b7c-8910-a0e0e2390b9d" method="GET">
+    <con:description>Returns all the payments of the customer identified by the given access token. By default are ordered from newer to older.</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>Authorization</con:name>
+        <con:style>HEADER</con:style>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "count" : 1,
+  "data" : [ {
+    "id" : "PAY01234567890123456789",
+    "state" : "approved",
+    "intent" : "sale",
+    "invoice_number" : "123",
+    "currency" : "DOP",
+    "total" : 100.0,
+    "subtotal" : 82.0,
+    "tax" : 0.18,
+    "shipping" : 0.0,
+    "insurance" : 0.0,
+    "items" : [ {
+      "sku" : 1,
+      "name" : "Soda CocaCola",
+      "description" : "Soda CocaCola Plastic 500ml",
+      "quantity" : 2,
+      "price" : 42,
+      "tax" : 0.18
+    } ]
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="b876dbf9-e76f-4566-9a7f-e23c0760a15c" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://virtserver.swaggerhub.com</con:endpoint>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:method name="POST" id="ced48b6c-c6e8-40fa-8b14-0116951e4362" method="POST">
+    <con:description>Creates a payment for the customer identified by the given access token.</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>Authorization</con:name>
+        <con:style>HEADER</con:style>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "intent" : "Sale",
+  "currency" : "string",
+  "total" : 1.100000023841858,
+  "subtotal" : 1.100000023841858,
+  "tax" : 1.100000023841858,
+  "shipping" : 1.100000023841858,
+  "insurance" : 1.100000023841858,
+  "items" : [ {
+    "sku" : "string",
+    "name" : "string",
+    "description" : "string",
+    "quantity" : 0,
+    "price" : 1.100000023841858,
+    "tax" : 1.100000023841858
+  } ],
+  "notes" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "data" : {
+    "id" : "PAY01234567890123456789",
+    "state" : "created",
+    "intent" : "sale",
+    "currency" : "DOP",
+    "total" : 100.0,
+    "subtotal" : 82.0,
+    "tax" : 0.18,
+    "shipping" : 0.0,
+    "insurance" : 0.0,
+    "items" : [ {
+      "sku" : 1,
+      "name" : "Soda CocaCola",
+      "description" : "Soda CocaCola Plastic 500ml",
+      "quantity" : 2,
+      "price" : 42,
+      "tax" : 0.18,
+      "self_url" : "https://w.io/payments/PAY01234567890123456789"
+    } ],
+    "approval_url" : "https://w.io/payments/PAY01234567890123456789/approval",
+    "execution_url" : "https://w.io/api/v1/payments/PAY01234567890123456789/execute"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="18adea6d-f8af-4497-a8bf-ee47640e3fc1" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://virtserver.swaggerhub.com</con:endpoint>
+      <con:request>{
+  "intent" : "Sale",
+  "currency" : "string",
+  "total" : 1.100000023841858,
+  "subtotal" : 1.100000023841858,
+  "tax" : 1.100000023841858,
+  "shipping" : 1.100000023841858,
+  "insurance" : 1.100000023841858,
+  "items" : [ {
+    "sku" : "string",
+    "name" : "string",
+    "description" : "string",
+    "quantity" : 0,
+    "price" : 1.100000023841858,
+    "tax" : 1.100000023841858
+  } ],
+  "notes" : "string"
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

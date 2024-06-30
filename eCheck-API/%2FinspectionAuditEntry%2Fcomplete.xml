@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/inspectionAuditEntry/complete" path="/inspectionAuditEntry/complete" id="476e38a7-7656-4328-aa1f-621b309969c5">
+  <con:settings id="71f8e6e9-62e7-40b2-be0d-484c71ab4b08">
+    <con:setting id="476e38a7-7656-4328-aa1f-621b309969c5fileName">%2FinspectionAuditEntry%2Fcomplete</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="markInspectionComplete" id="8d658864-0ae0-4ce0-b3fb-15566246b2b1" method="PUT">
+    <con:description>1. Get current equipments data which are related to given auditEntry.inspection.echeckSkuId from database (RequiredEquipmentDTO/AllowedEquipmentDTO/EquipmentTypeDTO, include deleted data)
+2. For each non-deleted item within given auditEntry's requiredEquipments/allowedEquipments/equipmentTypes, it must also exist as non-deleted in current equipments data and with all columns except createdAt/createdBy/updatedAt/updatedBy having same value
+3. If data not match, return the current equipments data with 409 error
+4. Otherwise data match, save auditEntry similar as saveInspectionAuditEntry
+
+Mark inspection complete. Note the given auditEntry.inspection.inspectionStatus must be COMPLETED</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "id" : 1.5,
+  "sku" : {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "process" : {
+      "createdBy" : "string",
+      "createdAt" : "2015-07-20T15:49:04-07:00",
+      "updatedBy" : "string",
+      "updatedAt" : "2015-07-20T15:49:04-07:00",
+      "id" : 1.5,
+      "description" : "string"
+    },
+    "skuNum" : "string",
+    "description" : "string"
+  },
+  "entryDatetime" : "2015-07-20T15:49:04-07:00",
+  "inspection" : {
+    "id" : 1.5,
+    "echeckSkuId" : 1.5,
+    "batch" : 1.5,
+    "inspectionStatus" : {
+      "id" : 1.5,
+      "description" : "string"
+    },
+    "comment" : "string",
+    "completionDate" : "2015-07-20T15:49:04-07:00"
+  },
+  "verifications" : [ {
+    "id" : 1.5,
+    "inspectionId" : 1.5,
+    "requiredEquipmentId" : 1.5,
+    "allowedEquipmentId" : 1.5,
+    "equipmentStatus" : {
+      "id" : 1.5,
+      "description" : "string"
+    },
+    "scannedTime" : "2015-07-20T15:49:04-07:00"
+  } ],
+  "requiredEquipments" : [ {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "echeckSkuId" : 1.5,
+    "equipmentTypeId" : 1.5
+  } ],
+  "alowedEquipments" : [ {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "echeckSkuId" : 1.5,
+    "equipmentTypeId" : 1.5,
+    "barCode" : "string",
+    "deleted" : true
+  } ],
+  "equipmentTypes" : [ {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "description" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>403</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>409</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "requiredEquipments" : [ {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "echeckSkuId" : 1.5,
+    "equipmentTypeId" : 1.5
+  } ],
+  "allowedEquipments" : [ {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "echeckSkuId" : 1.5,
+    "equipmentTypeId" : 1.5,
+    "barCode" : "string",
+    "deleted" : true
+  } ],
+  "equipmentTypes" : [ {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "description" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="e71b4b31-53ef-45cf-a525-5075f7c2aab7" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://localhost:8080</con:endpoint>
+      <con:request>{
+  "id" : 1.5,
+  "sku" : {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "process" : {
+      "createdBy" : "string",
+      "createdAt" : "2015-07-20T15:49:04-07:00",
+      "updatedBy" : "string",
+      "updatedAt" : "2015-07-20T15:49:04-07:00",
+      "id" : 1.5,
+      "description" : "string"
+    },
+    "skuNum" : "string",
+    "description" : "string"
+  },
+  "entryDatetime" : "2015-07-20T15:49:04-07:00",
+  "inspection" : {
+    "id" : 1.5,
+    "echeckSkuId" : 1.5,
+    "batch" : 1.5,
+    "inspectionStatus" : {
+      "id" : 1.5,
+      "description" : "string"
+    },
+    "comment" : "string",
+    "completionDate" : "2015-07-20T15:49:04-07:00"
+  },
+  "verifications" : [ {
+    "id" : 1.5,
+    "inspectionId" : 1.5,
+    "requiredEquipmentId" : 1.5,
+    "allowedEquipmentId" : 1.5,
+    "equipmentStatus" : {
+      "id" : 1.5,
+      "description" : "string"
+    },
+    "scannedTime" : "2015-07-20T15:49:04-07:00"
+  } ],
+  "requiredEquipments" : [ {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "echeckSkuId" : 1.5,
+    "equipmentTypeId" : 1.5
+  } ],
+  "alowedEquipments" : [ {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "echeckSkuId" : 1.5,
+    "equipmentTypeId" : 1.5,
+    "barCode" : "string",
+    "deleted" : true
+  } ],
+  "equipmentTypes" : [ {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "description" : "string"
+  } ]
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

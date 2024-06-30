@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="e1176cdd-a6a2-4ffc-ae00-188e1c4bc7d8" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="/pet/findByStatus Test Case" searchProperties="true" timeout="0">
+  <con:description id="49fa210b-ca7b-4772-b8ef-080b3612e3ee">The test case generated for the REST resource [/pet/findByStatus] located at [/pet/findByStatus]</con:description>
+  <con:settings>
+    <con:setting id="e1176cdd-a6a2-4ffc-ae00-188e1c4bc7d8fileName">%2Fpet%2FfindByStatus-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="4f7e6aee-fde4-4e5c-bb9d-ddf9dffc8ec3">
+    <con:settings/>
+    <con:config service="Swagger Petstore" resourcePath="/tree/bitcoinWallet/1.0.0/pet/findByStatus" methodName="findPetsByStatus" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="086a78de-ba0a-465d-b2a0-dbf517bf34d0" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://virtserver.swaggerhub.com/tree/bitcoinWallet/1.0.0/pet/findByStatus</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

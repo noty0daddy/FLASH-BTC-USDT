@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/cart/checkstockquantity/{productid}{productoptionid}{selectedoption}" path="/cart/checkstockquantity/{productid}{productoptionid}{selectedoption}" id="2ed07404-b548-4e38-8df6-ddab346142ab">
+  <con:settings id="74f81553-9322-4668-920b-5ba6783b71e9">
+    <con:setting id="2ed07404-b548-4e38-8df6-ddab346142abfileName">%2Fcart%2Fcheckstockquantity%2F%7Bproductid%7D%7Bproductoptionid%7D%7Bselectedoption%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>productid</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>The ID of the product</con:description>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>productoptionid</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>The ID of the product option</con:description>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>selectedoption</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>The ID option the user has selected</con:description>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="cart_checkstockquantity_with_paramaters" id="8b16532d-13d9-4c49-9375-704d021ff582" method="GET">
+    <con:description>This function check the stock level for an item that has stock level options enabled ie Trousers size 36 10 in stock , size 34 8 in stock</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "quantity" : 0
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="12f5873b-5407-4354-bb4d-0c6d511ccc89" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://dev.shoprocket.co</con:endpoint>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

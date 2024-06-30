@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/inspectionAuditEntry/skus/{skuId}" path="/inspectionAuditEntry/skus/{skuId}" id="77335527-55a5-4b04-95cc-d49aa39309cf">
+  <con:settings id="aa322cba-08b0-4679-ad4b-67d84c8eb353">
+    <con:setting id="77335527-55a5-4b04-95cc-d49aa39309cffileName">%2FinspectionAuditEntry%2Fskus%2F%7BskuId%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>skuId</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>number</con:dataType>
+      <con:description>the SKU id</con:description>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="getInspectionAuditEntries" id="867e0500-ce15-42d3-9d66-65b25af4390e" method="GET">
+    <con:description>select audit_entry from eCheck_Audit where echeck_sku_id={skuId}
+Get array of inspection audit entris for given sku</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>[ {
+  "id" : 1.5,
+  "sku" : {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "process" : {
+      "createdBy" : "string",
+      "createdAt" : "2015-07-20T15:49:04-07:00",
+      "updatedBy" : "string",
+      "updatedAt" : "2015-07-20T15:49:04-07:00",
+      "id" : 1.5,
+      "description" : "string"
+    },
+    "skuNum" : "string",
+    "description" : "string"
+  },
+  "entryDatetime" : "2015-07-20T15:49:04-07:00",
+  "inspection" : {
+    "id" : 1.5,
+    "echeckSkuId" : 1.5,
+    "batch" : 1.5,
+    "inspectionStatus" : {
+      "id" : 1.5,
+      "description" : "string"
+    },
+    "comment" : "string",
+    "completionDate" : "2015-07-20T15:49:04-07:00"
+  },
+  "verifications" : [ {
+    "id" : 1.5,
+    "inspectionId" : 1.5,
+    "requiredEquipmentId" : 1.5,
+    "allowedEquipmentId" : 1.5,
+    "equipmentStatus" : {
+      "id" : 1.5,
+      "description" : "string"
+    },
+    "scannedTime" : "2015-07-20T15:49:04-07:00"
+  } ],
+  "requiredEquipments" : [ {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "echeckSkuId" : 1.5,
+    "equipmentTypeId" : 1.5
+  } ],
+  "alowedEquipments" : [ {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "echeckSkuId" : 1.5,
+    "equipmentTypeId" : 1.5,
+    "barCode" : "string",
+    "deleted" : true
+  } ],
+  "equipmentTypes" : [ {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "description" : "string"
+  } ]
+} ]</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>403</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="781d7cce-8280-43ee-9425-d6dcc6080630" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://localhost:8080</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

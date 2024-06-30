@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/comms/setdetfault/{companyid}{authkey}{partnerkey}" path="/comms/setdetfault/{companyid}{authkey}{partnerkey}" id="05c3c90a-3876-4fea-adf6-ca96af412f2d">
+  <con:settings id="d43f4476-9aaa-442e-8b60-001e219740e9">
+    <con:setting id="05c3c90a-3876-4fea-adf6-ca96af412f2dfileName">%2Fcomms%2Fsetdetfault%2F%7Bcompanyid%7D%7Bauthkey%7D%7Bpartnerkey%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>companyid</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>The ID of the account you wish to set the defaults for</con:description>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>authkey</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>The authorisation key issued when the account was created</con:description>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>partnerkey</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>Your partner key which was issued</con:description>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="comms_set_with_paramaters" id="1e9fc3e2-61f9-4940-87ac-4b05a8597b3c" method="GET">
+    <con:description>The default communication settings for your account.</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>fromname</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>The name the email is from (defaults to company name)</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>fromemail</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>The from email that your customers see when the email arrives</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>youremail</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>An internal email that can be used to cc, to make a copy of the email, or inform you of a new order</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>accountsemail</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>An internal email that allows your accounts department to receive an email</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>telephone</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Your company's telephone number</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>mobile</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>The mobile number your customers will see when they receive a SMS confirmation</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>mobilefrom</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>The name your customers will see when they receive an SMS</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "result" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+      <con:sampleContent>{
+  "status" : 0,
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="4027d1e7-053e-4fcf-86c7-89d02091e592" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://dev.shoprocket.co</con:endpoint>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

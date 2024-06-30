@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/api/v1/remit/in/withdraw" path="/api/v1/remit/in/withdraw" id="d964c296-36ef-4c9a-abf3-65772a989696">
+  <con:settings id="5b0f36cd-0c76-4e7e-ac8f-7c1ed16e1de5">
+    <con:setting id="d964c296-36ef-4c9a-abf3-65772a989696fileName">%2Fapi%2Fv1%2Fremit%2Fin%2Fwithdraw</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="withdrawRequest" id="1952c274-41e1-4333-a04d-d488cafce752" method="POST">
+    <con:description>Request getting money to user bank card.
+
+Create a withdraw request</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "jobId" : "string",
+  "status" : 0,
+  "id" : "string",
+  "idType" : 0,
+  "tel" : "string",
+  "bankCode" : "string",
+  "accountType" : 0,
+  "accountNo" : "string",
+  "accountName" : "string",
+  "accountProp" : 0,
+  "cvv2" : "string",
+  "validate" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="3d202f11-0f74-4e16-8fbe-bc621ce25a43" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://virtserver.swaggerhub.com</con:endpoint>
+      <con:request>{
+  "jobId" : "string",
+  "status" : 0,
+  "id" : "string",
+  "idType" : 0,
+  "tel" : "string",
+  "bankCode" : "string",
+  "accountType" : 0,
+  "accountNo" : "string",
+  "accountName" : "string",
+  "accountProp" : 0,
+  "cvv2" : "string",
+  "validate" : "string"
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

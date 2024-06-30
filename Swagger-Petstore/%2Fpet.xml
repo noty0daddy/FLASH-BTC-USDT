@@ -1,0 +1,1245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/pet" path="/pet" id="60532896-4e50-4fb9-8791-94164072a027">
+  <con:settings id="3dfa9314-2232-4acd-b02f-2eb239cb4162">
+    <con:setting id="60532896-4e50-4fb9-8791-94164072a027fileName">%2Fpet</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:resource name="/pet/findByTags" path="/pet/findByTags" id="c29e27af-39a0-4f1a-ad9d-2d8dff72ddcf">
+    <con:settings/>
+    <con:parameters/>
+    <con:method name="findPetsByTags" id="c5b64d59-3b47-4de6-b7fc-78f0f4cbcb6e" method="GET">
+      <con:description>Muliple tags can be provided with comma separated strings. Use\ \ tag1, tag2, tag3 for testing.
+Finds Pets by tags</con:description>
+      <con:settings/>
+      <con:parameters>
+        <con:parameter required="true">
+          <con:name>tags</con:name>
+          <con:style>QUERY</con:style>
+          <con:dataType>array</con:dataType>
+          <con:description>Tags to filter by</con:description>
+        </con:parameter>
+      </con:parameters>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/json</con:mediaType>
+        <con:status>200</con:status>
+        <con:params/>
+        <con:sampleContent>[ {
+  "id" : 0,
+  "category" : {
+    "id" : 0,
+    "name" : "string"
+  },
+  "name" : "doggie",
+  "photoUrls" : [ "string" ],
+  "tags" : [ {
+    "id" : 0,
+    "name" : "string"
+  } ],
+  "status" : "available"
+} ]</con:sampleContent>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/xml</con:mediaType>
+        <con:status>200</con:status>
+        <con:params/>
+        <con:sampleContent><![CDATA[<object>
+   <AnonymousModel>
+      <id>0</id>
+      <Category>
+         <id>0</id>
+         <name>string</name>
+      </Category>
+      <name>doggie</name>
+      <photoUrl>
+         <photoUrls>string</photoUrls>
+      </photoUrl>
+      <tag>
+         <Tag>
+            <id>0</id>
+            <name>string</name>
+         </Tag>
+      </tag>
+      <status>available</status>
+   </AnonymousModel>
+</object>]]></con:sampleContent>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/json</con:mediaType>
+        <con:status>400</con:status>
+        <con:params/>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/xml</con:mediaType>
+        <con:status>400</con:status>
+        <con:params/>
+      </con:representation>
+      <con:request name="Request 1" id="d4026bad-e29b-4907-8d9c-5acec8dde2a9" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:method>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:resource>
+  <con:resource name="/pet/{petId}" path="/pet/{petId}" id="13c8a874-9b82-454c-81af-2e10240c51b4">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>petId</con:name>
+        <con:style>TEMPLATE</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description>Pet id to delete</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:method name="getPetById" id="97094a50-cfdd-4734-9efe-2d309fff7e03" method="GET">
+      <con:description>Returns a single pet
+Find pet by ID</con:description>
+      <con:settings/>
+      <con:parameters/>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/json</con:mediaType>
+        <con:status>200</con:status>
+        <con:params/>
+        <con:sampleContent>{
+  "id" : 0,
+  "category" : {
+    "id" : 0,
+    "name" : "string"
+  },
+  "name" : "doggie",
+  "photoUrls" : [ "string" ],
+  "tags" : [ {
+    "id" : 0,
+    "name" : "string"
+  } ],
+  "status" : "available"
+}</con:sampleContent>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/xml</con:mediaType>
+        <con:status>200</con:status>
+        <con:params/>
+        <con:sampleContent><![CDATA[<Pet>
+   <id>0</id>
+   <Category>
+      <id>0</id>
+      <name>string</name>
+   </Category>
+   <name>doggie</name>
+   <photoUrl>
+      <photoUrls>string</photoUrls>
+   </photoUrl>
+   <tag>
+      <Tag>
+         <id>0</id>
+         <name>string</name>
+      </Tag>
+   </tag>
+   <status>available</status>
+</Pet>]]></con:sampleContent>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/json</con:mediaType>
+        <con:status>400</con:status>
+        <con:params/>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/xml</con:mediaType>
+        <con:status>400</con:status>
+        <con:params/>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/json</con:mediaType>
+        <con:status>404</con:status>
+        <con:params/>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/xml</con:mediaType>
+        <con:status>404</con:status>
+        <con:params/>
+      </con:representation>
+      <con:request name="Request 1" id="e3478074-b61b-4162-ad32-97560236149c" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:method>
+    <con:method name="updatePetWithForm" id="e208dfd6-aa18-4950-a4a7-ff7120bd108b" method="POST">
+      <con:description>Updates a pet in the store with form data</con:description>
+      <con:settings/>
+      <con:parameters>
+        <con:parameter>
+          <con:name>name</con:name>
+          <con:style>QUERY</con:style>
+          <con:description>Updated name of the pet</con:description>
+        </con:parameter>
+        <con:parameter>
+          <con:name>status</con:name>
+          <con:style>QUERY</con:style>
+          <con:description>Updated status of the pet</con:description>
+        </con:parameter>
+      </con:parameters>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/json</con:mediaType>
+        <con:status>405</con:status>
+        <con:params/>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/xml</con:mediaType>
+        <con:status>405</con:status>
+        <con:params/>
+      </con:representation>
+      <con:representation type="REQUEST">
+        <con:mediaType>application/x-www-form-urlencoded</con:mediaType>
+        <con:params/>
+      </con:representation>
+      <con:request name="Request 1" id="78848da8-d12b-4741-b77d-eb3cf0975231" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:method>
+    <con:method name="deletePet" id="8fcb7007-6b4e-4436-b78a-f233b2dad211" method="DELETE">
+      <con:description>Deletes a pet</con:description>
+      <con:settings/>
+      <con:parameters>
+        <con:parameter>
+          <con:name>api_key</con:name>
+          <con:style>HEADER</con:style>
+          <con:description xsi:nil="true"/>
+        </con:parameter>
+      </con:parameters>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/json</con:mediaType>
+        <con:status>400</con:status>
+        <con:params/>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/xml</con:mediaType>
+        <con:status>400</con:status>
+        <con:params/>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/json</con:mediaType>
+        <con:status>404</con:status>
+        <con:params/>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/xml</con:mediaType>
+        <con:status>404</con:status>
+        <con:params/>
+      </con:representation>
+      <con:request name="Request 1" id="03c5cb5c-b773-4901-a64a-f0cf5fd0d50b" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:method>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:resource>
+  <con:resource name="/pet/{petId}/uploadImage" path="/pet/{petId}/uploadImage" id="5c202e18-b8e6-43cc-8bec-49ab04936dc0">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>petId</con:name>
+        <con:style>TEMPLATE</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description>ID of pet to update</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:method name="uploadFile" id="bbe626a0-ed86-4912-b7c7-1169940ddace" method="POST">
+      <con:description>uploads an image</con:description>
+      <con:settings/>
+      <con:parameters>
+        <con:parameter>
+          <con:name>additionalMetadata</con:name>
+          <con:style>QUERY</con:style>
+          <con:description>Additional data to pass to server</con:description>
+        </con:parameter>
+        <con:parameter>
+          <con:name>file</con:name>
+          <con:style>QUERY</con:style>
+          <con:description>file to upload</con:description>
+        </con:parameter>
+      </con:parameters>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/json</con:mediaType>
+        <con:status>200</con:status>
+        <con:params/>
+        <con:sampleContent>{
+  "code" : 0,
+  "type" : "string",
+  "message" : "string"
+}</con:sampleContent>
+      </con:representation>
+      <con:representation type="REQUEST">
+        <con:mediaType>multipart/form-data</con:mediaType>
+        <con:params/>
+      </con:representation>
+      <con:request name="Request 1" id="af163b76-255c-444d-bf81-187b3e398e61" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:method>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:resource>
+  <con:resource name="/store/inventory" path="/store/inventory" id="879592e3-db3c-4bc9-8f76-f52f41039366">
+    <con:settings/>
+    <con:parameters/>
+    <con:method name="getInventory" id="f6d47855-519c-4c81-b611-d8a75c9305f1" method="GET">
+      <con:description>Returns a map of status codes to quantities
+Returns pet inventories by status</con:description>
+      <con:settings/>
+      <con:parameters/>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/json</con:mediaType>
+        <con:status>200</con:status>
+        <con:params/>
+        <con:sampleContent>{
+  "additionalProp1" : 0,
+  "additionalProp2" : 0,
+  "additionalProp3" : 0
+}</con:sampleContent>
+      </con:representation>
+      <con:request name="Request 1" id="bd4a4d37-10c0-4050-b61b-74709fee4b79" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:method>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:resource>
+  <con:resource name="/store/order" path="/store/order" id="d06651e5-19a8-4d81-897d-462f951bc705">
+    <con:settings/>
+    <con:parameters/>
+    <con:method name="placeOrder" id="09c8c010-e7f5-4a4e-a9c1-a7c23aca27e4" method="POST">
+      <con:description>Place an order for a pet</con:description>
+      <con:settings/>
+      <con:parameters/>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/json</con:mediaType>
+        <con:status>200</con:status>
+        <con:params/>
+        <con:sampleContent>{
+  "id" : 0,
+  "petId" : 0,
+  "quantity" : 0,
+  "shipDate" : "2015-07-20T15:49:04-07:00",
+  "status" : "placed",
+  "complete" : false
+}</con:sampleContent>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/xml</con:mediaType>
+        <con:status>200</con:status>
+        <con:params/>
+        <con:sampleContent><![CDATA[<Order>
+   <id>0</id>
+   <petId>0</petId>
+   <quantity>0</quantity>
+   <shipDate>2015-07-20T15:49:04-07:00</shipDate>
+   <status>placed</status>
+   <complete>false</complete>
+</Order>]]></con:sampleContent>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/json</con:mediaType>
+        <con:status>400</con:status>
+        <con:params/>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/xml</con:mediaType>
+        <con:status>400</con:status>
+        <con:params/>
+      </con:representation>
+      <con:request name="Request 1" id="49da53cc-9960-417e-8a8c-a06e344521d2" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:method>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:resource>
+  <con:resource name="/store/order/{orderId}" path="/store/order/{orderId}" id="7a548af4-76e2-423f-8a24-a88e71d192ce">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>orderId</con:name>
+        <con:style>TEMPLATE</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description>ID of the order that needs to be deleted</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:method name="getOrderById" id="ecb1da50-2bed-4e78-be3b-87d9a59d0c18" method="GET">
+      <con:description>For valid response try integer IDs with value >= 1 and &lt;= 10.\ \ Other values will generated exceptions
+Find purchase order by ID</con:description>
+      <con:settings/>
+      <con:parameters/>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/json</con:mediaType>
+        <con:status>200</con:status>
+        <con:params/>
+        <con:sampleContent>{
+  "id" : 0,
+  "petId" : 0,
+  "quantity" : 0,
+  "shipDate" : "2015-07-20T15:49:04-07:00",
+  "status" : "placed",
+  "complete" : false
+}</con:sampleContent>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/xml</con:mediaType>
+        <con:status>200</con:status>
+        <con:params/>
+        <con:sampleContent><![CDATA[<Order>
+   <id>0</id>
+   <petId>0</petId>
+   <quantity>0</quantity>
+   <shipDate>2015-07-20T15:49:04-07:00</shipDate>
+   <status>placed</status>
+   <complete>false</complete>
+</Order>]]></con:sampleContent>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/json</con:mediaType>
+        <con:status>400</con:status>
+        <con:params/>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/xml</con:mediaType>
+        <con:status>400</con:status>
+        <con:params/>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/json</con:mediaType>
+        <con:status>404</con:status>
+        <con:params/>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/xml</con:mediaType>
+        <con:status>404</con:status>
+        <con:params/>
+      </con:representation>
+      <con:request name="Request 1" id="a65f0729-3318-422c-baee-97f390813f69" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:method>
+    <con:method name="deleteOrder" id="e562cf4b-7c9b-4e48-ace8-79f6d23ba74c" method="DELETE">
+      <con:description>For valid response try integer IDs with positive integer value.\ \ Negative or non-integer values will generate API errors
+Delete purchase order by ID</con:description>
+      <con:settings/>
+      <con:parameters/>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/json</con:mediaType>
+        <con:status>400</con:status>
+        <con:params/>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/xml</con:mediaType>
+        <con:status>400</con:status>
+        <con:params/>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/json</con:mediaType>
+        <con:status>404</con:status>
+        <con:params/>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/xml</con:mediaType>
+        <con:status>404</con:status>
+        <con:params/>
+      </con:representation>
+      <con:request name="Request 1" id="c13c3954-b553-4812-9106-15e663284a46" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:method>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:resource>
+  <con:resource name="/user" path="/user" id="1f6bc4eb-9b62-415e-b45c-b203c27f84b0">
+    <con:settings/>
+    <con:parameters/>
+    <con:method name="createUser" id="25dd08af-5031-4185-a767-e5ac3c00a3d4" method="POST">
+      <con:description>This can only be done by the logged in user.
+Create user</con:description>
+      <con:settings/>
+      <con:parameters/>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/json</con:mediaType>
+        <con:status/>
+        <con:params/>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/xml</con:mediaType>
+        <con:status/>
+        <con:params/>
+      </con:representation>
+      <con:request name="Request 1" id="f7c7c0f4-ea7b-4b56-9260-a48f55349265" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:method>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:resource>
+  <con:resource name="/user/createWithArray" path="/user/createWithArray" id="7e494172-7ebb-43ce-be13-1ff5628014b3">
+    <con:settings/>
+    <con:parameters/>
+    <con:method name="createUsersWithArrayInput" id="a221a907-a129-4738-92a9-e887ee9bb1dc" method="POST">
+      <con:description>Creates list of users with given input array</con:description>
+      <con:settings/>
+      <con:parameters/>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/json</con:mediaType>
+        <con:status/>
+        <con:params/>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/xml</con:mediaType>
+        <con:status/>
+        <con:params/>
+      </con:representation>
+      <con:request name="Request 1" id="2154b4f8-0339-470e-b06a-50ea6b8f0ffe" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:method>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:resource>
+  <con:resource name="/user/createWithList" path="/user/createWithList" id="4d71d54e-ed5f-448a-8fe5-7d58a7ec83e0">
+    <con:settings/>
+    <con:parameters/>
+    <con:method name="createUsersWithListInput" id="9ce06506-3046-4b30-b593-97a858c28d3d" method="POST">
+      <con:description>Creates list of users with given input array</con:description>
+      <con:settings/>
+      <con:parameters/>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/json</con:mediaType>
+        <con:status/>
+        <con:params/>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/xml</con:mediaType>
+        <con:status/>
+        <con:params/>
+      </con:representation>
+      <con:request name="Request 1" id="a2f0b33e-2bc6-4831-9e4c-42bc8b8bfd54" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:method>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:resource>
+  <con:resource name="/user/login" path="/user/login" id="ccbe5dfc-de74-409e-94dc-a2bb0686820c">
+    <con:settings/>
+    <con:parameters/>
+    <con:method name="loginUser" id="a7e947a2-a853-44b9-8c74-42bd1b602cff" method="GET">
+      <con:description>Logs user into the system</con:description>
+      <con:settings/>
+      <con:parameters>
+        <con:parameter required="true">
+          <con:name>username</con:name>
+          <con:style>QUERY</con:style>
+          <con:description>The user name for login</con:description>
+        </con:parameter>
+        <con:parameter required="true">
+          <con:name>password</con:name>
+          <con:style>QUERY</con:style>
+          <con:description>The password for login in clear text</con:description>
+        </con:parameter>
+      </con:parameters>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/json</con:mediaType>
+        <con:status>200</con:status>
+        <con:params/>
+        <con:sampleContent>"string"</con:sampleContent>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/xml</con:mediaType>
+        <con:status>200</con:status>
+        <con:params/>
+        <con:sampleContent>&lt;string>string&lt;/string></con:sampleContent>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/json</con:mediaType>
+        <con:status>400</con:status>
+        <con:params/>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/xml</con:mediaType>
+        <con:status>400</con:status>
+        <con:params/>
+      </con:representation>
+      <con:request name="Request 1" id="79b18080-1217-442d-8105-90abc82b9183" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:method>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:resource>
+  <con:resource name="/user/logout" path="/user/logout" id="4558fdbd-ace7-44fa-9fbe-531b2c33468e">
+    <con:settings/>
+    <con:parameters/>
+    <con:method name="logoutUser" id="d2e4fc91-bb16-422c-983b-d9d004049713" method="GET">
+      <con:description>Logs out current logged in user session</con:description>
+      <con:settings/>
+      <con:parameters/>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/json</con:mediaType>
+        <con:status/>
+        <con:params/>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/xml</con:mediaType>
+        <con:status/>
+        <con:params/>
+      </con:representation>
+      <con:request name="Request 1" id="ebce0d71-cbee-4f86-b194-20296fccdb1e" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:method>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:resource>
+  <con:resource name="/user/{username}" path="/user/{username}" id="80b86bd6-0578-4266-9101-e25daeb6e5e1">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>username</con:name>
+        <con:style>TEMPLATE</con:style>
+        <con:description>The name that needs to be deleted</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:method name="getUserByName" id="cdb0a0d1-55af-40f0-bda2-70ed3ea43bdb" method="GET">
+      <con:description>Get user by user name</con:description>
+      <con:settings/>
+      <con:parameters/>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/json</con:mediaType>
+        <con:status>200</con:status>
+        <con:params/>
+        <con:sampleContent>{
+  "id" : 0,
+  "username" : "string",
+  "firstName" : "string",
+  "lastName" : "string",
+  "email" : "string",
+  "password" : "string",
+  "phone" : "string",
+  "userStatus" : 0
+}</con:sampleContent>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/xml</con:mediaType>
+        <con:status>200</con:status>
+        <con:params/>
+        <con:sampleContent><![CDATA[<User>
+   <id>0</id>
+   <username>string</username>
+   <firstName>string</firstName>
+   <lastName>string</lastName>
+   <email>string</email>
+   <password>string</password>
+   <phone>string</phone>
+   <userStatus>0</userStatus>
+</User>]]></con:sampleContent>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/json</con:mediaType>
+        <con:status>400</con:status>
+        <con:params/>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/xml</con:mediaType>
+        <con:status>400</con:status>
+        <con:params/>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/json</con:mediaType>
+        <con:status>404</con:status>
+        <con:params/>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/xml</con:mediaType>
+        <con:status>404</con:status>
+        <con:params/>
+      </con:representation>
+      <con:request name="Request 1" id="7a53c4ad-71fe-4198-8e52-e57de590885c" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:method>
+    <con:method name="updateUser" id="9f79f285-65bf-417c-a4af-fad54f18c344" method="PUT">
+      <con:description>This can only be done by the logged in user.
+Updated user</con:description>
+      <con:settings/>
+      <con:parameters/>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/json</con:mediaType>
+        <con:status>400</con:status>
+        <con:params/>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/xml</con:mediaType>
+        <con:status>400</con:status>
+        <con:params/>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/json</con:mediaType>
+        <con:status>404</con:status>
+        <con:params/>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/xml</con:mediaType>
+        <con:status>404</con:status>
+        <con:params/>
+      </con:representation>
+      <con:request name="Request 1" id="4da27c56-0944-45c6-8de6-6525b7c3d26e" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:method>
+    <con:method name="deleteUser" id="57615911-9694-4d42-b5c7-c28ee463d8a5" method="DELETE">
+      <con:description>This can only be done by the logged in user.
+Delete user</con:description>
+      <con:settings/>
+      <con:parameters/>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/json</con:mediaType>
+        <con:status>400</con:status>
+        <con:params/>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/xml</con:mediaType>
+        <con:status>400</con:status>
+        <con:params/>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/json</con:mediaType>
+        <con:status>404</con:status>
+        <con:params/>
+      </con:representation>
+      <con:representation type="RESPONSE">
+        <con:mediaType>application/xml</con:mediaType>
+        <con:status>404</con:status>
+        <con:params/>
+      </con:representation>
+      <con:request name="Request 1" id="3789d0a4-0018-49c4-9418-4c78524b31c8" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:request>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:method>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:resource>
+  <con:method name="addPet" id="f5ec58d8-045d-478d-90f6-595fdca90f6a" method="POST">
+    <con:description>Add a new pet to the store</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "id" : 0,
+  "category" : {
+    "id" : 0,
+    "name" : "string"
+  },
+  "name" : "doggie",
+  "photoUrls" : [ "string" ],
+  "tags" : [ {
+    "id" : 0,
+    "name" : "string"
+  } ],
+  "status" : "available"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:params/>
+      <con:sampleContent><![CDATA[<Pet>
+   <id>0</id>
+   <Category>
+      <id>0</id>
+      <name>string</name>
+   </Category>
+   <name>doggie</name>
+   <photoUrl>
+      <photoUrls>string</photoUrls>
+   </photoUrl>
+   <tag>
+      <Tag>
+         <id>0</id>
+         <name>string</name>
+      </Tag>
+   </tag>
+   <status>available</status>
+</Pet>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>405</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>405</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="b6455f7c-9e24-4a3f-9ca7-66ce12ee5f64" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+      <con:request>{
+  "id" : 0,
+  "category" : {
+    "id" : 0,
+    "name" : "string"
+  },
+  "name" : "doggie",
+  "photoUrls" : [ "string" ],
+  "tags" : [ {
+    "id" : 0,
+    "name" : "string"
+  } ],
+  "status" : "available"
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:request name="Request 2" id="65605fa7-5e91-4d5b-b76a-d613fb02e4a6" mediaType="application/xml">
+      <con:settings/>
+      <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+      <con:request><![CDATA[<Pet>
+   <id>0</id>
+   <Category>
+      <id>0</id>
+      <name>string</name>
+   </Category>
+   <name>doggie</name>
+   <photoUrl>
+      <photoUrls>string</photoUrls>
+   </photoUrl>
+   <tag>
+      <Tag>
+         <id>0</id>
+         <name>string</name>
+      </Tag>
+   </tag>
+   <status>available</status>
+</Pet>]]></con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:method name="updatePet" id="2db26979-e63d-457c-8308-b505d306e30d" method="PUT">
+    <con:description>Update an existing pet</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "id" : 0,
+  "category" : {
+    "id" : 0,
+    "name" : "string"
+  },
+  "name" : "doggie",
+  "photoUrls" : [ "string" ],
+  "tags" : [ {
+    "id" : 0,
+    "name" : "string"
+  } ],
+  "status" : "available"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:params/>
+      <con:sampleContent><![CDATA[<Pet>
+   <id>0</id>
+   <Category>
+      <id>0</id>
+      <name>string</name>
+   </Category>
+   <name>doggie</name>
+   <photoUrl>
+      <photoUrls>string</photoUrls>
+   </photoUrl>
+   <tag>
+      <Tag>
+         <id>0</id>
+         <name>string</name>
+      </Tag>
+   </tag>
+   <status>available</status>
+</Pet>]]></con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>405</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:status>405</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/xml</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="d68e9940-bc84-44c3-9cbc-4f3beb868797" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+      <con:request>{
+  "id" : 0,
+  "category" : {
+    "id" : 0,
+    "name" : "string"
+  },
+  "name" : "doggie",
+  "photoUrls" : [ "string" ],
+  "tags" : [ {
+    "id" : 0,
+    "name" : "string"
+  } ],
+  "status" : "available"
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:request name="Request 2" id="64f80601-662b-447b-b9ba-c4012f77915e" mediaType="application/xml">
+      <con:settings/>
+      <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+      <con:request><![CDATA[<Pet>
+   <id>0</id>
+   <Category>
+      <id>0</id>
+      <name>string</name>
+   </Category>
+   <name>doggie</name>
+   <photoUrl>
+      <photoUrls>string</photoUrls>
+   </photoUrl>
+   <tag>
+      <Tag>
+         <id>0</id>
+         <name>string</name>
+      </Tag>
+   </tag>
+   <status>available</status>
+</Pet>]]></con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

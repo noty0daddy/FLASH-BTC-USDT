@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/api/agents/search" path="/api/agents/search" id="45824d14-43f2-4188-82d8-dc478c72e71a">
+  <con:settings id="0ceba9ff-febb-4d5d-b4e6-b9d7b80b93cf">
+    <con:setting id="45824d14-43f2-4188-82d8-dc478c72e71afileName">%2Fapi%2Fagents%2Fsearch</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="AgentsSearch_Search" id="b6b29f78-8424-4fdd-8fa1-c095af81d014" method="GET">
+    <con:description></con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>searchRequest.officeId</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>searchRequest.startLetter</con:name>
+        <con:style>QUERY</con:style>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>searchRequest.uri</con:name>
+        <con:style>QUERY</con:style>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>searchRequest.search</con:name>
+        <con:style>QUERY</con:style>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>searchRequest.page</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>searchRequest.size</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>integer</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>searchRequest.sortBy</con:name>
+        <con:style>QUERY</con:style>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+      <con:parameter>
+        <con:name>searchRequest.sortDesc</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>boolean</con:dataType>
+        <con:description xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "items" : [ {
+    "id" : 0,
+    "fullName" : "string",
+    "firstName" : "string",
+    "lastName" : "string",
+    "displayName" : "string",
+    "officeName" : "string",
+    "imageUrl" : "string"
+  } ],
+  "request" : {
+    "officeId" : 0,
+    "startLetter" : "string",
+    "uri" : "string",
+    "search" : "string",
+    "page" : 0,
+    "size" : 0,
+    "sortBy" : "string",
+    "sortDesc" : true
+  },
+  "results" : {
+    "itemCount" : 0,
+    "itemOffset" : 0,
+    "totalItemsCount" : 0,
+    "hasMore" : true,
+    "nextPageQueryString" : "string"
+  },
+  "errors" : [ "string" ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "items" : [ {
+    "id" : 0,
+    "fullName" : "string",
+    "firstName" : "string",
+    "lastName" : "string",
+    "displayName" : "string",
+    "officeName" : "string",
+    "imageUrl" : "string"
+  } ],
+  "request" : {
+    "officeId" : 0,
+    "startLetter" : "string",
+    "uri" : "string",
+    "search" : "string",
+    "page" : 0,
+    "size" : 0,
+    "sortBy" : "string",
+    "sortDesc" : true
+  },
+  "results" : {
+    "itemCount" : 0,
+    "itemOffset" : 0,
+    "totalItemsCount" : 0,
+    "hasMore" : true,
+    "nextPageQueryString" : "string"
+  },
+  "errors" : [ "string" ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/html</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent/>
+    </con:representation>
+    <con:request name="Request 1" id="19b2f27a-1f30-4215-9e1c-98b3ea8ef530" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://paragon-dash-api-stage.azurewebsites.net</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/bill/enquiry/consumernumber" path="/bill/enquiry/consumernumber" id="eabcf254-07fb-4871-be95-34b1b9ed1425">
+  <con:settings id="4b3606d6-be44-44f7-bb76-bc412c476f42">
+    <con:setting id="eabcf254-07fb-4871-be95-34b1b9ed1425fileName">%2Fbill%2Fenquiry%2Fconsumernumber</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GET" id="6da47fb4-8829-45d6-90cd-b539662456e9" method="GET">
+    <con:description>The Bill Enquiry endpoint returns information about the Bill Enquiry 
+offered for a contract account or a Bill Enquiry Reference Number at a  given period of time. The response includes the Electricity, Water, Sewerage, Housing , Cooling, and Other Charges along with Total Amount in proper display order.
+
+Consumer Number Bill Enquiry</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>enquiryrefnumber</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>number</con:dataType>
+        <con:description>Utility Reference Number of the Customer</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>transactiontype</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Type of transaction. The value to be passed as follows Bill Enquiry Outstanding = BILL, Reference Number Bill Outstanding =REFB, Estimate Number Outstanding= ESTM</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>datetime_stamp</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Date Time Stamp of Enquiry Transaction</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>channel</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Channel through which Enquiry have been made.</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>terminalnumber</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Terminal No of Enquiry. It can be considered as any sub-channel, for which information is required.</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>terminalinfo</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Terminal Info can considered as a sub part of Terminal No</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>txsequencenumber</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Unique transaction sequence number provided by Bank or Agency</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>[ {
+  "consumernumber" : "string",
+  "water" : "string",
+  "electricity" : "string",
+  "sewerage" : "string",
+  "dm" : "string",
+  "cooling" : "string",
+  "typeoftransaction" : "string",
+  "category" : "string",
+  "accountstatus" : "string",
+  "txsequencenumber" : "string"
+} ]</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : 0,
+  "message" : "string",
+  "fields" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="679712aa-3832-4ccc-bd41-1ee80c3d54d3" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://virtserver.swaggerhub.com</con:endpoint>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

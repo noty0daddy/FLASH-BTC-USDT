@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/inspectionAuditEntry" path="/inspectionAuditEntry" id="1b59c5ef-bd74-49b5-9e8c-3ba23afecdad">
+  <con:settings id="0ab7cf7a-18c9-430c-93af-6d283e8be42c">
+    <con:setting id="1b59c5ef-bd74-49b5-9e8c-3ba23afecdadfileName">%2FinspectionAuditEntry</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="saveInspectionAuditEntry" id="c75f67c5-5630-4f7c-8673-31a707f3b60d" method="PUT">
+    <con:description>1. Get existing audit (select * from eCheck_Audit where echeck_sku_id=auditEntry.inspection.echeckSkuId and batch=auditEntry.inspection.batch)
+2. If existing audit is marked as deleted (ins_status=DELETED), return 404 error
+3. If existing audit is not deleted then update it (update eCheck_Audit set entry_datetime=auditEntry.entryDatetime, ins_status=auditEntry.inspection.inspectionStatus.description, audit_entry=auditEntry.toJSON())
+4. If there is no existing audit then insert it (insert into eCheck_Audit values(auditEntry.inspection.echeckSkuId, auditEntry.inspection.batch, auditEntry.entryDatetime, auditEntry.inspection.inspectionStatus.description, auditEntry.toJSON()))
+
+Save inspection audit. Note the given auditEntry.inspection.inspectionStatus must be either INPROGRESS or DELETED</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "id" : 1.5,
+  "sku" : {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "process" : {
+      "createdBy" : "string",
+      "createdAt" : "2015-07-20T15:49:04-07:00",
+      "updatedBy" : "string",
+      "updatedAt" : "2015-07-20T15:49:04-07:00",
+      "id" : 1.5,
+      "description" : "string"
+    },
+    "skuNum" : "string",
+    "description" : "string"
+  },
+  "entryDatetime" : "2015-07-20T15:49:04-07:00",
+  "inspection" : {
+    "id" : 1.5,
+    "echeckSkuId" : 1.5,
+    "batch" : 1.5,
+    "inspectionStatus" : {
+      "id" : 1.5,
+      "description" : "string"
+    },
+    "comment" : "string",
+    "completionDate" : "2015-07-20T15:49:04-07:00"
+  },
+  "verifications" : [ {
+    "id" : 1.5,
+    "inspectionId" : 1.5,
+    "requiredEquipmentId" : 1.5,
+    "allowedEquipmentId" : 1.5,
+    "equipmentStatus" : {
+      "id" : 1.5,
+      "description" : "string"
+    },
+    "scannedTime" : "2015-07-20T15:49:04-07:00"
+  } ],
+  "requiredEquipments" : [ {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "echeckSkuId" : 1.5,
+    "equipmentTypeId" : 1.5
+  } ],
+  "alowedEquipments" : [ {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "echeckSkuId" : 1.5,
+    "equipmentTypeId" : 1.5,
+    "barCode" : "string",
+    "deleted" : true
+  } ],
+  "equipmentTypes" : [ {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "description" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>403</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="2f9ba6a8-5583-45ef-b3a2-fe39ca5721ae" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://localhost:8080</con:endpoint>
+      <con:request>{
+  "id" : 1.5,
+  "sku" : {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "process" : {
+      "createdBy" : "string",
+      "createdAt" : "2015-07-20T15:49:04-07:00",
+      "updatedBy" : "string",
+      "updatedAt" : "2015-07-20T15:49:04-07:00",
+      "id" : 1.5,
+      "description" : "string"
+    },
+    "skuNum" : "string",
+    "description" : "string"
+  },
+  "entryDatetime" : "2015-07-20T15:49:04-07:00",
+  "inspection" : {
+    "id" : 1.5,
+    "echeckSkuId" : 1.5,
+    "batch" : 1.5,
+    "inspectionStatus" : {
+      "id" : 1.5,
+      "description" : "string"
+    },
+    "comment" : "string",
+    "completionDate" : "2015-07-20T15:49:04-07:00"
+  },
+  "verifications" : [ {
+    "id" : 1.5,
+    "inspectionId" : 1.5,
+    "requiredEquipmentId" : 1.5,
+    "allowedEquipmentId" : 1.5,
+    "equipmentStatus" : {
+      "id" : 1.5,
+      "description" : "string"
+    },
+    "scannedTime" : "2015-07-20T15:49:04-07:00"
+  } ],
+  "requiredEquipments" : [ {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "echeckSkuId" : 1.5,
+    "equipmentTypeId" : 1.5
+  } ],
+  "alowedEquipments" : [ {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "echeckSkuId" : 1.5,
+    "equipmentTypeId" : 1.5,
+    "barCode" : "string",
+    "deleted" : true
+  } ],
+  "equipmentTypes" : [ {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "description" : "string"
+  } ]
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

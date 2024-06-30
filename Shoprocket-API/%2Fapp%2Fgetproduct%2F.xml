@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/app/getproduct/" path="/app/getproduct/" id="9df57a9b-9672-462a-9c15-8f84baedece4">
+  <con:settings id="c9efffda-b731-40f8-8b14-028ce3c89afc">
+    <con:setting id="9df57a9b-9672-462a-9c15-8f84baedece4fileName">%2Fapp%2Fgetproduct%2F</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="app_getprodict_with_paramaters" id="bd6cbe43-5722-4b78-bdea-cd68e35855b2" method="GET">
+    <con:description>This function will return you allof the details for a product</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>companyid</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>The ID of the account you wish to set the defaults for</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "shippingdetails" : {
+    "shipping" : {
+      "id" : true,
+      "name" : "string",
+      "price" : "string",
+      "customerid" : 0,
+      "compnayid" : 0,
+      "active" : 0,
+      "freeshipping" : "string",
+      "billingshippingequal" : 0,
+      "overcharge" : 0,
+      "weight" : 0,
+      "shippingnote" : "string"
+    },
+    "shippingcountries" : {
+      "countryname" : "string",
+      "code" : "string"
+    },
+    "billingcountries" : {
+      "countryname" : "string",
+      "code" : "string"
+    }
+  },
+  "vouchercodes" : {
+    "id" : 0,
+    "companyid" : 0,
+    "percentoff" : 0,
+    "amountoff" : "string",
+    "currency" : "string",
+    "duration" : "string",
+    "maxredemptions" : "string",
+    "redeemby" : "string",
+    "name" : "string",
+    "redemptions" : 0,
+    "showit" : 0,
+    "vocuehrtype" : "string"
+  },
+  "accountdetails" : {
+    "id" : true,
+    "compnayid" : 0,
+    "stripecode" : "string",
+    "stripepercentage" : "string",
+    "livemode" : 0,
+    "refresh_token" : 0,
+    "stripe_puplishable_key" : "string",
+    "stripe_user_id" : 0,
+    "scope" : "string",
+    "token_type" : 0,
+    "paypal" : "string",
+    "paypalordertext" : "string",
+    "paypalcurrency" : "string",
+    "bankdetails" : "string",
+    "usestripe" : true,
+    "usepaypal" : true,
+    "usestripebitcoin" : true,
+    "usebank" : true,
+    "shoprurl" : "string",
+    "usebilling" : true,
+    "useshipping" : true,
+    "displaycurrency" : "string",
+    "testmode" : 0,
+    "testrefresh_token" : 0,
+    "teststripe_puplishable_key" : "string",
+    "teststripe_user_id" : 0,
+    "testscope" : "string",
+    "testtoken_type" : 0,
+    "usetax" : true,
+    "usevoucher" : true,
+    "srmode" : true,
+    "openingtime" : 0,
+    "closingtime" : 0,
+    "hideoutofstock" : true,
+    "usebranchproductcheck" : true,
+    "useajaxtable" : true,
+    "capturemobile" : true,
+    "accountsreport" : 0,
+    "currencysymbol" : 0,
+    "whositfor" : true,
+    "currencyshow" : true,
+    "paymentcurrency" : "string",
+    "srshipping" : true,
+    "srbilling" : true,
+    "billingshippingequal" : true,
+    "use_usa_tax" : true,
+    "usestockquantity" : true,
+    "livestock" : true,
+    "modladetails" : {
+      "id" : 0,
+      "companyid" : 0,
+      "baskettitle" : 0,
+      "ordertitle" : 0,
+      "confirmationtext" : 0,
+      "baseurl" : 0,
+      "cdnurl" : 0,
+      "filepickerurl" : 0,
+      "storeclosedtext" : 0,
+      "storesellwhenclosedtext" : 0
+    }
+  },
+  "locations" : {
+    "id" : true,
+    "name" : 0,
+    "address1" : "string",
+    "address2" : "string",
+    "address3" : "string",
+    "address4" : "string",
+    "postcode" : "string",
+    "email" : 0,
+    "telephone" : 0,
+    "useallproducts" : true,
+    "printercode" : 0,
+    "openingtime" : "string",
+    "closingtime" : "string",
+    "image" : "string",
+    "sellwhenclosed" : true,
+    "mondayopen" : "string",
+    "mondayclosed" : "string",
+    "tuesdayopen" : "string",
+    "tuesdayclosed" : "string",
+    "wednesdaydayopen" : "string",
+    "wednesdayclosed" : "string",
+    "thursdaydayopen" : "string",
+    "thursdayclosed" : "string",
+    "fridaydayopen" : "string",
+    "fridayclosed" : "string",
+    "saturdaydayopen" : "string",
+    "saturdayclosed" : "string",
+    "sundaydayopen" : "string",
+    "sundayclosed" : "string",
+    "livestripekey" : "string",
+    "teststripekey" : "string",
+    "liveaccesstoken" : "string",
+    "testaccesstoken" : "string"
+  },
+  "timeslots" : {
+    "id" : 0,
+    "companyid" : 0,
+    "startime" : "string",
+    "endtime" : "string",
+    "name" : "string",
+    "baseslots" : "string",
+    "interval" : "string",
+    "usedslots" : 0,
+    "showit" : 0
+  },
+  "menumeta" : {
+    "keyword" : "string",
+    "label" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="4220695d-79d2-4eb9-aed6-26795f9a439e" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://dev.shoprocket.co</con:endpoint>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

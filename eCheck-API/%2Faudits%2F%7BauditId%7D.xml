@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/audits/{auditId}" path="/audits/{auditId}" id="5e193405-c91b-4e5a-856e-310d7cfac941">
+  <con:settings id="d848fbf4-025f-487e-ae90-362978922de3">
+    <con:setting id="5e193405-c91b-4e5a-856e-310d7cfac941fileName">%2Faudits%2F%7BauditId%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>auditId</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>number</con:dataType>
+      <con:description>the audit id</con:description>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="getInspectionAudit" id="94da1681-81d2-4cd1-bab7-6c0417e1b3ee" method="GET">
+    <con:description>select * from eCheck_SKU where id={auditId}
+Get inspection audit along with its entry details</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "createdBy" : "string",
+  "createdAt" : "2015-07-20T15:49:04-07:00",
+  "updatedBy" : "string",
+  "updatedAt" : "2015-07-20T15:49:04-07:00",
+  "id" : 1.5,
+  "sku" : {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "process" : {
+      "createdBy" : "string",
+      "createdAt" : "2015-07-20T15:49:04-07:00",
+      "updatedBy" : "string",
+      "updatedAt" : "2015-07-20T15:49:04-07:00",
+      "id" : 1.5,
+      "description" : "string"
+    },
+    "skuNum" : "string",
+    "description" : "string"
+  },
+  "batch" : 1.5,
+  "entryDatetime" : "2015-07-20T15:49:04-07:00",
+  "insStatus" : "string",
+  "auditEntry" : {
+    "id" : 1.5,
+    "sku" : {
+      "createdBy" : "string",
+      "createdAt" : "2015-07-20T15:49:04-07:00",
+      "updatedBy" : "string",
+      "updatedAt" : "2015-07-20T15:49:04-07:00",
+      "id" : 1.5,
+      "process" : {
+        "createdBy" : "string",
+        "createdAt" : "2015-07-20T15:49:04-07:00",
+        "updatedBy" : "string",
+        "updatedAt" : "2015-07-20T15:49:04-07:00",
+        "id" : 1.5,
+        "description" : "string"
+      },
+      "skuNum" : "string",
+      "description" : "string"
+    },
+    "entryDatetime" : "2015-07-20T15:49:04-07:00",
+    "inspection" : {
+      "id" : 1.5,
+      "echeckSkuId" : 1.5,
+      "batch" : 1.5,
+      "inspectionStatus" : {
+        "id" : 1.5,
+        "description" : "string"
+      },
+      "comment" : "string",
+      "completionDate" : "2015-07-20T15:49:04-07:00"
+    },
+    "verifications" : [ {
+      "id" : 1.5,
+      "inspectionId" : 1.5,
+      "requiredEquipmentId" : 1.5,
+      "allowedEquipmentId" : 1.5,
+      "equipmentStatus" : {
+        "id" : 1.5,
+        "description" : "string"
+      },
+      "scannedTime" : "2015-07-20T15:49:04-07:00"
+    } ],
+    "requiredEquipments" : [ {
+      "createdBy" : "string",
+      "createdAt" : "2015-07-20T15:49:04-07:00",
+      "updatedBy" : "string",
+      "updatedAt" : "2015-07-20T15:49:04-07:00",
+      "id" : 1.5,
+      "echeckSkuId" : 1.5,
+      "equipmentTypeId" : 1.5
+    } ],
+    "alowedEquipments" : [ {
+      "createdBy" : "string",
+      "createdAt" : "2015-07-20T15:49:04-07:00",
+      "updatedBy" : "string",
+      "updatedAt" : "2015-07-20T15:49:04-07:00",
+      "id" : 1.5,
+      "echeckSkuId" : 1.5,
+      "equipmentTypeId" : 1.5,
+      "barCode" : "string",
+      "deleted" : true
+    } ],
+    "equipmentTypes" : [ {
+      "createdBy" : "string",
+      "createdAt" : "2015-07-20T15:49:04-07:00",
+      "updatedBy" : "string",
+      "updatedAt" : "2015-07-20T15:49:04-07:00",
+      "id" : 1.5,
+      "description" : "string"
+    } ]
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>403</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>404</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="6d2f00b8-df5b-43ce-97a4-6be81c815dcd" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://localhost:8080</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

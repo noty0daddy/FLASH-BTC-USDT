@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/api/agents/{agentId}/preferences" path="/api/agents/{agentId}/preferences" id="db0dd27e-3ba2-4d51-8698-90f3b407d267">
+  <con:settings id="a0e9b85c-296a-4344-b20c-41cca613d0e5">
+    <con:setting id="db0dd27e-3ba2-4d51-8698-90f3b407d267fileName">%2Fapi%2Fagents%2F%7BagentId%7D%2Fpreferences</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>agentId</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="AgentPreferences_GetById" id="cbe2ab19-8ba5-4d0c-a8f3-c03e663b0b17" method="GET">
+    <con:description></con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "id" : 0,
+  "agentId" : 0,
+  "altAgentHeaderUrl" : "string",
+  "twitterUsername" : "string",
+  "instagramUsername" : "string",
+  "facebookUsername" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "id" : 0,
+  "agentId" : 0,
+  "altAgentHeaderUrl" : "string",
+  "twitterUsername" : "string",
+  "instagramUsername" : "string",
+  "facebookUsername" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/html</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent><![CDATA[<AgentPreferenceDto>
+   <id>0</id>
+   <agentId>0</agentId>
+   <altAgentHeaderUrl>string</altAgentHeaderUrl>
+   <twitterUsername>string</twitterUsername>
+   <instagramUsername>string</instagramUsername>
+   <facebookUsername>string</facebookUsername>
+</AgentPreferenceDto>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="5686b5d2-6bad-488f-a77a-87194857f3e2" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://paragon-dash-api-stage.azurewebsites.net</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

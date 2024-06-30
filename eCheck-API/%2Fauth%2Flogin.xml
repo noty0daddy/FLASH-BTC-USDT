@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/auth/login" path="/auth/login" id="05a0b499-1b2e-402a-ba60-5f1a0b9f2f92">
+  <con:settings id="68679f04-c441-46a0-a76c-a9cb40fee530">
+    <con:setting id="05a0b499-1b2e-402a-ba60-5f1a0b9f2f92fileName">%2Fauth%2Flogin</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="login" id="59e1366a-631d-4f58-8402-4366e5bd7d62" method="POST">
+    <con:description>Find user by AuthRequest.username and check AuthRequest.password. Upon success login, use user id as the JWT token payload to generate access token (with configurable expire time) and refresh token (never expire).
+User login</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "username" : "string",
+  "password" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "user" : {
+    "id" : 1.5,
+    "username" : "string",
+    "password" : "string",
+    "role" : "ROLE_ADMIN"
+  },
+  "accessToken" : "string",
+  "refreshToken" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="7c6bd527-30ca-4cdb-8944-6755ef4631c1" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://localhost:8080</con:endpoint>
+      <con:request>{
+  "username" : "string",
+  "password" : "string"
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/account/create/" path="/account/create/" id="d25e2675-b87e-432e-bf3e-c162d5096cb0">
+  <con:settings id="b641f601-3c77-4851-b4e0-5654b5b2f80b">
+    <con:setting id="d25e2675-b87e-432e-bf3e-c162d5096cb0fileName">%2Faccount%2Fcreate%2F</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="create_account_no_paramaters" id="dffe13cc-fa43-4681-8480-9ab5b75720c4" method="POST">
+    <con:description>Create a company.  Note this once you create a company you will be presented with a unique company id which you use to interact with Shoprocket and a Oauthey which can be exchanged for a token to used with the Shoprocket API</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>email</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Primary email address for the company</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>password</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Password for company account you are creating</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>companyname</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>The name of the company you are creating the account for</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>partnerkey</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Your partner key which was issued</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>currencycode</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Hold the currency, supported currencies can be found here https://support.shoprocket.co/docs/supported-currencies</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>live</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>boolean</con:dataType>
+        <con:description>Set the account you create to live or test</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "companyid" : "string",
+  "oauthkey" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+      <con:sampleContent>{
+  "result" : 0,
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="9628d001-43bc-4e64-9e82-f7a9a185e5ce" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://dev.shoprocket.co</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

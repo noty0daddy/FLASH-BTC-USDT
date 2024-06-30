@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/api/trends-analysis-blog-posts/featured-blog-posts" path="/api/trends-analysis-blog-posts/featured-blog-posts" id="f55f876a-8811-45af-8304-4d7cbe61039f">
+  <con:settings id="6b07acad-c77b-42ad-90c1-680ca3ae55df">
+    <con:setting id="f55f876a-8811-45af-8304-4d7cbe61039ffileName">%2Fapi%2Ftrends-analysis-blog-posts%2Ffeatured-blog-posts</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="TrendsAnalysisBlogPosts_GetFeaturedBlogPosts" id="0d6f9d77-9df3-4698-96d3-3df571f41723" method="GET">
+    <con:description></con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>[ {
+  "id" : 0,
+  "coreLogicId" : 0,
+  "title" : "string",
+  "location" : "string",
+  "parentPage" : "string",
+  "pageOrder" : 0,
+  "summary" : "string",
+  "htmlBody" : "string",
+  "markdownBody" : "string",
+  "imageUrl" : "string",
+  "featuredPostDisplayOrder" : 0,
+  "tags" : "string",
+  "topics" : "string",
+  "regions" : "string",
+  "modifiedDate" : "2015-07-20T15:49:04-07:00",
+  "published" : true
+} ]</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>[ {
+  "id" : 0,
+  "coreLogicId" : 0,
+  "title" : "string",
+  "location" : "string",
+  "parentPage" : "string",
+  "pageOrder" : 0,
+  "summary" : "string",
+  "htmlBody" : "string",
+  "markdownBody" : "string",
+  "imageUrl" : "string",
+  "featuredPostDisplayOrder" : 0,
+  "tags" : "string",
+  "topics" : "string",
+  "regions" : "string",
+  "modifiedDate" : "2015-07-20T15:49:04-07:00",
+  "published" : true
+} ]</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/html</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent><![CDATA[<object>
+   <AnonymousModel>
+      <id>0</id>
+      <coreLogicId>0</coreLogicId>
+      <title>string</title>
+      <location>string</location>
+      <parentPage>string</parentPage>
+      <pageOrder>0</pageOrder>
+      <summary>string</summary>
+      <htmlBody>string</htmlBody>
+      <markdownBody>string</markdownBody>
+      <imageUrl>string</imageUrl>
+      <featuredPostDisplayOrder>0</featuredPostDisplayOrder>
+      <tags>string</tags>
+      <topics>string</topics>
+      <regions>string</regions>
+      <modifiedDate>2015-07-20T15:49:04-07:00</modifiedDate>
+      <published>true</published>
+   </AnonymousModel>
+</object>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="2ac22f70-f76c-433c-8693-116c9cc5b139" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://paragon-dash-api-stage.azurewebsites.net</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

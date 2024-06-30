@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/cart/getproduct/{id}{companyid}{translationcode}" path="/cart/getproduct/{id}{companyid}{translationcode}" id="dce0782e-bb28-450e-a625-df4a8cef7e88">
+  <con:settings id="e7428ab0-8d90-430b-b146-67eb92b5f618">
+    <con:setting id="dce0782e-bb28-450e-a625-df4a8cef7e88fileName">%2Fcart%2Fgetproduct%2F%7Bid%7D%7Bcompanyid%7D%7Btranslationcode%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>id</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>The ID of the product you require details for</con:description>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>companyid</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>The ID of the account you wish to set the defaults for</con:description>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>translationcode</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>The ID of the translation you want to return for the product</con:description>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="cart_getproduct_with_paramaters" id="91b11b2f-9020-465d-91cb-6635e0df517e" method="GET">
+    <con:description>This function retturns all of the items in the cart.  It also the closing times of the locations if your company has multipile locations.</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "closingtimes" : {
+    "Sunday" : 0,
+    "Monday" : 0,
+    "Tuesday" : 0,
+    "Wednesday" : 0,
+    "Thursday" : 0,
+    "Friday" : 0,
+    "Saturday" : 0
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="52857047-c675-41c5-90a8-a8862251c769" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://dev.shoprocket.co</con:endpoint>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

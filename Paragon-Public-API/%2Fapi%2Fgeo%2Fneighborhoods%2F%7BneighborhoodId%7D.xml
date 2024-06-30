@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/api/geo/neighborhoods/{neighborhoodId}" path="/api/geo/neighborhoods/{neighborhoodId}" id="6a15da91-75fd-49b8-8aae-7685da94a7ed">
+  <con:settings id="32782b63-93e1-4a6a-b124-5c84d5426135">
+    <con:setting id="6a15da91-75fd-49b8-8aae-7685da94a7edfileName">%2Fapi%2Fgeo%2Fneighborhoods%2F%7BneighborhoodId%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>neighborhoodId</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="GeoNeighborhoods_GetById" id="5114a124-3925-4b91-b5c6-cfd5914890ef" method="GET">
+    <con:description></con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "id" : 0,
+  "name" : "string",
+  "sanFranciscoRealtorDistrictId" : 0,
+  "marketingCityId" : 0,
+  "summaryBody" : "string",
+  "detailHeader" : "string",
+  "detailBody" : "string",
+  "images" : [ {
+    "id" : 0,
+    "ordinal" : 0,
+    "areaType" : 0,
+    "areaImageType" : 0,
+    "areaImageLayoutType" : 0,
+    "url" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "id" : 0,
+  "name" : "string",
+  "sanFranciscoRealtorDistrictId" : 0,
+  "marketingCityId" : 0,
+  "summaryBody" : "string",
+  "detailHeader" : "string",
+  "detailBody" : "string",
+  "images" : [ {
+    "id" : 0,
+    "ordinal" : 0,
+    "areaType" : 0,
+    "areaImageType" : 0,
+    "areaImageLayoutType" : 0,
+    "url" : "string"
+  } ]
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/html</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent><![CDATA[<GeoNeighborhoodDetailDto>
+   <id>0</id>
+   <name>string</name>
+   <sanFranciscoRealtorDistrictId>0</sanFranciscoRealtorDistrictId>
+   <marketingCityId>0</marketingCityId>
+   <summaryBody>string</summaryBody>
+   <detailHeader>string</detailHeader>
+   <detailBody>string</detailBody>
+   <images>
+      <AnonymousModel>
+         <id>0</id>
+         <ordinal>0</ordinal>
+         <areaType>0</areaType>
+         <areaImageType>0</areaImageType>
+         <areaImageLayoutType>0</areaImageLayoutType>
+         <url>string</url>
+      </AnonymousModel>
+   </images>
+</GeoNeighborhoodDetailDto>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="7f41b92a-44e9-4ca6-b65b-8cea149c39e7" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://paragon-dash-api-stage.azurewebsites.net</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

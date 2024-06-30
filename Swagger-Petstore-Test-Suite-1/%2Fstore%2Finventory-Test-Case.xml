@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="feb097ec-f857-4619-bda3-39c9b0d5c027" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="/store/inventory Test Case" searchProperties="true" timeout="0">
+  <con:description id="180a4b09-ca1c-4268-8a4c-4bce1fcd49d4">The test case generated for the REST resource [/store/inventory] located at [/store/inventory]</con:description>
+  <con:settings>
+    <con:setting id="feb097ec-f857-4619-bda3-39c9b0d5c027fileName">%2Fstore%2Finventory-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="edf29d0a-d897-49f7-aac8-c9450670f079">
+    <con:settings/>
+    <con:config service="Swagger Petstore" resourcePath="/tree/bitcoinWallet/1.0.0/store/inventory" methodName="getInventory" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="bd4a4d37-10c0-4050-b61b-74709fee4b79" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://virtserver.swaggerhub.com/tree/bitcoinWallet/1.0.0/store/inventory</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

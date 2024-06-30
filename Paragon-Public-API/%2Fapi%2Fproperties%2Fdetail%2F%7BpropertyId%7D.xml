@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/api/properties/detail/{propertyId}" path="/api/properties/detail/{propertyId}" id="0ec7ca52-eabd-478d-aea5-b615c8d4b6b7">
+  <con:settings id="bfd09799-518b-419a-80c4-345f4f5a9fe2">
+    <con:setting id="0ec7ca52-eabd-478d-aea5-b615c8d4b6b7fileName">%2Fapi%2Fproperties%2Fdetail%2F%7BpropertyId%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>propertyId</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="PropertiesDetail_GetPublicProperty" id="695a2bea-0b7a-4ead-a768-f952c408c6c8" method="GET">
+    <con:description></con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "id" : "string",
+  "dashListingId" : 0,
+  "homeJunctionSystemId" : "string",
+  "addressWithheld" : true,
+  "streetAddress" : "string",
+  "city" : "string",
+  "state" : "string",
+  "zip" : "string",
+  "county" : "string",
+  "mlsArea" : "string",
+  "neighborhood" : "string",
+  "mlsId" : "string",
+  "aggregatePropertySearchCategory" : 100,
+  "aggregateListingStatus" : "string",
+  "paragonLegacyPropertyTypeId" : 0,
+  "paragonListingStatusId" : 0,
+  "hjListingType" : "string",
+  "hjPropertyType" : "string",
+  "hjListingStatus" : "string",
+  "listingDate" : "2015-07-20T15:49:04-07:00",
+  "source" : "string",
+  "description" : "string",
+  "bedrooms" : 0,
+  "totalBaths" : 1.100000023841858,
+  "fullBaths" : 0,
+  "halfBaths" : 0,
+  "squareFootage" : 1.100000023841858,
+  "lotSizeAcres" : 1.100000023841858,
+  "lotSizeSqft" : 0,
+  "yearBuilt" : 0,
+  "parkingSpaces" : "string",
+  "price" : 0,
+  "officeName" : "string",
+  "agents" : [ {
+    "dashAgentId" : 0,
+    "fullName" : "string",
+    "imageUrl" : "string",
+    "mlsId" : "string",
+    "phone" : "string",
+    "email" : "string",
+    "cellNumber" : "string",
+    "dreLicense" : "string",
+    "address" : {
+      "id" : 0,
+      "address1" : "string",
+      "address2" : "string",
+      "city" : "string",
+      "state" : "string",
+      "zip" : "string"
+    }
+  } ],
+  "leadImageUrl" : "string",
+  "imageUrls" : [ "string" ],
+  "paragonFeatures" : [ "string" ],
+  "openHouses" : [ {
+    "startDateTime" : "2015-07-20T15:49:04-07:00",
+    "endDateTime" : "2015-07-20T15:49:04-07:00"
+  } ],
+  "viewStrings" : [ "string" ],
+  "garageStrings" : [ "string" ],
+  "parkingStrings" : [ "string" ],
+  "fireplaceStrings" : [ "string" ],
+  "expenseStrings" : [ "string" ],
+  "incomeStrings" : [ "string" ],
+  "zoningStrings" : [ "string" ],
+  "hoa" : true,
+  "hoaDues" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "id" : "string",
+  "dashListingId" : 0,
+  "homeJunctionSystemId" : "string",
+  "addressWithheld" : true,
+  "streetAddress" : "string",
+  "city" : "string",
+  "state" : "string",
+  "zip" : "string",
+  "county" : "string",
+  "mlsArea" : "string",
+  "neighborhood" : "string",
+  "mlsId" : "string",
+  "aggregatePropertySearchCategory" : 100,
+  "aggregateListingStatus" : "string",
+  "paragonLegacyPropertyTypeId" : 0,
+  "paragonListingStatusId" : 0,
+  "hjListingType" : "string",
+  "hjPropertyType" : "string",
+  "hjListingStatus" : "string",
+  "listingDate" : "2015-07-20T15:49:04-07:00",
+  "source" : "string",
+  "description" : "string",
+  "bedrooms" : 0,
+  "totalBaths" : 1.100000023841858,
+  "fullBaths" : 0,
+  "halfBaths" : 0,
+  "squareFootage" : 1.100000023841858,
+  "lotSizeAcres" : 1.100000023841858,
+  "lotSizeSqft" : 0,
+  "yearBuilt" : 0,
+  "parkingSpaces" : "string",
+  "price" : 0,
+  "officeName" : "string",
+  "agents" : [ {
+    "dashAgentId" : 0,
+    "fullName" : "string",
+    "imageUrl" : "string",
+    "mlsId" : "string",
+    "phone" : "string",
+    "email" : "string",
+    "cellNumber" : "string",
+    "dreLicense" : "string",
+    "address" : {
+      "id" : 0,
+      "address1" : "string",
+      "address2" : "string",
+      "city" : "string",
+      "state" : "string",
+      "zip" : "string"
+    }
+  } ],
+  "leadImageUrl" : "string",
+  "imageUrls" : [ "string" ],
+  "paragonFeatures" : [ "string" ],
+  "openHouses" : [ {
+    "startDateTime" : "2015-07-20T15:49:04-07:00",
+    "endDateTime" : "2015-07-20T15:49:04-07:00"
+  } ],
+  "viewStrings" : [ "string" ],
+  "garageStrings" : [ "string" ],
+  "parkingStrings" : [ "string" ],
+  "fireplaceStrings" : [ "string" ],
+  "expenseStrings" : [ "string" ],
+  "incomeStrings" : [ "string" ],
+  "zoningStrings" : [ "string" ],
+  "hoa" : true,
+  "hoaDues" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/html</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent><![CDATA[<AggregatePropertyDetail>
+   <id>string</id>
+   <dashListingId>0</dashListingId>
+   <homeJunctionSystemId>string</homeJunctionSystemId>
+   <addressWithheld>true</addressWithheld>
+   <streetAddress>string</streetAddress>
+   <city>string</city>
+   <state>string</state>
+   <zip>string</zip>
+   <county>string</county>
+   <mlsArea>string</mlsArea>
+   <neighborhood>string</neighborhood>
+   <mlsId>string</mlsId>
+   <aggregatePropertySearchCategory>100</aggregatePropertySearchCategory>
+   <aggregateListingStatus>string</aggregateListingStatus>
+   <paragonLegacyPropertyTypeId>0</paragonLegacyPropertyTypeId>
+   <paragonListingStatusId>0</paragonListingStatusId>
+   <hjListingType>string</hjListingType>
+   <hjPropertyType>string</hjPropertyType>
+   <hjListingStatus>string</hjListingStatus>
+   <listingDate>2015-07-20T15:49:04-07:00</listingDate>
+   <source>string</source>
+   <description>string</description>
+   <bedrooms>0</bedrooms>
+   <totalBaths>1.100000023841858</totalBaths>
+   <fullBaths>0</fullBaths>
+   <halfBaths>0</halfBaths>
+   <squareFootage>1.100000023841858</squareFootage>
+   <lotSizeAcres>1.100000023841858</lotSizeAcres>
+   <lotSizeSqft>0</lotSizeSqft>
+   <yearBuilt>0</yearBuilt>
+   <parkingSpaces>string</parkingSpaces>
+   <price>0</price>
+   <officeName>string</officeName>
+   <agents>
+      <AnonymousModel>
+         <dashAgentId>0</dashAgentId>
+         <fullName>string</fullName>
+         <imageUrl>string</imageUrl>
+         <mlsId>string</mlsId>
+         <phone>string</phone>
+         <email>string</email>
+         <cellNumber>string</cellNumber>
+         <dreLicense>string</dreLicense>
+         <AddressDto>
+            <id>0</id>
+            <address1>string</address1>
+            <address2>string</address2>
+            <city>string</city>
+            <state>string</state>
+            <zip>string</zip>
+         </AddressDto>
+      </AnonymousModel>
+   </agents>
+   <leadImageUrl>string</leadImageUrl>
+   <imageUrls>string</imageUrls>
+   <paragonFeatures>string</paragonFeatures>
+   <openHouses>
+      <AnonymousModel>
+         <startDateTime>2015-07-20T15:49:04-07:00</startDateTime>
+         <endDateTime>2015-07-20T15:49:04-07:00</endDateTime>
+      </AnonymousModel>
+   </openHouses>
+   <viewStrings>string</viewStrings>
+   <garageStrings>string</garageStrings>
+   <parkingStrings>string</parkingStrings>
+   <fireplaceStrings>string</fireplaceStrings>
+   <expenseStrings>string</expenseStrings>
+   <incomeStrings>string</incomeStrings>
+   <zoningStrings>string</zoningStrings>
+   <hoa>true</hoa>
+   <hoaDues>string</hoaDues>
+</AggregatePropertyDetail>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="6ffa6754-855d-4291-96d1-8c7a2209485a" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://paragon-dash-api-stage.azurewebsites.net</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

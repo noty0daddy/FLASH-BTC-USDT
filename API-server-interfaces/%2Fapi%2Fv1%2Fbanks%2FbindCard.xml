@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/api/v1/banks/bindCard" path="/api/v1/banks/bindCard" id="001ab127-3601-4c8a-a0a4-fcce5e85b2fc">
+  <con:settings id="75b9afd4-bf35-4869-8158-5667121d4e31">
+    <con:setting id="001ab127-3601-4c8a-a0a4-fcce5e85b2fcfileName">%2Fapi%2Fv1%2Fbanks%2FbindCard</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="bindCardRequest" id="4cba4388-fdfa-4f10-8e6d-4b7a216b39c4" method="OPTIONS">
+    <con:description>Request a card bind
+
+Create a bind card request</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "partnerId" : "string",
+  "bindId" : "string",
+  "relateId" : "string",
+  "bankCode" : "string",
+  "accountType" : 0,
+  "accountNo" : "string",
+  "accountName" : "string",
+  "accountProp" : 0,
+  "idType" : "string",
+  "id" : "string",
+  "relatedCard" : "string",
+  "tel" : "string",
+  "merrem" : "string",
+  "remark" : "string",
+  "status" : {
+    "version" : 0,
+    "message" : "Success",
+    "code" : 0,
+    "property" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="e9d4af33-bd7c-44e7-9488-ba6606f7c1d0" mediaType="application/json" postQueryString="false">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://virtserver.swaggerhub.com</con:endpoint>
+      <con:request>{
+  "partnerId" : "string",
+  "bindId" : "string",
+  "relateId" : "string",
+  "bankCode" : "string",
+  "accountType" : 0,
+  "accountNo" : "string",
+  "accountName" : "string",
+  "accountProp" : 0,
+  "idType" : "string",
+  "id" : "string",
+  "relatedCard" : "string",
+  "tel" : "string",
+  "merrem" : "string",
+  "remark" : "string",
+  "status" : {
+    "version" : 0,
+    "message" : "Success",
+    "code" : 0,
+    "property" : "string"
+  }
+}</con:request>
+      <con:originalUri>https://virtserver.swaggerhub.com/guobiao960/api-server/v1.0.0/api/v1/banks/bindCard</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters/>
+      <con:parameterOrder/>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

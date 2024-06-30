@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/masterdata/delta" path="/masterdata/delta" id="7dce37f1-c3b0-4c62-958b-4060d4d2e87a">
+  <con:settings id="8ec8dead-3312-4ecc-a0eb-6437c1330ece">
+    <con:setting id="7dce37f1-c3b0-4c62-958b-4060d4d2e87afileName">%2Fmasterdata%2Fdelta</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="loadMasterDataDelta" id="3ba31130-01a9-41a6-a645-ff408f74de67" method="GET">
+    <con:description>For each given table, query the corresponding DTOs (include deleted data) which have createdAt or updatedAt timestamp greater than given last updated date
+Get master data delta (include deleted data)</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>tables</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>array</con:dataType>
+        <con:description>the array of table names to get their delta data. Non-null and non-empty. Its length must be same as lastUpdatedDates parameter</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>lastUpdatedDates</con:name>
+        <con:style>QUERY</con:style>
+        <con:dataType>array</con:dataType>
+        <con:description>the array of last updated dates to determine delta data for each table. Non-null and non-empty. Its length must be same as tables parameter</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>[ {
+  "processes" : [ {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "description" : "string"
+  } ],
+  "skus" : [ {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "processId" : 1.5,
+    "skuNum" : "string",
+    "description" : "string"
+  } ],
+  "equipmentTypes" : [ {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "description" : "string"
+  } ],
+  "requiredEquipments" : [ {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "echeckSkuId" : 1.5,
+    "equipmentTypeId" : 1.5
+  } ],
+  "alowedEquipments" : [ {
+    "createdBy" : "string",
+    "createdAt" : "2015-07-20T15:49:04-07:00",
+    "updatedBy" : "string",
+    "updatedAt" : "2015-07-20T15:49:04-07:00",
+    "id" : 1.5,
+    "echeckSkuId" : 1.5,
+    "equipmentTypeId" : 1.5,
+    "barCode" : "string",
+    "deleted" : true
+  } ]
+} ]</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>400</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>401</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>403</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "code" : "string",
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="1d33c36f-4414-499e-8820-cab9116dc996" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://localhost:8080</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

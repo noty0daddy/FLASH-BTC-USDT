@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="119e8459-0778-4160-8ea8-15115789e587" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="/user/createWithList Test Case" searchProperties="true" timeout="0">
+  <con:description id="3578db7c-fe52-4293-b131-7b82eba081e9">The test case generated for the REST resource [/user/createWithList] located at [/user/createWithList]</con:description>
+  <con:settings>
+    <con:setting id="119e8459-0778-4160-8ea8-15115789e587fileName">%2Fuser%2FcreateWithList-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="ac917b31-da0e-4fc6-9041-043bca43e01d">
+    <con:settings/>
+    <con:config service="Swagger Petstore" resourcePath="/tree/bitcoinWallet/1.0.0/user/createWithList" methodName="createUsersWithListInput" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="a2f0b33e-2bc6-4831-9e4c-42bc8b8bfd54" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://virtserver.swaggerhub.com/tree/bitcoinWallet/1.0.0/user/createWithList</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

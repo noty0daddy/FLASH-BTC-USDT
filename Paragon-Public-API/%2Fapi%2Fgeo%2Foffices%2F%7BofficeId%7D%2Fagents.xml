@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/api/geo/offices/{officeId}/agents" path="/api/geo/offices/{officeId}/agents" id="9785a26c-8ab3-42bd-9729-4cb3113a9413">
+  <con:settings id="60228fb6-89a9-4d61-9959-dffce4b275f5">
+    <con:setting id="9785a26c-8ab3-42bd-9729-4cb3113a9413fileName">%2Fapi%2Fgeo%2Foffices%2F%7BofficeId%7D%2Fagents</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>officeId</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="GeoOffices_GetAgentsByOfficeId" id="4d8704ce-30ec-4830-9cf4-15c9f879aefe" method="GET">
+    <con:description></con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>[ {
+  "id" : 0,
+  "fullName" : "string",
+  "firstName" : "string",
+  "lastName" : "string",
+  "displayName" : "string",
+  "officeName" : "string",
+  "imageUrl" : "string"
+} ]</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>[ {
+  "id" : 0,
+  "fullName" : "string",
+  "firstName" : "string",
+  "lastName" : "string",
+  "displayName" : "string",
+  "officeName" : "string",
+  "imageUrl" : "string"
+} ]</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/html</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent><![CDATA[<object>
+   <AnonymousModel>
+      <id>0</id>
+      <fullName>string</fullName>
+      <firstName>string</firstName>
+      <lastName>string</lastName>
+      <displayName>string</displayName>
+      <officeName>string</officeName>
+      <imageUrl>string</imageUrl>
+   </AnonymousModel>
+</object>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="cd715b45-8e42-4784-9431-0ee95585c115" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://paragon-dash-api-stage.azurewebsites.net</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

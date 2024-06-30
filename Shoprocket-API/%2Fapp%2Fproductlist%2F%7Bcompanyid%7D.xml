@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/app/productlist/{companyid}" path="/app/productlist/{companyid}" id="194a00ae-c2cf-4284-a868-f2f55a9b39d9">
+  <con:settings id="7857585e-0d7d-4131-a53d-252778d5b632">
+    <con:setting id="194a00ae-c2cf-4284-a868-f2f55a9b39d9fileName">%2Fapp%2Fproductlist%2F%7Bcompanyid%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>companyid</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>The ID of the account you wish to set the defaults for</con:description>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="app_productlist_with_paramaters" id="db41e4da-41da-438a-bd24-a058fc6059a4" method="GET">
+    <con:description>Return a list of products</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "meta" : "string",
+  "id" : 0,
+  "price" : "string",
+  "currency" : "string",
+  "quantity" : "string",
+  "dateadded" : "string",
+  "lastmodified" : "string",
+  "companyid" : "string",
+  "externalid" : "string",
+  "notes" : "string",
+  "views" : "string",
+  "slug" : "string",
+  "weight" : "string",
+  "image" : "string",
+  "starpline" : "string",
+  "deposit" : "string",
+  "video" : "string",
+  "code" : "string",
+  "description" : "string",
+  "billingnotes" : "string",
+  "showit" : true,
+  "historyid" : 0,
+  "revenue" : 0,
+  "justpicker" : true,
+  "outofstock" : true,
+  "taxrate" : 0,
+  "rating_count" : "string",
+  "branch" : 0,
+  "hasimage" : true,
+  "custom1" : "string",
+  "custom2" : "string",
+  "custom3" : "string",
+  "custom4" : "string",
+  "custom5" : "string",
+  "custom6" : "string",
+  "custom7" : "string",
+  "custom8" : "string",
+  "custom9" : "string",
+  "custom10" : "string",
+  "custom11" : "string",
+  "custom12" : "string",
+  "custom13" : "string",
+  "custom14" : "string",
+  "custom15" : "string",
+  "custom16" : "string",
+  "custom17" : "string",
+  "custom18" : "string",
+  "custom19" : "string",
+  "custom20" : "string",
+  "outputname" : "string",
+  "digital" : true,
+  "mealdeal" : true,
+  "mealdealdescription" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="482b7ab4-7295-4a3d-99be-41224b7c68b6" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://dev.shoprocket.co</con:endpoint>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

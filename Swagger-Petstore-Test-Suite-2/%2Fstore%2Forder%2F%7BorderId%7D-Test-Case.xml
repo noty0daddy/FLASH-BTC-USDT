@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="ba7ef491-f8eb-4f25-b454-429a33f6b8a9" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="/store/order/{orderId} Test Case" searchProperties="true" timeout="0">
+  <con:description id="6a292ae4-5046-4481-8f50-7f6291556a0d">The test case generated for the REST resource [/store/order/{orderId}] located at [/store/order/{orderId}]</con:description>
+  <con:settings>
+    <con:setting id="ba7ef491-f8eb-4f25-b454-429a33f6b8a9fileName">%2Fstore%2Forder%2F%7BorderId%7D-Test-Case</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="b09ecdd7-fb35-4880-b446-84a68d991d47">
+    <con:settings/>
+    <con:config service="Swagger Petstore" resourcePath="/tree/bitcoinWallet/1.0.0/store/order/{orderId}" methodName="getOrderById" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1" id="a65f0729-3318-422c-baee-97f390813f69" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://virtserver.swaggerhub.com/tree/bitcoinWallet/1.0.0/store/order/</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Request 1 2" id="cc4afbc1-cd6a-421b-bdd1-7475051c2f44">
+    <con:settings/>
+    <con:config service="Swagger Petstore" resourcePath="/tree/bitcoinWallet/1.0.0/store/order/{orderId}" methodName="deleteOrder" xsi:type="con:RestRequestStep">
+      <con:restRequest name="Request 1 2" id="c13c3954-b553-4812-9106-15e663284a46" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://virtserver.swaggerhub.com</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://virtserver.swaggerhub.com/tree/bitcoinWallet/1.0.0/store/order/</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>Inherit From Parent</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

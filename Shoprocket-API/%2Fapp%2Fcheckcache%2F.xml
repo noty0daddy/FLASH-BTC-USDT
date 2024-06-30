@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/app/checkcache/" path="/app/checkcache/" id="f0dad4c3-9f98-49e5-852d-e5157adcf3c4">
+  <con:settings id="ae0ce716-a62f-4709-acd9-b6598247e97a">
+    <con:setting id="f0dad4c3-9f98-49e5-852d-e5157adcf3c4fileName">%2Fapp%2Fcheckcache%2F</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="app_checkcache_with_paramaters" id="24333833-40e2-42af-aeda-287ee1ad5f0e" method="GET">
+    <con:description>Check the cache state for the company.  The cache is reset whenever anyone makes a write to the company such as changing a product price.  You should store the cache number and if it is higher the fetch the products again.</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>companyid</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>The ID of the account you wish to set the defaults for</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "cache" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="262112f0-624a-4ab3-a951-d42e4691ad37" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://dev.shoprocket.co</con:endpoint>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite xmlns:con="http://eviware.com/soapui/config" id="d6f11db4-2659-41ec-9822-5f1483b16fcc" name="Swagger Petstore Test Suite 2">
+  <con:description id="3a9a4a86-afb7-4079-9e0b-e29f6a8e9cee">The test suite generated for the REST service [Swagger Petstore]</con:description>
+  <con:settings id="774b378e-1c0c-44da-81c6-8f87c2762026">
+    <con:setting id="IncludeOverview">true</con:setting>
+    <con:setting id="IncludeResults">true</con:setting>
+    <con:setting id="FlowLayout">true</con:setting>
+    <con:setting id="ErrorDetails">true</con:setting>
+    <con:setting id="IncludeCoverage">true</con:setting>
+    <con:setting id="d6f11db4-2659-41ec-9822-5f1483b16fccfileName">Swagger-Petstore-Test-Suite-2</con:setting>
+  </con:settings>
+  <con:runType>PARALLELL</con:runType>
+  <con:properties>
+    <con:property>
+      <con:name/>
+      <con:value/>
+    </con:property>
+  </con:properties>
+  <con:reportParameters/>
+</con:testSuite>

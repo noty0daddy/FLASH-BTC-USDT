@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/api/agents" path="/api/agents" id="23e6d4b2-602c-496d-bac0-fc441a9315e8">
+  <con:settings id="23ddf93d-4731-4f54-9c48-dd5401bc7d15">
+    <con:setting id="23e6d4b2-602c-496d-bac0-fc441a9315e8fileName">%2Fapi%2Fagents</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="AgentsSearch_Get" id="e3b4780a-d3e1-45ff-a716-7a423e18a640" method="GET">
+    <con:description></con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>[ {
+  "id" : 0,
+  "fullName" : "string",
+  "firstName" : "string",
+  "lastName" : "string",
+  "displayName" : "string",
+  "officeName" : "string",
+  "imageUrl" : "string"
+} ]</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>[ {
+  "id" : 0,
+  "fullName" : "string",
+  "firstName" : "string",
+  "lastName" : "string",
+  "displayName" : "string",
+  "officeName" : "string",
+  "imageUrl" : "string"
+} ]</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/html</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent><![CDATA[<object>
+   <AnonymousModel>
+      <id>0</id>
+      <fullName>string</fullName>
+      <firstName>string</firstName>
+      <lastName>string</lastName>
+      <displayName>string</displayName>
+      <officeName>string</officeName>
+      <imageUrl>string</imageUrl>
+   </AnonymousModel>
+</object>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="dcbd5716-86c8-41f1-a09f-fc5afc524180" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://paragon-dash-api-stage.azurewebsites.net</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/cart/getcartitems/{sessionid}{companyid}" path="/cart/getcartitems/{sessionid}{companyid}" id="b55da713-e830-4bce-bd07-9e2d80ffdc02">
+  <con:settings id="7e25321f-a3b7-4a2e-ab0f-c08da64fc420">
+    <con:setting id="b55da713-e830-4bce-bd07-9e2d80ffdc02fileName">%2Fcart%2Fgetcartitems%2F%7Bsessionid%7D%7Bcompanyid%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>sessionid</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>The ID of the current session</con:description>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>companyid</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>The ID of the account you wish to set the defaults for</con:description>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="cart_getcartitems_with_paramaters" id="17e578e4-0691-4f39-9288-d8e83bae725d" method="GET">
+    <con:description>This function returns all of the items in the cart.  It also the closing times of the locations if your company has multipile locations.</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "product" : {
+    "meta" : "string",
+    "id" : 0,
+    "price" : "string",
+    "currency" : "string",
+    "quantity" : "string",
+    "dateadded" : "string",
+    "lastmodified" : "string",
+    "companyid" : "string",
+    "externalid" : "string",
+    "notes" : "string",
+    "views" : "string",
+    "slug" : "string",
+    "weight" : "string",
+    "image" : "string",
+    "starpline" : "string",
+    "deposit" : "string",
+    "video" : "string",
+    "code" : "string",
+    "description" : "string",
+    "billingnotes" : "string",
+    "showit" : true,
+    "historyid" : 0,
+    "revenue" : 0,
+    "justpicker" : true,
+    "outofstock" : true,
+    "taxrate" : 0,
+    "rating_count" : "string",
+    "branch" : 0,
+    "hasimage" : true,
+    "custom1" : "string",
+    "custom2" : "string",
+    "custom3" : "string",
+    "custom4" : "string",
+    "custom5" : "string",
+    "custom6" : "string",
+    "custom7" : "string",
+    "custom8" : "string",
+    "custom9" : "string",
+    "custom10" : "string",
+    "custom11" : "string",
+    "custom12" : "string",
+    "custom13" : "string",
+    "custom14" : "string",
+    "custom15" : "string",
+    "custom16" : "string",
+    "custom17" : "string",
+    "custom18" : "string",
+    "custom19" : "string",
+    "custom20" : "string",
+    "outputname" : "string",
+    "digital" : true,
+    "mealdeal" : true,
+    "mealdealdescription" : "string"
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="582a5512-d924-4dd1-a2c0-b480c8ce0c0b" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://dev.shoprocket.co</con:endpoint>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

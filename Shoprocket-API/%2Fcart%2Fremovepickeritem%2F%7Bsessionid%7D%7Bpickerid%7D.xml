@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/cart/removepickeritem/{sessionid}{pickerid}" path="/cart/removepickeritem/{sessionid}{pickerid}" id="9748eddc-cc27-47be-ae20-f592f812a332">
+  <con:settings id="e4c438cb-3707-4ce5-9e0d-489b74f4fb26">
+    <con:setting id="9748eddc-cc27-47be-ae20-f592f812a332fileName">%2Fcart%2Fremovepickeritem%2F%7Bsessionid%7D%7Bpickerid%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>sessionid</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>The ID of the product you require details for</con:description>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>pickerid</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>The picker id you want to remove</con:description>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="cart_removepickeritem_with_paramaters" id="83712712-4efa-4856-8d63-c670bef2fde0" method="GET">
+    <con:description>This end point is not in v2 yet so please reove the v2 to make it work.</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "cartitems" : {
+    "specialreqs" : "string",
+    "location" : {
+      "locationid" : "string",
+      "message" : "string",
+      "name" : "string",
+      "state" : true
+    },
+    "sessionshipping" : {
+      "digital" : true,
+      "free" : "string",
+      "weight" : "string",
+      "weightovercharge" : "string",
+      "pricetofree" : "string",
+      "cost" : "string",
+      "name" : "string",
+      "id" : 0,
+      "givefreeshipping" : true
+    },
+    "sessionlocation" : {
+      "locationid" : "string",
+      "message" : "string",
+      "name" : "string",
+      "state" : true
+    },
+    "sessionaddress" : {
+      "shippingname" : "string",
+      "shippingaddress1" : "string",
+      "shippingaddress2" : "string",
+      "shippingaddress3" : "string",
+      "shippingcountry" : "string",
+      "billingname" : "string",
+      "billingaddress1" : "string",
+      "billingaddress2" : "string",
+      "billingaddress3" : "string",
+      "billingcountry" : "string",
+      "telephone" : "string"
+    },
+    "voucher" : {
+      "percentoff" : "string",
+      "amountoff" : "string",
+      "name" : "string",
+      "vouchertype" : 0
+    },
+    "sessiontimeslot" : "string",
+    "items" : {
+      "quantity" : 0,
+      "id" : 0,
+      "whositfor" : "string",
+      "productid" : 0,
+      "name" : "string",
+      "price" : "string",
+      "taxrate" : "string",
+      "weight" : "string",
+      "quantitywarning" : "string",
+      "digital" : "string",
+      "taxamount" : "string",
+      "optionstotal" : "string",
+      "goptions" : {
+        "option" : {
+          "name" : "string",
+          "price" : "string"
+        },
+        "modifiers" : {
+          "name" : "string",
+          "modifier" : "string"
+        }
+      },
+      "options" : {
+        "optionname" : "string",
+        "optionsprice" : "string"
+      },
+      "deal" : {
+        "dealname" : "string",
+        "dealprice" : "string"
+      },
+      "itemtotal" : "string"
+    },
+    "pickers" : {
+      "id" : "string",
+      "name" : "string",
+      "whofor" : "string",
+      "cost" : "string",
+      "items" : {
+        "pickerid" : "string"
+      },
+      "quantity" : "string"
+    },
+    "totals" : {
+      "subtotal" : "string",
+      "itemcount" : "string",
+      "digitalcount" : "string",
+      "total" : "string",
+      "itemtotal" : "string",
+      "pickertotal" : "string",
+      "totalwithdiscount" : "string",
+      "discount" : "string",
+      "shippingtotal" : "string",
+      "taxtotal" : "string",
+      "gprice" : "string",
+      "stripe_min_payment" : "string",
+      "paypal_min_payment" : "string",
+      "min_paypal_flag" : "string",
+      "min_stripe_flag" : "string"
+    },
+    "stockfail" : 0,
+    "closingtimes" : {
+      "Sunday" : 0,
+      "Monday" : 0,
+      "Tuesday" : 0,
+      "Wednesday" : 0,
+      "Thursday" : 0,
+      "Friday" : 0,
+      "Saturday" : 0
+    }
+  },
+  "closingtimes" : {
+    "Sunday" : 0,
+    "Monday" : 0,
+    "Tuesday" : 0,
+    "Wednesday" : 0,
+    "Thursday" : 0,
+    "Friday" : 0,
+    "Saturday" : 0
+  }
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="3c814e68-76e0-4e41-8731-d272ea76d961" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://dev.shoprocket.co</con:endpoint>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

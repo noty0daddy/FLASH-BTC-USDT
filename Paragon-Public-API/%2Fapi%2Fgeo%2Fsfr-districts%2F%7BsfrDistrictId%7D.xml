@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="/api/geo/sfr-districts/{sfrDistrictId}" path="/api/geo/sfr-districts/{sfrDistrictId}" id="ea3f101d-d129-40f3-87ff-67ff1834a1ce">
+  <con:settings id="e9b693ca-b2ab-471a-8b9a-f80b27a8823e">
+    <con:setting id="ea3f101d-d129-40f3-87ff-67ff1834a1cefileName">%2Fapi%2Fgeo%2Fsfr-districts%2F%7BsfrDistrictId%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>sfrDistrictId</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="GeoSfrDistricts_GetById" id="e5fc6161-f6c2-4b7f-8bd9-c335cb12b943" method="GET">
+    <con:description></con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "id" : 0,
+  "name" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "id" : 0,
+  "name" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/html</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent xsi:nil="true"/>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>text/xml</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent><![CDATA[<IdNameDto>
+   <id>0</id>
+   <name>string</name>
+</IdNameDto>]]></con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="17ec2d14-82dc-4d01-b6d1-f85cca47813f" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://paragon-dash-api-stage.azurewebsites.net</con:endpoint>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/product/add/" path="/product/add/" id="f1fcb414-56e7-4c51-8f44-c1e78884ed7e">
+  <con:settings id="ead5c4f4-929a-41fb-8bd6-eb34a235c38b">
+    <con:setting id="f1fcb414-56e7-4c51-8f44-c1e78884ed7efileName">%2Fproduct%2Fadd%2F</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="product_add_without_paramaters" id="fc524c42-9c79-4921-93e6-4d88ecd7e473" method="POST">
+    <con:description>Allows You to Add a Product to a Company Account on the Shoprocket Platform.</con:description>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>companyid</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>The ID of company you want to add a product to</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>authkey</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>The authorisation key issued when the account was created</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>name</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>The name of the product</con:description>
+      </con:parameter>
+      <con:parameter required="true">
+        <con:name>price</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>The price of the product</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>quantity</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>The quantity of the product you have for sale</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>externalid</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Adds an external ID to tie to other stock control systems</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>notes</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Adds any notes you have for the product</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>views</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Adds the number of views the product has. Useful if you are porting from an existing system and do not want to start again.</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>weight</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Weight of the product in KG's</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>strapline</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>The strapline of the product you wish to create.</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>rating</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>The current rating for the product. Useful if you are porting from an existing system and do not want to start again.</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>rating_count</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>The overall (max) rating. Useful if you are porting from an existing system and do not want to start again.</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>imagename</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>The name of the image if you want to bypass shoprockets image CDN</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>image</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>The location of the image (absolute URL) if you want to bypass shoprockets image CDN</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>customfields</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Any custom fields you want to attach to the product</con:description>
+      </con:parameter>
+      <con:parameter>
+        <con:name>meta</con:name>
+        <con:style>QUERY</con:style>
+        <con:description>Sets any search able meta you want to associate with the product</con:description>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "result" : 0
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status/>
+      <con:params/>
+      <con:sampleContent>{
+  "result" : 0,
+  "message" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="7b496da4-bbfd-4712-a42b-308fc3bb2a8a" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://dev.shoprocket.co</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

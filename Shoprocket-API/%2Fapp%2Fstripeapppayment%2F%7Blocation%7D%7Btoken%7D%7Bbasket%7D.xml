@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/app/stripeapppayment/{location}{token}{basket}" path="/app/stripeapppayment/{location}{token}{basket}" id="ff50887a-49c7-478a-8d3f-f8b77f18e843">
+  <con:settings id="215dc494-e591-4c3e-88f3-6ee7f1ceb74b">
+    <con:setting id="ff50887a-49c7-478a-8d3f-f8b77f18e843fileName">%2Fapp%2Fstripeapppayment%2F%7Blocation%7D%7Btoken%7D%7Bbasket%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>location</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>The ID of the account you wish to set the defaults for</con:description>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>token</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>A json object old the token (id</con:description>
+    </con:parameter>
+    <con:parameter required="true">
+      <con:name>basket</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:description>A json object containing the basket (email,companyid,total item(quantity,productID,productName,selectedOptions )</con:description>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="app_strippayment_with_paramaters" id="6d3df41a-38cd-4eee-94bd-f63943cd0b67" method="GET">
+    <con:description>Send a payment to the server for processing.</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>{
+  "result" : "string",
+  "orderid" : 0
+}</con:sampleContent>
+    </con:representation>
+    <con:request name="Request 1" id="24246b57-5929-4b25-969b-142c3503c401" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>http://dev.shoprocket.co</con:endpoint>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>

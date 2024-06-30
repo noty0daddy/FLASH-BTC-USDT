@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource xmlns:con="http://eviware.com/soapui/config" name="/api/v1/banks/fx" path="/api/v1/banks/fx" id="ff9aa44c-3358-45b8-8322-561a656c1d2e">
+  <con:settings id="8c9e7543-e8e6-460f-968f-4f07013a7c6c">
+    <con:setting id="ff9aa44c-3358-45b8-8322-561a656c1d2efileName">%2Fapi%2Fv1%2Fbanks%2Ffx</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="fXRateRequest" id="2b5a1626-4e83-4af1-a5d8-aa118d2b396a" method="POST">
+    <con:description>Request for fx
+
+Create a fx request</con:description>
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+      <con:sampleContent>{
+  "bankId" : 0,
+  "refBankId" : 0,
+  "fromCurrency" : "string",
+  "toCurrency" : "string"
+}</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="6bfaa393-5471-4fda-856e-621060095380" mediaType="application/json">
+      <con:settings/>
+      <con:endpoint>https://virtserver.swaggerhub.com</con:endpoint>
+      <con:request>{
+  "bankId" : 0,
+  "refBankId" : 0,
+  "fromCurrency" : "string",
+  "toCurrency" : "string"
+}</con:request>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:parameters/>
+      <con:environmentSpec>
+        <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
+    </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
+  </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="a4eb22e5-5cb5-4b2c-a9c1-3bebc4c560a2">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:resource>
